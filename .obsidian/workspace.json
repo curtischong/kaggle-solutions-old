@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "competitions/CAFA 5 Protein Function Prediction.md"
               }
             }
           }
@@ -160,10 +160,10 @@
   },
   "active": "b005e0ee8017aa0b",
   "lastOpenFiles": [
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "README.md",
     "templates/competition template.md",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "eval-metrics/recall.md",
     "techniques/Identify poor data sources.md",
     "techniques/Multiple Instance Learning.md",
