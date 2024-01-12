@@ -10,4 +10,8 @@ Terms deep in the ontology tend to appear less frequently, be harder to predict,
 The goal is to figure out "what each protein does" (it's function)
 ##### Solution Links
 
+(2nd)
+- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/434064
+	- they only did a simple 5-fold CV (nothing else was better)
+	- Gradient Boosting improved their models the most (their own pyboost framework is super fast)
 #### Takeaways

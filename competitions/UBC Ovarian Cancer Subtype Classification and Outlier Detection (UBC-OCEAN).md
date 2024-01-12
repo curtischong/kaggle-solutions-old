@@ -4,7 +4,7 @@ Input: [[Whole Slide Images]] and [[Image Masks]]
 Output: [[Class Name (Thresholded)]]
 Eval Metric: [[Balanced Accuracy]]
 ##### Summary
-Given an image, predict one of these [subtypes of ovarian cancer](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2592352/): `CC, EC, HGSC, LGSC, MC, Other`. The `Other` class is not present in the training set; identifying outliers is one of the challenges of this competition.
+Given a medical image scan, predict one of these [subtypes of ovarian cancer](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2592352/): `CC, EC, HGSC, LGSC, MC, Other`. The `Other` class is not present in the training set; identifying outliers is one of the challenges of this competition.
 
 There are two different types of data: TMA and WSI (much larger)
 - it appears that the test set had more TMA examples. Figuring out how to classify both accurately was important
