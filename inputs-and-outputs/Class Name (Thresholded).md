@@ -1,0 +1,2 @@
+- You output the class you think the instance belongs to
+	- it's thresholded since you don't output a probability

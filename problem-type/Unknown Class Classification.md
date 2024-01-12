@@ -1,0 +1,2 @@
+- use a threshold of the [[entropy]] of the predictions of other classes
+- You can also use a threshold on the [[variance]] of the predictions
