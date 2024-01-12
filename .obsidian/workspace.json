@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "474c17b64b8b4bf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "techniques/Identify poor data sources.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md"
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
               }
             }
           }
@@ -158,14 +170,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b005e0ee8017aa0b",
+  "active": "474c17b64b8b4bf1",
   "lastOpenFiles": [
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/CAFA 5 Protein Function Prediction.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "techniques/Identify poor data sources.md",
+    "techniques/models/Gradient-Boosted Decision Tree.md",
+    "techniques/models",
     "README.md",
     "templates/competition template.md",
     "eval-metrics/recall.md",
-    "techniques/Identify poor data sources.md",
     "techniques/Multiple Instance Learning.md",
     "NystromAttention.md",
     "techniques/UMAP dimension reduction.md",
