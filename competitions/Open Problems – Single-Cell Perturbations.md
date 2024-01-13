@@ -56,4 +56,13 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 				- the amount of data needed for a sufficiently large training set
 				- vs robust validation
 		- I initially explored utilizing the nn.Embedding layer. However, due to computational constraints on my laptop GPU, I opted for an alternative approach using a linear layer (nn.Linear) to convert sparse features into a dense representation.
+			- you should probably try feeding sparse features into embedding layers, and dense features into linear layers
+			- make sure you normalize the dense features (also explained here: https://quoraengineering.quora.com/Unifying-dense-and-sparse-features-for-neural-networks#:~:text=Dense%20features%20incorporate%20information%20from,%2C%20demographics%2C%20keywords%20and%20etc.)
+	- hyperparms:
+		- [[weight decay]] of 1e-4
+	- model params
+		- used [[Huber loss]]
+		- used dropout
+		- used L2 loss
+		- Implemented gradient norm clipping with a maximum norm of 1.
 #### Takeaways
