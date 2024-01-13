@@ -29,6 +29,9 @@ Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 				- MSELoss(0.05, -0.05) = 0.010 # this loss is much smaller! However, the values are quite far!
 			- Since most target values are from a Gaussian distribution with mean 0, using BCELoss will more aggressively punish imprecise predictions
 	- removed padding in the ChemBERTa model improved private leaderboard results
-	- 
-
+	- also setting 30% of the input features’ entries to 0 improves the score
+		- the hypothesis is:
+			- 1) we might not need to know the complete chemical structure of a molecule to know its impact on a cell. OR
+			- 2) there is a biological disorder in the cell, but we still expect it to respond to the drug in the same way
+		- this feels like [[dropout]]
 #### Takeaways

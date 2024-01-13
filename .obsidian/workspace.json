@@ -32,24 +32,12 @@
             }
           },
           {
-            "id": "b6c4b5f1e8c89640",
+            "id": "f86a75701b1b155b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "loss-functions/LogCosh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7131494011dbc51b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "techniques/adding epsilon to regularize.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "techniques/adding epsilon to regularize.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "techniques/adding epsilon to regularize.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "techniques/adding epsilon to regularize.md"
+                "file": "README.md"
               }
             }
           }
@@ -194,12 +182,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc60e17ef030f44f",
+  "active": "f86a75701b1b155b",
   "lastOpenFiles": [
+    "techniques/regularization/adding epsilon to regularize.md",
+    "techniques/regularization/dropout.md",
     "techniques/regularization",
-    "loss-functions/LogCosh.md",
-    "techniques/adding epsilon to regularize.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
+    "loss-functions/LogCosh.md",
+    "techniques/regularization",
     "loss-functions/MSELoss.md",
     "loss-functions/MAELoss.md",
     "loss-functions/BCELoss.md",
@@ -225,12 +215,9 @@
     "inputs-and-outputs/Whole Slide Images.md",
     "All Competitions.md",
     "inputs-and-outputs/Class Name (Thresholded).md",
-    "inputs-and-outputs/Multiclass Classification.md",
     "inputs-and-outputs",
     "techniques",
     "eval-metrics",
-    "templates",
-    "competitions",
-    "problem-type"
+    "templates"
   ]
 }
