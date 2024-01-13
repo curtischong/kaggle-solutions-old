@@ -10,3 +10,7 @@ Why study Kaggle competitions?
 - Many people iterate on the same problem -> better ideas
 - It's a competition, so people try a lot harder to figure out what works/doesn't
 - They aren't motivated to only show positive results. People will talk about their failures as well
+
+
+shortcuts:
+cmd + shift + leftarrow to select entire line until the bullet (before deleteing)

@@ -43,4 +43,17 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 	- used one-hot encoding
 	- [[cluster sampling]]
 	- To address high and low bias labels, I utilized target encoding by calculating the mean and standard deviation for each cell type and SM name
+	- including uncommon columns significantly improved the training of encoding layers for mean and standard deviation feature vectors
+	- he found targets with significant standard deviation values.
+		- so he added 2 features via [[frequency encoding]] (but with std deviation): (std_cell_type, std_sm_name). 
+	- sampling strategy
+		- He wanted each model to see many different cells of different types
+			- so he did a kmeans to cluster each y_value.
+			- He made sure that each train/test split contained cells from different clusters
+		- He tested various validation percentages between 0.1 - 0.2
+			- a validation percentage of 0.1 was deemed most effective
+			- he carefully considered:
+				- the amount of data needed for a sufficiently large training set
+				- vs robust validation
+		- I initially explored utilizing the nn.Embedding layer. However, due to computational constraints on my laptop GPU, I opted for an alternative approach using a linear layer (nn.Linear) to convert sparse features into a dense representation.
 #### Takeaways
