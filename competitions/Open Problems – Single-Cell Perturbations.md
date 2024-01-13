@@ -1,7 +1,7 @@
 Link: https://www.kaggle.com/competitions/open-problems-single-cell-perturbations
 Problem Type: 
 Input: cell types and small molecule names
-Output: 
+Output: A 18,211 dim vector for each row. These are the probabilities that the molecule (sm_name) will affect each gene's expression when applied to this cell_type.
 Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 ##### Summary
 
@@ -40,16 +40,21 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 		- NOTE: significant training data qualities could mean this technique isn't valid
 - (2nd) 
 	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/458738
-	- used one-hot encoding
-	- [[cluster sampling]]
+	- Their main source of features were **de_train.parquet** (which is just the Differential expression value for each gene)
+			- https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L67
+		- then they engineered extra features
 	- To address high and low bias labels, I utilized target encoding by calculating the mean and standard deviation for each cell type and SM name
 	- including uncommon columns significantly improved the training of encoding layers for mean and standard deviation feature vectors
 	- he found targets with significant standard deviation values.
-		- so he added 2 features via [[frequency encoding]] (but with std deviation): (std_cell_type, std_sm_name). 
+		- so he added 2 features via [[frequency encoding]] (but with std deviation): (std_cell_type, std_sm_name).
+		- Note: this is why his code does one-hot-encoding on the 'cell_type', 'sm_name' [columns](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L77). It's to prepare the data for frequency encoding
+			- explanation of code: notice how xlist only defines these [columns](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L72C4-L72C37)
 	- sampling strategy
 		- He wanted each model to see many different cells of different types
-			- so he did a kmeans to cluster each y_value.
+			- so he did a kmeans to cluster each y_value [[cluster sampling]].
 			- He made sure that each train/test split contained cells from different clusters
+			- Note: he only included subsets of clusters in the validation set [if there were 20+ items in that cluster](https://github.com/Eliorkalfon/single_cell_pb/blob/41a45d327691c7869b9de18633f137f04eba166b/train.py#L156)
+			- otherwise, all of the items in that cluster [would just go into the training set](https://github.com/Eliorkalfon/single_cell_pb/blob/41a45d327691c7869b9de18633f137f04eba166b/train.py#L167-L168)
 		- He tested various validation percentages between 0.1 - 0.2
 			- a validation percentage of 0.1 was deemed most effective
 			- he carefully considered:
@@ -65,4 +70,14 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 		- used dropout
 		- used L2 loss
 		- Implemented gradient norm clipping with a maximum norm of 1.
+	- Their code on github is REALLY short and easy to read!
+- (3rd) Treated this problem as a regression with 2 feature columns and 18211 targets
+	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/458750
+	- the sm_name column maps one-to-one with the SMILES column. So he dropped the sm_name column
+		- he tried using a neural network on the SMILES column but failed.
+	-  for each of the genes, he plotted the range of possible values and found that the values can be from 4 to 50.
+		- 50 is a big number, which can affect [[MSELoss]] or [[MAELoss]]. So he standardized the columns (divided by std) to calculate standardized mse.
 #### Takeaways
+- This was a biological problem that can be abstracted way into important feature selection
+	- after feature selection, you just needed simple models to get the prediction
+- [[frequency encoding]]  (for mean/std on the cell type / molecule) is important
