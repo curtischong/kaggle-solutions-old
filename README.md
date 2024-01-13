@@ -18,3 +18,13 @@ Why use this resource:
 
 shortcuts:
 cmd + shift + leftarrow to select entire line until the bullet (before deleteing)
+
+
+
+In general:
+- things that work for some teams (models / features) may not work for every team
+- but some features / techniques always works on a problem
+- pretrained neural net embeddings are OP. just use them, even with small datasets
+- hyperparam tuning won't save you. garbage features => bad predictions
+- winning teams try things that aren't done in the public notebooks.
+- trust your CV, not your ego. Don't get attached to implementations that *should* work
