@@ -24,5 +24,11 @@ Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 	- Loss function:
 		- 0.32[[MSELoss]] + 0.24[[MAELoss]] + 0.24[[LogCosh]] + 0.2[[BCELoss]]
 			- Although BCE is for binary classification, it was used cause it "sends better signals to the models and optimizers when the target values are close to zero"
+			- e.g.
+				- BCELoss(0.05, -0.05) = 0.694
+				- MSELoss(0.05, -0.05) = 0.010 # this loss is much smaller! However, the values are quite far!
+			- Since most target values are from a Gaussian distribution with mean 0, using BCELoss will more aggressively punish imprecise predictions
+	- removed padding in the ChemBERTa model improved private leaderboard results
+	- 
 
 #### Takeaways

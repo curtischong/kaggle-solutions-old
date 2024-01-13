@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "loss-functions/LogCosh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7131494011dbc51b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "techniques/adding epsilon to regularize.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "techniques/adding epsilon to regularize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "techniques/adding epsilon to regularize.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
+                "file": "techniques/adding epsilon to regularize.md"
               }
             }
           }
@@ -182,13 +194,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6c4b5f1e8c89640",
+  "active": "bc60e17ef030f44f",
   "lastOpenFiles": [
-    "loss-functions/MSELoss.md",
+    "techniques/regularization",
+    "loss-functions/LogCosh.md",
+    "techniques/adding epsilon to regularize.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
+    "loss-functions/MSELoss.md",
     "loss-functions/MAELoss.md",
     "loss-functions/BCELoss.md",
-    "loss-functions/LogCosh.md",
     "loss-functions",
     "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
@@ -212,8 +226,6 @@
     "All Competitions.md",
     "inputs-and-outputs/Class Name (Thresholded).md",
     "inputs-and-outputs/Multiclass Classification.md",
-    "problem-type/Image Classification.md",
-    "inputs-and-outputs/Image Masks.md",
     "inputs-and-outputs",
     "techniques",
     "eval-metrics",
