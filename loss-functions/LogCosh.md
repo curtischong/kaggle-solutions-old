@@ -1,0 +1,1 @@
+- LogCosh is similar to MAE with the difference being that it is a softer version that can allow smoother convergence. It was adapted from [https://github.com/tuantle/regression-losses-pytorch](https://github.com/tuantle/regression-losses-pytorch)

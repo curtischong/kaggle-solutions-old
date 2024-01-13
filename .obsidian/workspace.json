@@ -184,10 +184,15 @@
   },
   "active": "b6c4b5f1e8c89640",
   "lastOpenFiles": [
+    "loss-functions/MSELoss.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "loss-functions/MAELoss.md",
+    "loss-functions/BCELoss.md",
+    "loss-functions/LogCosh.md",
+    "loss-functions",
+    "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/CAFA 5 Protein Function Prediction.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
-    "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
     "techniques/Identify poor data sources.md",
     "techniques/models/Gradient-Boosted Decision Tree.md",
     "techniques/models",
@@ -210,14 +215,10 @@
     "problem-type/Image Classification.md",
     "inputs-and-outputs/Image Masks.md",
     "inputs-and-outputs",
-    "eval-metrics/Balanced Accuracy.md",
-    "templates/metric template.md",
-    "eval-metrics/Precision.md",
     "techniques",
     "eval-metrics",
     "templates",
     "competitions",
-    "problem-type/Time Series.md",
     "problem-type"
   ]
 }
