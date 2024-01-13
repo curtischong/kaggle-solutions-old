@@ -50,6 +50,8 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 		- so he does [[target encoding]] (std deviation and mean) on all 18k target variables
 			- so 36k extra columns
 		- Note: this is why his code groups by 'cell_type', 'sm_name' [columns](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L90-L94). It's to prepare the data for target encoding
+		- Notice how he does the [appending of these new columns twice](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L96-L111):
+			- once for all the cell_types and once for the sm_name. (so when he trains, he doesn't miss any)
 	- sampling strategy
 		- He wanted each model to see many different cells of different types
 			- so he did a kmeans to cluster each y_value [[cluster sampling]].
@@ -81,13 +83,13 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 	- he made sure that "Every fold contains one cell type chosen from NK cells, T cells CD4+, T cells CD8+, T regulatory cells"
 		- only sm_names being in public and private test was involved
 			- so you don't train on irrelevant names
-	- 2-stage prediction
-	- 1st stage - pseudolabel all the test data (255 rows) for more training data: (this is why he's third!)
+	- has a 2-stage prediction:
+	- **1st stage** - pseudolabel all the test data (255 rows) for more training data: (this is why he's third!)
 		- used optuna for all hyperparams:
 			- dropout%, num neuron in layers, output dim of embedding layer, num epochs, learning rate, batch size, num of dimensions of truncated singular value decomposition
 		- he used 4-fold CV. but ran each fold twice (prob diff seed / data shuffle)
 		- the final prediction of this first stage is an ensemble of 7 models
-	- 2nd stage - use train data + pseudolabelled test data
+	- **2nd stage** - use train data + pseudolabelled test data
 		- he used 20 models with diff hyperparams (didn't mention seeds!)
 		- more optuna
 		- Models had high variance, so every model was trained 10 times on all dataset and **the median of prediction is taken as a final prediction**
@@ -96,11 +98,14 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 	- **History of improvements:**
 		1. a replacing onehot encoding with an embedding layer
 		2. a replacing MAE loss with MRRMSE loss
-		3. an ensembing of models with mean
-		4. a dimension reduction with truncated singular value decomposition
-		5. an ensembling of models with weighted mean
-		6. using pseudolabeling
-		7. using pseudolabeling and ensembling of 20 models and weighted mean.
+		3. an ensembling of models with mean
+		4. a dimension reduction with truncated [[singular value decomposition]]
+			- An example of this is here (not their kernel): https://www.kaggle.com/code/ambrosm/scp-quickstart?scriptVersionId=144293041&cellId=8
+			- "We denoise the targets by applying a singular value decomposition"
+			- here is the line of code they actually use fit transform: https://github.com/okon2000/single_cell_perturbations/blob/7e9513972d7cf8ab9c87021bd082712efefff9b9/util.py#L194-L195C6
+		1. an ensembling of models with weighted mean
+		2. using pseudolabeling
+			1. using pseudolabeling and ensembling of 20 models and weighted mean.
 		
 		**What did not work for me**:
 		
@@ -114,7 +119,15 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 		- a training on selected easy / hard to predict columns
 		- a huber loss.
 	- huber loss didn't work!!! Also outlier removal!
+- (4th)
+	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/460191
+	- cross validation:
+		- random k-fold cross-validation wasn't sufficient. They needed:
+			- 
 #### Takeaways
 - This was a biological problem that can be abstracted way into important feature selection
 	- after feature selection, you just needed simple models to get the prediction
-- [[frequency encoding]]  (for mean/std on the cell type / molecule) is important
+- 1) using ChemBERTa is important. it gets you very far
+- 2) [[target encoding]]  (for mean/std on the cell type / molecule) is important
+	- the popular public notebook ONLY DID ONE HOT ENCODING: https://www.kaggle.com/code/ambrosm/scp-quickstart?scriptVersionId=144293041&cellId=8
+- 3) people saw success pseudo labeling the test data and feeding that into round 2 of training

@@ -147,8 +147,9 @@
   },
   "active": "9a082c7062fc7a22",
   "lastOpenFiles": [
-    "techniques/frequency encoding.md",
+    "techniques/singular value decomposition.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
+    "techniques/frequency encoding.md",
     "templates/metric template.md",
     "templates/competition template.md",
     "techniques/target encoding.md",
@@ -181,7 +182,6 @@
     "eval-metrics/recall.md",
     "techniques/Multiple Instance Learning.md",
     "NystromAttention.md",
-    "techniques/UMAP dimension reduction.md",
     "tools",
     "techniques/formulas",
     "inputs-and-outputs",
