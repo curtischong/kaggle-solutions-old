@@ -11,6 +11,10 @@ Why study Kaggle competitions?
 - It's a competition, so people try a lot harder to figure out what works/doesn't
 - They aren't motivated to only show positive results. People will talk about their failures as well
 
+Why use this resource:
+- I looked at each competition holistically, scouring discussions as if I were actually competing
+- I verify nuances by looking at the specific implementations written on their github / jupyter solutions
+
 
 shortcuts:
 cmd + shift + leftarrow to select entire line until the bullet (before deleteing)

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b88a3db5f694b23e",
+        "id": "033c276b7b7f2d07",
         "type": "tabs",
         "children": [
           {
-            "id": "0d68e3bf0cd6285c",
+            "id": "9a082c7062fc7a22",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -90,7 +90,7 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
-                "searchQuery": "clut",
+                "searchQuery": "cluster",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,22 +145,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dfb729a4ca046f8",
+  "active": "9a082c7062fc7a22",
   "lastOpenFiles": [
-    "techniques/cluster sampling.md",
-    "Pasted image 20240113111631.png",
-    "Pasted image 20240113111356.png",
-    "Pasted image 20240113011148.png",
-    "techniques/Identify poor data sources.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
+    "techniques/frequency encoding.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
+    "templates/metric template.md",
+    "templates/competition template.md",
+    "techniques/target encoding.md",
+    "techniques/one-hot encoding.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "README.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "assets/Pasted image 20240113011148.png",
+    "Untitled.md",
+    "assets",
+    "assets/Pasted image 20240113145106.png",
+    "techniques/cluster sampling.md",
+    "assets/Pasted image 20240113111631.png",
+    "assets/Pasted image 20240113111356.png",
+    "techniques/Identify poor data sources.md",
     "loss-functions/Huber loss.md",
     "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
     "loss-functions/MAELoss.md",
     "techniques/regularization/weight decay.md",
-    "techniques/frequency encoding.md",
-    "README.md",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "techniques/regularization/adding epsilon to regularize.md",
     "techniques/regularization/dropout.md",
     "techniques/regularization",
@@ -171,19 +178,14 @@
     "loss-functions",
     "techniques/models/Gradient-Boosted Decision Tree.md",
     "techniques/models",
-    "templates/competition template.md",
     "eval-metrics/recall.md",
     "techniques/Multiple Instance Learning.md",
     "NystromAttention.md",
     "techniques/UMAP dimension reduction.md",
-    "techniques/formulas/entropy.md",
-    "problem-type/Unknown Class Classification.md",
-    "techniques/formulas/variance.md",
     "tools",
     "techniques/formulas",
     "inputs-and-outputs",
     "techniques",
-    "eval-metrics",
-    "templates"
+    "eval-metrics"
   ]
 }

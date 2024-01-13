@@ -4,6 +4,7 @@ Input: cell types and small molecule names
 Output: A 18,211 dim vector for each row. These are the probabilities that the molecule (sm_name) will affect each gene's expression when applied to this cell_type.
 Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 ##### Summary
+This is basically a regression problem with 2 feature columns and 18211 targets
 
 Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com/code/jalilnourisa/post-eda
 - This could affect the validity of techniques used in this competition
@@ -38,7 +39,7 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 			- 2) there is a biological disorder in the cell, but we still expect it to respond to the drug in the same way
 		- this feels like [[dropout]]
 		- NOTE: significant training data qualities could mean this technique isn't valid
-- (2nd) 
+- (2nd) [[target encoding]]
 	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/458738
 	- Their main source of features were **de_train.parquet** (which is just the Differential expression value for each gene)
 			- https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L67
@@ -46,9 +47,9 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 	- To address high and low bias labels, I utilized target encoding by calculating the mean and standard deviation for each cell type and SM name
 	- including uncommon columns significantly improved the training of encoding layers for mean and standard deviation feature vectors
 	- he found targets with significant standard deviation values.
-		- so he added 2 features via [[frequency encoding]] (but with std deviation): (std_cell_type, std_sm_name).
-		- Note: this is why his code does one-hot-encoding on the 'cell_type', 'sm_name' [columns](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L77). It's to prepare the data for frequency encoding
-			- explanation of code: notice how xlist only defines these [columns](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L72C4-L72C37)
+		- so he does [[target encoding]] (std deviation and mean) on all 18k target variables
+			- so 36k extra columns
+		- Note: this is why his code groups by 'cell_type', 'sm_name' [columns](https://github.com/Eliorkalfon/single_cell_pb/blob/main/utils.py#L90-L94). It's to prepare the data for target encoding
 	- sampling strategy
 		- He wanted each model to see many different cells of different types
 			- so he did a kmeans to cluster each y_value [[cluster sampling]].
@@ -71,12 +72,48 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 		- used L2 loss
 		- Implemented gradient norm clipping with a maximum norm of 1.
 	- Their code on github is REALLY short and easy to read!
-- (3rd) Treated this problem as a regression with 2 feature columns and 18211 targets
+- (3rd) 2-stage prediction. 1: create pseudolables 2: final prediction
 	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/458750
 	- the sm_name column maps one-to-one with the SMILES column. So he dropped the sm_name column
 		- he tried using a neural network on the SMILES column but failed.
 	-  for each of the genes, he plotted the range of possible values and found that the values can be from 4 to 50.
 		- 50 is a big number, which can affect [[MSELoss]] or [[MAELoss]]. So he standardized the columns (divided by std) to calculate standardized mse.
+	- he made sure that "Every fold contains one cell type chosen from NK cells, T cells CD4+, T cells CD8+, T regulatory cells"
+		- only sm_names being in public and private test was involved
+			- so you don't train on irrelevant names
+	- 2-stage prediction
+	- 1st stage - pseudolabel all the test data (255 rows) for more training data: (this is why he's third!)
+		- used optuna for all hyperparams:
+			- dropout%, num neuron in layers, output dim of embedding layer, num epochs, learning rate, batch size, num of dimensions of truncated singular value decomposition
+		- he used 4-fold CV. but ran each fold twice (prob diff seed / data shuffle)
+		- the final prediction of this first stage is an ensemble of 7 models
+	- 2nd stage - use train data + pseudolabelled test data
+		- he used 20 models with diff hyperparams (didn't mention seeds!)
+		- more optuna
+		- Models had high variance, so every model was trained 10 times on all dataset and **the median of prediction is taken as a final prediction**
+			- used median over mean!
+		- he made sure to clip the final predictions based on the min/max of each col ([only from the original training data](https://github.com/okon2000/single_cell_perturbations/blob/master/util.py#L169C8-L169C8))
+	- **History of improvements:**
+		1. a replacing onehot encoding with an embedding layer
+		2. a replacing MAE loss with MRRMSE loss
+		3. an ensembing of models with mean
+		4. a dimension reduction with truncated singular value decomposition
+		5. an ensembling of models with weighted mean
+		6. using pseudolabeling
+		7. using pseudolabeling and ensembling of 20 models and weighted mean.
+		
+		**What did not work for me**:
+		
+		- a label normalization, standardization
+		- a chained regression
+		- a denoising dataset
+		- a removal of outliers
+		- an adding noise to labels
+			- ![[Pasted image 20240113145106.png]]
+				- Adding some noise (0.01 * std) can even improve the model's performance.
+		- a training on selected easy / hard to predict columns
+		- a huber loss.
+	- huber loss didn't work!!! Also outlier removal!
 #### Takeaways
 - This was a biological problem that can be abstracted way into important feature selection
 	- after feature selection, you just needed simple models to get the prediction
