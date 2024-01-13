@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
               }
             }
           }
@@ -184,10 +184,15 @@
   },
   "active": "f86a75701b1b155b",
   "lastOpenFiles": [
+    "techniques/cluster sampling.md",
+    "Pasted image 20240113011148.png",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "README.md",
     "techniques/regularization/adding epsilon to regularize.md",
     "techniques/regularization/dropout.md",
     "techniques/regularization",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "loss-functions/LogCosh.md",
     "techniques/regularization",
     "loss-functions/MSELoss.md",
@@ -195,12 +200,9 @@
     "loss-functions/BCELoss.md",
     "loss-functions",
     "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "techniques/Identify poor data sources.md",
     "techniques/models/Gradient-Boosted Decision Tree.md",
     "techniques/models",
-    "README.md",
     "templates/competition template.md",
     "eval-metrics/recall.md",
     "techniques/Multiple Instance Learning.md",
@@ -214,7 +216,6 @@
     "techniques/formulas",
     "inputs-and-outputs/Whole Slide Images.md",
     "All Competitions.md",
-    "inputs-and-outputs/Class Name (Thresholded).md",
     "inputs-and-outputs",
     "techniques",
     "eval-metrics",

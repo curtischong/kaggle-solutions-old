@@ -4,8 +4,11 @@ Input: cell types and small molecule names
 Output: 
 Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 ##### Summary
+
+Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com/code/jalilnourisa/post-eda
+- This could affect the validity of techniques used in this competition
 ##### Solution Links
-- (1st)
+- (1st) ChemBERTa
 	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/459258
 	- generated features by embedding the description of the cell
 		- but these text embeddings decreased his score.
@@ -34,4 +37,10 @@ Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 			- 1) we might not need to know the complete chemical structure of a molecule to know its impact on a cell. OR
 			- 2) there is a biological disorder in the cell, but we still expect it to respond to the drug in the same way
 		- this feels like [[dropout]]
+		- NOTE: significant training data qualities could mean this technique isn't valid
+- (2nd) 
+	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/458738
+	- used one-hot encoding
+	- [[cluster sampling]]
+	- To address high and low bias labels, I utilized target encoding by calculating the mean and standard deviation for each cell type and SM name
 #### Takeaways
