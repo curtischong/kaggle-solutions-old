@@ -17,7 +17,7 @@ Detect sleep onset and wake from wrist-worn accelerometer data
 			- how to improve this notebook:
 				- 1) use fastparquet
 				- 2) add skip connections
-				- 
+- 
 	
 
 #### Takeaways
