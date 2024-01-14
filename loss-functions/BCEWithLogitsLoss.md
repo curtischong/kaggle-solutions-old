@@ -1,0 +1,4 @@
+- `BCEWithLogitsLoss` combines a `Sigmoid` layer and the `BCELoss` in one single class that makes it more numerically stable. This makes it suitable for a set of predictions (real numbers) from 0 to 1, which represents the probabilities of a class.
+	- you should use this over [[BCELoss]] because pytorch's implementation makes gradients stable:
+		- https://discuss.pytorch.org/t/bceloss-vs-bcewithlogitsloss/33586/9
+		- https://github.com/pytorch/pytorch/issues/751

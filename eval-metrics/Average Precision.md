@@ -9,6 +9,7 @@ https://www.kaggle.com/code/metric/event-detection-ap/notebook
 
 Note: This metric could be abused:
 ![[Child Mind Institute - Detect Sleep States#^ep8pd9]]
+ - you can abuse this to get a better score
 
 
 
