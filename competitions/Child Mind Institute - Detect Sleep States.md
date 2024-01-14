@@ -1,15 +1,16 @@
 Link: https://www.kaggle.com/c/child-mind-institute-detect-sleep-states
 Problem Type: 
-Input: 
-Output: 
-Eval Metric: 
+Input: wrist accelerometer data
+Output: the times when a user wakes up AND the times when a user sleeps
+Eval Metric: [[Average Precision]]
+- https://www.kaggle.com/code/metric/event-detection-ap/notebook
 ##### Summary
 Detect sleep onset and wake from wrist-worn accelerometer data
 
 
 Note: if you submitted multiple predictions for the same sleep event, you'll get the same score (or better)
 - https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/460516
-- competitors abused this bias to get a better score
+- competitors abused this bias to get a better score ^ydz6b7
 ##### Solution Links
 (1st)
 - https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459715
@@ -27,6 +28,16 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 			- basically: when we do a regular convolution, we apply the weights in the same way to all channels.
 				- SE block is similar, but the importance of each channel is individually assessed based on its context
 					- so it probably changes the kernel when doing the convolutions on a per-channel basis
-	
+
+### Important kernels
+- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/441470
+- [pure heuristic approach (HDCZA)](https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/453267)
+	- notebook: https://www.kaggle.com/code/tatamikenn/sleep-hdcza-a-pure-heuristic-approach-lb-0-447?scriptVersionId=149818796
+	- "Since ~37% of nights in training sequences has no sleep logs, I believe training model of predicting existence of sleep logs in the target night will get higher score in LB."
+	- it was based on this paper: https://www.nature.com/articles/s41598-018-31266-z#data-availability
+		- the implementation details start at the "Accelerometer data preparation" section
+		- Heuristic algorithm looking at Distribution of Change in Z-Angle (HDCZA)
+		- Main steps of the heuristic (to find the SPT-window (The Sleep Period Time window)):
+		- ![[Pasted image 20240114142212.png]]
 
 #### Takeaways
