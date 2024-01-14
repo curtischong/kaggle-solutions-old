@@ -160,8 +160,9 @@
   },
   "active": "2b9ac1ceb9e8ec94",
   "lastOpenFiles": [
-    "README.md",
+    "loss-functions/KLDivergenceLoss.md",
     "Child Mind Institute - Detect Sleep States.md",
+    "README.md",
     "All Competitions.md",
     "techniques/models/RAPIDS SVR.md",
     "techniques/features",
@@ -196,7 +197,6 @@
     "loss-functions/LogCosh.md",
     "techniques/regularization",
     "loss-functions/MSELoss.md",
-    "loss-functions/BCELoss.md",
     "loss-functions",
     "techniques/models",
     "tools",
