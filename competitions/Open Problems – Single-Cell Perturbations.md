@@ -158,7 +158,8 @@ Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com
 		- it uses an "autoencoder method": https://www.kaggle.com/code/vendekagonlabs/jax-autoencoder-quickstart
 			- basically, they train an autoencoder on the x-values
 				- but these x-values are only one-hot-encoded (i.e. they aren't very good features)
-					- which is why they
+					- which is why they only assigned 5% of their ensemble to this
+			- I should check to see if they are using the variational autoencoder, or just the standard one in the notebook
 	- Normalization of target data DID NOT WORK
 #### Takeaways
 - This was a biological problem that can be abstracted way into important feature selection
