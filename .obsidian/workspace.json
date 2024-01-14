@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9f8cd501a756fd1a",
+        "id": "e894f5e97e093f05",
         "type": "tabs",
         "children": [
           {
-            "id": "2c4d42263b90c4e9",
+            "id": "5edd90d785a3d8eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2b9ac1ceb9e8ec94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Child Mind Institute - Detect Sleep States.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "Child Mind Institute - Detect Sleep States.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "Child Mind Institute - Detect Sleep States.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
+                "file": "Child Mind Institute - Detect Sleep States.md"
               }
             }
           }
@@ -145,26 +158,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2c4d42263b90c4e9",
+  "active": "2b9ac1ceb9e8ec94",
   "lastOpenFiles": [
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "README.md",
+    "Child Mind Institute - Detect Sleep States.md",
+    "All Competitions.md",
+    "techniques/models/RAPIDS SVR.md",
+    "techniques/features",
     "competitions/Open Problems – Single-Cell Perturbations.md",
-    "techniques/Leave-one-out encoding.md",
-    "RAPIDS SVR.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "techniques/features/Leave-one-out encoding.md",
     "models/Pyboost.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "assets/Pasted image 20240113171932.png",
     "models",
     "assets/Pasted image 20240113171954.png",
     "techniques/singular value decomposition.md",
-    "techniques/frequency encoding.md",
+    "techniques/features/frequency encoding.md",
     "templates/metric template.md",
     "templates/competition template.md",
-    "techniques/target encoding.md",
-    "techniques/one-hot encoding.md",
+    "techniques/features/target encoding.md",
+    "techniques/features/one-hot encoding.md",
     "assets/Pasted image 20240113011148.png",
-    "Untitled.md",
     "assets",
     "assets/Pasted image 20240113145106.png",
     "techniques/cluster sampling.md",
@@ -183,11 +198,9 @@
     "loss-functions/MSELoss.md",
     "loss-functions/BCELoss.md",
     "loss-functions",
-    "techniques/models/Gradient-Boosted Decision Tree.md",
     "techniques/models",
     "tools",
     "techniques/formulas",
-    "inputs-and-outputs",
-    "techniques"
+    "inputs-and-outputs"
   ]
 }
