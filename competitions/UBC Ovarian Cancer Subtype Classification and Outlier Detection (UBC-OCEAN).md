@@ -14,7 +14,7 @@ https://www.kaggle.com/competitions/UBC-OCEAN/discussion/455890
 - minor data cleaning issues. the color of the masks has a mix of red/green/blue after the img was resized. Basically, treat nonzero values as masks
 - Important: An area marked as a tumor doesn’t imply it’s the sole tumor area in the slide: https://www.kaggle.com/competitions/UBC-OCEAN/discussion/455890#2529071
 
-##### Solution Links
+##### Solutions
 - (1st) Used phikon to extract features, then submit an ensemble of chowder models ([[Multiple Instance Learning]])
 	- https://www.kaggle.com/competitions/UBC-OCEAN/discussion/466455
 	- They used https://huggingface.co/owkin/phikon, a foundational model for digital pathology

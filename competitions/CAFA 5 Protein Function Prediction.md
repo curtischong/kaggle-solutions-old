@@ -11,7 +11,7 @@ Terms deep in the ontology tend to appear less frequently, be harder to predict,
 - TODO: understand why their metric implementation was flawed. (there was a discussion post). This will teach you how this metric actually works
 ##### Summary
 The goal is to figure out "what each protein does" (it's function)
-##### Solution Links
+##### Solutions
 
 (2nd)
 - https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/434064

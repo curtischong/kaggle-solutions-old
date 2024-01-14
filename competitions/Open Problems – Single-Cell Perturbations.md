@@ -8,7 +8,7 @@ This is basically a regression problem with 2 feature columns and 18211 targets
 
 Note: an estimated 35% of the training data is erroneous: https://www.kaggle.com/code/jalilnourisa/post-eda
 - This could affect the validity of techniques used in this competition
-##### Solution Links
+##### Solutions
 - (1st) ChemBERTa
 	- https://www.kaggle.com/competitions/open-problems-single-cell-perturbations/discussion/459258
 	- generated features by embedding the description of the cell

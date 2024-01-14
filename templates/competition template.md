@@ -4,6 +4,8 @@ Input:
 Output: 
 Eval Metric: 
 ##### Summary
-##### Solution Links
+##### Solutions
+
+##### Important notebooks/discussions
 
 #### Takeaways

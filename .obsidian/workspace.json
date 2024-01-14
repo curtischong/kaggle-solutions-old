@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "510b81faa49529be",
+        "id": "bbf07255fc144950",
         "type": "tabs",
         "children": [
           {
-            "id": "40f27992039e1076",
+            "id": "0d44c50ccd51b40b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "820e7b5a9605359e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "loss-functions/BCELoss.md",
+                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "loss-functions/BCELoss.md",
+                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "loss-functions/BCELoss.md",
+                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "loss-functions/BCELoss.md"
+                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md"
               }
             }
           }
@@ -158,11 +145,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "820e7b5a9605359e",
+  "active": "0d44c50ccd51b40b",
   "lastOpenFiles": [
-    "loss-functions/BCEWithLogitsLoss.md",
-    "loss-functions/BCELoss.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "All Competitions.md",
+    "competitions/NeurIPS 2023 - Machine Unlearning.md",
+    "templates/competition template.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "loss-functions/BCELoss.md",
+    "README.md",
+    "loss-functions/BCEWithLogitsLoss.md",
     "assets/Pasted image 20240114150324.png",
     "assets/Pasted image 20240114142212.png",
     "assets/Pasted image 20240113111631.png",
@@ -171,15 +165,10 @@
     "assets/Pasted image 20240113145106.png",
     "assets/Pasted image 20240113171954.png",
     "assets/Pasted image 20240114143837.png",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "eval-metrics/Average Precision.md",
-    "README.md",
     "loss-functions/KLDivergenceLoss.md",
-    "All Competitions.md",
     "techniques/models/RAPIDS SVR.md",
     "techniques/features",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "techniques/features/Leave-one-out encoding.md",
     "models/Pyboost.md",
     "assets/Pasted image 20240113171932.png",
@@ -187,7 +176,6 @@
     "techniques/singular value decomposition.md",
     "techniques/features/frequency encoding.md",
     "templates/metric template.md",
-    "templates/competition template.md",
     "techniques/features/target encoding.md",
     "techniques/features/one-hot encoding.md",
     "assets",
@@ -197,7 +185,6 @@
     "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
     "loss-functions/MAELoss.md",
     "techniques/regularization/weight decay.md",
-    "techniques/regularization/adding epsilon to regularize.md",
     "techniques/regularization",
     "techniques/regularization",
     "loss-functions",
