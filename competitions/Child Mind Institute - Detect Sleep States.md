@@ -71,11 +71,41 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 - (3rd)
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459599
 	- feature engineering
+		- code: https://github.com/FNoaGut/child-mind-institute-detect-sleep-states-3rd-place-solution/blob/main/inference.py
 		- only had 3 features. Any more features was innacurate
 		- Made anglez absolute, giving +0.002 on local validation.
 		- For the only two variables we had (anglez and enmo), we tried to find useful aggregations(diff, mean, median, skew, etc…), but the only thing that seemed to work was the standard deviation (**anglez_abs_std** and **enmo_std**).
 		- Detecting noise: We realized that when exactly the same value is repeated in the same series at the same hour, minute and second, this was basically noise.
 		- To incorporate temporal information into the model, we decided to add 2 frequency encoding variables (one for onsets and one for wakeups) at the hour-minute level.
+	- Training their models
+		- Note: the model had to predict 2 targets (one for onsets and other for wakeups) 
+		- **Target transformation**: Add two steps back and one forward. (0,0,0,0,1,0,0,0 -> 0,0,1,1,1,1,0,0)
+			- prob cause just predicting on one time step is very hard
+		- **loss** : [[cross-entropy]]
 		- A good augmentation trick was to reverse all the series during training, this allowed us to have more sequences and increased our local validation by 0.01
-			- this means:
+			- code
+			```python
+				if ADD_INVERT_SERIES and MODE=='train':
+					# ADD INVERT SERIES
+					num_array_flip = np.flip(num_array_, axis=1).copy()
+					target_array_flip = np.flip(np.flip(target_array_, axis=1), axis=2)
+					mask_array_flip = np.flip(mask_array_, axis=1)
+					pred_use_array_flip = np.flip(pred_use_array_, axis=1)
+			
+					num_array.append(num_array_flip)
+					target_array.append(target_array_flip)
+					mask_array.append(mask_array_flip)
+					pred_use_array.append(pred_use_array_flip)
+					time_array.append(time_array_)
+					id_list.append(id_array_)
+```
+			- They flipped on axis=1. probably cause axis=0 is for each training instance
+		- Ok. I guess this is an ok thing to do since they are NOT extrapolating the future, they are merely identifying onset/wakeup times, so it's good for the model to see data points in reverse time.
+	- important considerations:
+		- used Rolling_mean(center=True) to smooth the predictions
+		- Take the highest predictions every certain distance (this allows us to eliminate false positives)
+			- I COULDN'T find this logic in the github (at a glance)
+- (4th)
+	- 
 #### Takeaways
+- In time series problems where are you **identifying events** within the series (not predicting future values), you can double your training data (and get better results) by reversing all the events in the time series.
