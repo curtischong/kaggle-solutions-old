@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bbf07255fc144950",
+        "id": "9ae2a3134653b757",
         "type": "tabs",
         "children": [
           {
-            "id": "0d44c50ccd51b40b",
+            "id": "3fe1d10b8e68245f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md",
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md",
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md",
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/NeurIPS 2023 - Machine Unlearning.md"
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md"
               }
             }
           }
@@ -145,13 +145,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d44c50ccd51b40b",
+  "active": "3fe1d10b8e68245f",
   "lastOpenFiles": [
+    "WBF ensembling.md",
+    "competitions/Child Mind Institute - Detect Sleep States.md",
+    "competitions/NeurIPS 2023 - Machine Unlearning.md",
+    "assets/Pasted image 20240114191810.png",
+    "cosine annealing LR.md",
+    "Pasted image 20240114191805.png",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "All Competitions.md",
-    "competitions/NeurIPS 2023 - Machine Unlearning.md",
     "templates/competition template.md",
-    "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "loss-functions/BCELoss.md",
@@ -171,7 +175,6 @@
     "techniques/features",
     "techniques/features/Leave-one-out encoding.md",
     "models/Pyboost.md",
-    "assets/Pasted image 20240113171932.png",
     "models",
     "techniques/singular value decomposition.md",
     "techniques/features/frequency encoding.md",
@@ -183,8 +186,6 @@
     "techniques/Identify poor data sources.md",
     "loss-functions/Huber loss.md",
     "eval-metrics/Mean Rowwise Root Mean Squared Error.md",
-    "loss-functions/MAELoss.md",
-    "techniques/regularization/weight decay.md",
     "techniques/regularization",
     "techniques/regularization",
     "loss-functions",

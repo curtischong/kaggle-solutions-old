@@ -64,4 +64,16 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- angleZ seems like an important feature!
 - (2nd)
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459627
+	- used [[WBF ensembling]] rather than averaging for the final ensemble prediction
+	- After getting the score for each step, he uses a LGBM model to predict the scores for the steps (but the steps are shifted by a bit)
+		- this is so he can get more predictions that are nearby. the extra predictions won't harm his score
+	- he concats these new predictions back onto the original table from step 2
+- (3rd)
+	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459599
+	- feature engineering
+		- only had 3 features. Any more features was innacurate
+		- Made anglez absolute, giving +0.002 on local validation.
+		- For the only two variables we had (anglez and enmo), we tried to find useful aggregations(diff, mean, median, skew, etc…), but the only thing that seemed to work was the standard deviation (**anglez_abs_std** and **enmo_std**).
+		- Detecting noise: We realized that when exactly the same value is repeated in the same series at the same hour, minute and second, this was basically noise.
+		- To incorporate temporal information into the model, we decided to add 2 frequency encoding variables (one for onsets and one for wakeups) at the hour-minute level.
 #### Takeaways
