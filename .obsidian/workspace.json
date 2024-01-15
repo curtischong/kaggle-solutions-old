@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2db5d7bd7b41f191",
+        "id": "605e859261bae2b9",
         "type": "tabs",
         "children": [
           {
-            "id": "9c17528a13980c48",
+            "id": "c1dcda9792d184dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -145,10 +145,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c17528a13980c48",
+  "active": "bc60e17ef030f44f",
   "lastOpenFiles": [
-    "techniques/models/Freezing Layers.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "techniques/Masked Language Modeling (MLM).md",
     "competitions/Linking Writing Processes to Writing Quality.md",
+    "techniques/models/Train on external data first.md",
+    "techniques/models/Freezing Layers.md",
     "techniques/models/Squeezeformer layer.md",
     "techniques/Training own Tokenizer.md",
     "techniques/diagnosis",
@@ -161,7 +164,6 @@
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "techniques/cosine annealing LR.md",
     "techniques/Weighted Boxes Fusion (WBF) ensembling.md",
@@ -183,8 +185,6 @@
     "eval-functions/KLDivergenceLoss.md",
     "techniques/models/RAPIDS SVR.md",
     "techniques/features",
-    "techniques/features/Leave-one-out encoding.md",
-    "models/Pyboost.md",
     "models",
     "assets",
     "techniques/regularization",

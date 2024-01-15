@@ -8,7 +8,7 @@ Given only keystroke information, predict a student's essay score [0, 6], in inc
 - all alphanumeric characters were replaced with `q` so you couldn't decipher the original essay text
 ##### Solutions
 
-- (3rd)
+- (3rd) Dieter's team.
 	- https://www.kaggle.com/competitions/linking-writing-processes-to-writing-quality/discussion/466906
 		- 8fold cross validation
 		- [[identify domain shift]]: Deberta worked better on CV, while GBM were relatively bad on CV, but good on LB.
@@ -19,7 +19,10 @@ Given only keystroke information, predict a student's essay score [0, 6], in inc
 				- prob cause the deBertas have these tokenizations in them:  i, ii, iii, or X, XX, XXX
 				- [[Training own Tokenizer]] noticing that these specialized tokenizations led to better results, they trained their own tokenizer specifically for X, XX, or XXX.
 					- This led to much better results
-			- **External Data Source:** offuscated the persuade corpus in a similar manner as the train dataset (for more data)
+			- **External Data Source:** obfuscated the persuade corpus in a similar manner as the train dataset (for more data)
+				- They [[Train on external data first]]
+					- so DeBERTa they saw the competition data, it already knew how obfuscated text looked like
+				- [[Masked Language Modeling (MLM)]]
 			- used a [[Squeezeformer layer]] to derive semantic features
 			- added three features:
 				-  cursor position, etc
