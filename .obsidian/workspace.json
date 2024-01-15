@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stanford Ribonanza RNA Folding.md",
+                "file": "competitions/Linking Writing Processes to Writing Quality.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stanford Ribonanza RNA Folding.md",
+                "file": "competitions/Linking Writing Processes to Writing Quality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stanford Ribonanza RNA Folding.md",
+                "file": "competitions/Linking Writing Processes to Writing Quality.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stanford Ribonanza RNA Folding.md"
+                "file": "competitions/Linking Writing Processes to Writing Quality.md"
               }
             }
           }
@@ -147,10 +147,17 @@
   },
   "active": "9c17528a13980c48",
   "lastOpenFiles": [
+    "techniques/models/Freezing Layers.md",
+    "competitions/Linking Writing Processes to Writing Quality.md",
+    "techniques/models/Squeezeformer layer.md",
+    "techniques/Training own Tokenizer.md",
+    "techniques/diagnosis",
+    "techniques/diagnosis/identify domain shift.md",
+    "eval-functions/RMSE.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
     "eval-functions/Average Precision.md",
     "README.md",
     "eval-functions/MAELoss.md",
-    "Stanford Ribonanza RNA Folding.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
@@ -179,19 +186,12 @@
     "techniques/features/Leave-one-out encoding.md",
     "models/Pyboost.md",
     "models",
-    "techniques/singular value decomposition.md",
-    "techniques/features/frequency encoding.md",
-    "templates/metric template.md",
-    "techniques/features/target encoding.md",
-    "techniques/features/one-hot encoding.md",
     "assets",
-    "techniques/cluster sampling.md",
     "techniques/regularization",
     "techniques/regularization",
     "eval-functions",
     "techniques/models",
     "tools",
-    "techniques/formulas",
-    "inputs-and-outputs"
+    "techniques/formulas"
   ]
 }
