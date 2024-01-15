@@ -15,8 +15,9 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 - https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/460516
 - competitors abused this bias to get a better score
 ##### Solutions
-- (1st)
+- (1st) - very smart postprocsessing to make fuzzy predictions precise
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459715
+	- solution code: https://github.com/sakami0000/child-mind-institute-detect-sleep-states-1st-place
 		- was based on this public notebook:
 			- https://www.kaggle.com/code/danielphalen/cmss-grunet-train
 				- [[KLDivergenceLoss]] was good because
@@ -26,6 +27,14 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 				- how to improve this notebook:
 					- 1) use fastparquet
 					- 2) add skip connections
+				- the autoencoder had a size of 1040. how did it compressed the time?
+					- SleepDatasetTrain preps the data
+						```python
+						   gap = 6*60*12
+						            tmp = self.events[(self.events.series_id == series_id) & (self.events.night >= start) & (self.events.night <= end)]
+						            data = data[(data.step > (tmp.step.min() - gap)) & (data.step < (tmp.step.max() + gap))]
+						```
+
 		- For input scaling, SEModule was utilized. ([https://arxiv.org/abs/1709.01507](https://arxiv.org/abs/1709.01507))
 			- SEModules
 				- [Squeeze-and-Excitation block explained | by Taha Samavati | Medium](https://medium.com/@tahasamavati/squeeze-and-excitation-explained-387b5981f249)
@@ -64,7 +73,54 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- angleZ seems like an important feature!
 - (2nd)
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459627
-	- used [[Weighted Boxes Fusion (WBF) ensembling]] rather than averaging for the final ensemble prediction
+	- used enssembling similar to  [[Weighted Boxes Fusion (WBF) ensembling]]
+		- code
+			```python
+			# ensemble after 2nd stage
+			def weighted_fusion_ensemble(df_0, df_1, distance_threshold=100):
+			    weight_wo_fusion = 0.5
+			    large_val = 1e8
+			    series_ids = df_0['series_id'].unique()
+			    out_df = []
+			    for series_id in series_ids:
+			        df_0_id = df_0[df_0['series_id']==series_id].copy()
+			        df_1_id = df_1[df_1['series_id']==series_id].copy()
+			        df_0_id = df_0_id.sort_values("score", ascending=False).reset_index(drop=True)
+			        df_1_id = df_1_id.sort_values("score", ascending=False).reset_index(drop=True)
+			        
+			        steps_0 = df_0_id['step'].values.copy() # base
+			        steps_1 = df_1_id['step'].values.copy()
+			        scores_0 = df_0_id['score'].values.copy() # base
+			        scores_1 = df_1_id['score'].values.copy()
+			        not_assigned_df = []
+			        for step, score in zip(steps_1, scores_1):
+			            dists = np.abs(steps_0 - step)
+			            argmin = np.argmin(dists)
+			            min_dist = dists[argmin]
+			            if min_dist < distance_threshold:
+			                f_step = steps_0[argmin]
+			                f_score = scores_0[argmin]
+			                add_step = step
+			                add_score = score
+			                
+			                # new_score = (f_score + add_score) / 2
+			                new_score = (f_score * f_score + add_score * add_score) / (f_score + add_score)
+			                new_step = (f_step * f_score + add_step * add_score) / (f_score + add_score)
+			                df_0_id.loc[argmin, "score"] = new_score
+			                df_0_id.loc[argmin, "step"] = new_step
+			                steps_0[argmin] = large_val # large val to avoid assign again
+			            else:
+			                not_assigned = df_1_id[df_1_id['step']==step].copy()
+			                not_assigned['score'] = score * weight_wo_fusion # not assigned
+			                not_assigned_df.append(not_assigned)
+			        df_0_id.loc[steps_0!=large_val, "score"] *= weight_wo_fusion # not assigned
+			        out_df.append(df_0_id)
+			        if len(not_assigned_df) >0:
+			            not_assigned_df = pd.concat(not_assigned_df)
+			            out_df.append(not_assigned_df)
+			    out_df = pd.concat(out_df).reset_index(drop=True) # .reset_index() # .rename(columns={"index": "row_id"})
+			    return out_df
+			```
 	- After getting the score for each step, he uses a LGBM model to predict the scores for the steps (but the steps are shifted by a bit)
 		- this is so he can get more predictions that are nearby. the extra predictions won't harm his score
 	- he concats these new predictions back onto the original table from step 2
@@ -119,5 +175,7 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 	- TODO: penguin's solution had many good features
 	- They actually used WBF in their ensemble
 		- Final_Sub = WBF(Penguins_Predictions * 0.25 + Nikhil's Predictions\*0.75)
+	- I looked at their code, but I don't quite understand their ensembling solution. Also, I'm not sure if this code was the final one they used:
+		- https://github.com/nikhilmishradevelop/kaggle-child-mind-institute-detect-sleep-states/blob/main/nbs/ensembling_experiments.ipynb
 #### Takeaways
 - In time series problems where are you **identifying events** within the series (not predicting future values), you can double your training data (and get better results) by reversing all the events in the time series.
