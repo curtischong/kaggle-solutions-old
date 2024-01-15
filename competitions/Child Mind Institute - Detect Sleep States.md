@@ -64,12 +64,14 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- angleZ seems like an important feature!
 - (2nd)
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459627
-	- used [[WBF ensembling]] rather than averaging for the final ensemble prediction
+	- used [[Weighted Boxes Fusion (WBF) ensembling]] rather than averaging for the final ensemble prediction
 	- After getting the score for each step, he uses a LGBM model to predict the scores for the steps (but the steps are shifted by a bit)
 		- this is so he can get more predictions that are nearby. the extra predictions won't harm his score
 	- he concats these new predictions back onto the original table from step 2
 - (3rd)
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459599
+	- We decided to divide the series into one-day sequences and reduce the granularity from 5 secs to 30 secs
+		- probably to reduce model size and speed it up. They due have a 60-sec leeway with the eval metric
 	- feature engineering
 		- code: https://github.com/FNoaGut/child-mind-institute-detect-sleep-states-3rd-place-solution/blob/main/inference.py
 		- only had 3 features. Any more features was innacurate
@@ -98,14 +100,24 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 					pred_use_array.append(pred_use_array_flip)
 					time_array.append(time_array_)
 					id_list.append(id_array_)
-```
+			```
 			- They flipped on axis=1. probably cause axis=0 is for each training instance
 		- Ok. I guess this is an ok thing to do since they are NOT extrapolating the future, they are merely identifying onset/wakeup times, so it's good for the model to see data points in reverse time.
 	- important considerations:
 		- used Rolling_mean(center=True) to smooth the predictions
 		- Take the highest predictions every certain distance (this allows us to eliminate false positives)
 			- I COULDN'T find this logic in the github (at a glance)
+		- We decided to create sequences of days starting at 17:00 local time. If one day it was not complete at the beginning or at the end, we added padding.
+		- the final weighing of the models (in the ensemble) was adjusted manually based on local CV
 - (4th)
-	- 
+	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459637
+	- solution code: [https://github.com/nikhilmishradevelop/kaggle-child-mind-institute-detect-sleep-states](https://github.com/nikhilmishradevelop/kaggle-child-mind-institute-detect-sleep-states)
+	- **Model Inputs**: 17280 x n_features length sequences as input (17280 = 12 steps_per_minute x 60_minutes * 24 hours)  
+	- **Model Outputs**: 17280 x 2 (one for onset and other for wakeup)  
+	- **Model Type**: Regression Model
+	- sequences with length < 17280 were padded to make them equal to 17280
+	- TODO: penguin's solution had many good features
+	- They actually used WBF in their ensemble
+		- Final_Sub = WBF(Penguins_Predictions * 0.25 + Nikhil's Predictions\*0.75)
 #### Takeaways
 - In time series problems where are you **identifying events** within the series (not predicting future values), you can double your training data (and get better results) by reversing all the events in the time series.

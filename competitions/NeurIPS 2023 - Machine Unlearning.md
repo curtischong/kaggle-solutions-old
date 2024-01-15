@@ -1,4 +1,4 @@
-TO COMPLETE. I kinda dropped this one cause it's really academic and doesn't reward medals, so it was probably less competitive. it did have money though
+TO COMPLETE. I kinda dropped this one cause it's really academic and isn't a common type of competition
 Link: https://www.kaggle.com/c/neurips-2023-machine-unlearning
 Problem Type: 
 Input: model weights

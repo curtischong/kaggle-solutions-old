@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9ae2a3134653b757",
+        "id": "89c9d0f1b91c956e",
         "type": "tabs",
         "children": [
           {
-            "id": "3fe1d10b8e68245f",
+            "id": "94d580a3a8c9758d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WBF ensembling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d280e9ce4c74a8d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "loss-functions/cross-entropy.md",
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WBF ensembling.md",
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WBF ensembling.md",
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WBF ensembling.md"
+                "file": "competitions/Child Mind Institute - Detect Sleep States.md"
               }
             }
           }
@@ -157,20 +145,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3fe1d10b8e68245f",
+  "active": "94d580a3a8c9758d",
   "lastOpenFiles": [
-    "competitions/Child Mind Institute - Detect Sleep States.md",
-    "loss-functions/cross-entropy.md",
-    "WBF ensembling.md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "Weighted Boxes Fusion (WBF) ensembling.md",
+    "competitions/Child Mind Institute - Detect Sleep States.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "loss-functions/cross-entropy.md",
     "assets/Pasted image 20240114191810.png",
     "cosine annealing LR.md",
     "Pasted image 20240114191805.png",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "All Competitions.md",
     "templates/competition template.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "loss-functions/BCELoss.md",
     "README.md",
     "loss-functions/BCEWithLogitsLoss.md",
