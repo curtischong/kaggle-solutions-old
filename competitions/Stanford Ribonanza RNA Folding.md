@@ -27,5 +27,7 @@ Eval Metric: [[MAELoss]]
 			- It can be useful in this problem, since in train set Lmax=206, and in test Lmax=457
 		
 				My guess was if I am to use sliding window attention, my generalization plots would become closer to the ones Shujun shared, but it was not the case, they are still "too sharp"
-- 
+- https://www.kaggle.com/code/ayushs9020/understanding-the-competition-standford-ribonaza
+##### Questions
+- What are bpp matrices?
 #### Takeaways
