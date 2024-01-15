@@ -76,4 +76,6 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- For the only two variables we had (anglez and enmo), we tried to find useful aggregations(diff, mean, median, skew, etc…), but the only thing that seemed to work was the standard deviation (**anglez_abs_std** and **enmo_std**).
 		- Detecting noise: We realized that when exactly the same value is repeated in the same series at the same hour, minute and second, this was basically noise.
 		- To incorporate temporal information into the model, we decided to add 2 frequency encoding variables (one for onsets and one for wakeups) at the hour-minute level.
+		- A good augmentation trick was to reverse all the series during training, this allowed us to have more sequences and increased our local validation by 0.01
+			- this means:
 #### Takeaways
