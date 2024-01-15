@@ -62,7 +62,7 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 			- "In our case, performance did not improve with post-processing alone. (w/o daily normalization of the score)
 				- "The 2nd level model and daily normalization of the score were crucial elements in improving performance."
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/441470
-	- [pure heuristic approach (HDCZA)](https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/453267)
+	- [pure heuristic approach (HDCZA)](https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/453267) ^g8mptz
 		- notebook: https://www.kaggle.com/code/tatamikenn/sleep-hdcza-a-pure-heuristic-approach-lb-0-447?scriptVersionId=149818796
 		- "Since ~37% of nights in training sequences has no sleep logs, I believe training model of predicting existence of sleep logs in the target night will get higher score in LB."
 		- it was based on this paper: https://www.nature.com/articles/s41598-018-31266-z#data-availability
@@ -71,7 +71,7 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 			- Main steps of the heuristic (to find the SPT-window (The Sleep Period Time window)):
 			- ![[Pasted image 20240114142212.png]]
 		- angleZ seems like an important feature!
-- (2nd)
+- (2nd) - Two stage predictions: use LGBM to sharpen results from the first model (rather than smart postprocessing)
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459627
 	- used enssembling similar to  [[Weighted Boxes Fusion (WBF) ensembling]]
 		- code
@@ -124,7 +124,7 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 	- After getting the score for each step, he uses a LGBM model to predict the scores for the steps (but the steps are shifted by a bit)
 		- this is so he can get more predictions that are nearby. the extra predictions won't harm his score
 	- he concats these new predictions back onto the original table from step 2
-- (3rd)
+- (3rd) - reduce granularity from 5sec to 30sec (most efficient solution). remove noise
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459599
 	- We decided to divide the series into one-day sequences and reduce the granularity from 5 secs to 30 secs
 		- probably to reduce model size and speed it up. They due have a 60-sec leeway with the eval metric
@@ -133,7 +133,10 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- only had 3 features. Any more features was innacurate
 		- Made anglez absolute, giving +0.002 on local validation.
 		- For the only two variables we had (anglez and enmo), we tried to find useful aggregations(diff, mean, median, skew, etc…), but the only thing that seemed to work was the standard deviation (**anglez_abs_std** and **enmo_std**).
-		- Detecting noise: We realized that when exactly the same value is repeated in the same series at the same hour, minute and second, this was basically noise.
+		- Detecting noise: We realized that when exactly the same value is repeated in the same series at the same hour, minute and second, this was basically noise (user wasn't wearing watch).
+			- once they detect noise, they will remove those nights:
+			- https://github.com/FNoaGut/child-mind-institute-detect-sleep-states-3rd-place-solution/blob/6c8a4d5aa6bea636db602927c27dfd91b8324798/preprocessing/preprocess.py#L396C8-L396C32
+			- This was how they calculated the noise removal cols: https://github.com/FNoaGut/child-mind-institute-detect-sleep-states-3rd-place-solution/blob/6c8a4d5aa6bea636db602927c27dfd91b8324798/inference.py#L221-L224
 		- To incorporate temporal information into the model, we decided to add 2 frequency encoding variables (one for onsets and one for wakeups) at the hour-minute level.
 	- Training their models
 		- Note: the model had to predict 2 targets (one for onsets and other for wakeups) 
@@ -165,13 +168,19 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 			- I COULDN'T find this logic in the github (at a glance)
 		- We decided to create sequences of days starting at 17:00 local time. If one day it was not complete at the beginning or at the end, we added padding.
 		- the final weighing of the models (in the ensemble) was adjusted manually based on local CV
-- (4th)
+- (4th) - smart feature engineering. input dim: 17280 x n_features. output dim: 17280 x 2
 	- https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/459637
 	- solution code: [https://github.com/nikhilmishradevelop/kaggle-child-mind-institute-detect-sleep-states](https://github.com/nikhilmishradevelop/kaggle-child-mind-institute-detect-sleep-states)
 	- **Model Inputs**: 17280 x n_features length sequences as input (17280 = 12 steps_per_minute x 60_minutes * 24 hours)  
 	- **Model Outputs**: 17280 x 2 (one for onset and other for wakeup)  
 	- **Model Type**: Regression Model
 	- sequences with length < 17280 were padded to make them equal to 17280
+	- features:
+		1. Original Sequence Features: Enmo, Anglez
+		2. TimeStamp Features: Hour and Weekday
+		3. Derived Sequence Features: Anglez difference, Enmo Difference, HDCZA features etc)
+			- explaining HDCZA
+			- ![[Child Mind Institute - Detect Sleep States#^g8mptz]]
 	- TODO: penguin's solution had many good features
 	- They actually used WBF in their ensemble
 		- Final_Sub = WBF(Penguins_Predictions * 0.25 + Nikhil's Predictions\*0.75)
@@ -179,3 +188,9 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- https://github.com/nikhilmishradevelop/kaggle-child-mind-institute-detect-sleep-states/blob/main/nbs/ensembling_experiments.ipynb
 #### Takeaways
 - In time series problems where are you **identifying events** within the series (not predicting future values), you can double your training data (and get better results) by reversing all the events in the time series.
+- When postprocessing is annoying (e.g. there's a constraint where there's only two awake/onset events a day), you can use two models:
+	- 1) The first to give you probability distributions of where the event is
+	- 2) The second to interpret these peaks and sharpen the result
+		- Cause simply taking the max points won't yield the best results
+- You can use [[Weighted Boxes Fusion (WBF) ensembling]] rather than taking the mean of all model outputs
+- Making anglez absolute can give you a boost in CV

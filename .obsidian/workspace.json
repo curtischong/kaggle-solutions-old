@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "89c9d0f1b91c956e",
+        "id": "2db5d7bd7b41f191",
         "type": "tabs",
         "children": [
           {
-            "id": "94d580a3a8c9758d",
+            "id": "9c17528a13980c48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
+                "file": "Stanford Ribonanza RNA Folding.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
+                "file": "Stanford Ribonanza RNA Folding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Child Mind Institute - Detect Sleep States.md",
+                "file": "Stanford Ribonanza RNA Folding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Child Mind Institute - Detect Sleep States.md"
+                "file": "Stanford Ribonanza RNA Folding.md"
               }
             }
           }
@@ -145,23 +145,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94d580a3a8c9758d",
+  "active": "9c17528a13980c48",
   "lastOpenFiles": [
+    "eval-functions/Average Precision.md",
+    "README.md",
+    "eval-functions/MAELoss.md",
+    "Stanford Ribonanza RNA Folding.md",
+    "competitions/Child Mind Institute - Detect Sleep States.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
-    "Weighted Boxes Fusion (WBF) ensembling.md",
-    "competitions/Child Mind Institute - Detect Sleep States.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
-    "loss-functions/cross-entropy.md",
+    "techniques/cosine annealing LR.md",
+    "techniques/Weighted Boxes Fusion (WBF) ensembling.md",
+    "eval-functions/cross-entropy.md",
     "assets/Pasted image 20240114191810.png",
-    "cosine annealing LR.md",
     "Pasted image 20240114191805.png",
     "All Competitions.md",
     "templates/competition template.md",
-    "loss-functions/BCELoss.md",
-    "README.md",
-    "loss-functions/BCEWithLogitsLoss.md",
+    "eval-functions/BCELoss.md",
+    "eval-functions/BCEWithLogitsLoss.md",
     "assets/Pasted image 20240114150324.png",
     "assets/Pasted image 20240114142212.png",
     "assets/Pasted image 20240113111631.png",
@@ -170,8 +173,7 @@
     "assets/Pasted image 20240113145106.png",
     "assets/Pasted image 20240113171954.png",
     "assets/Pasted image 20240114143837.png",
-    "eval-metrics/Average Precision.md",
-    "loss-functions/KLDivergenceLoss.md",
+    "eval-functions/KLDivergenceLoss.md",
     "techniques/models/RAPIDS SVR.md",
     "techniques/features",
     "techniques/features/Leave-one-out encoding.md",
@@ -184,11 +186,9 @@
     "techniques/features/one-hot encoding.md",
     "assets",
     "techniques/cluster sampling.md",
-    "techniques/Identify poor data sources.md",
-    "loss-functions/Huber loss.md",
     "techniques/regularization",
     "techniques/regularization",
-    "loss-functions",
+    "eval-functions",
     "techniques/models",
     "tools",
     "techniques/formulas",
