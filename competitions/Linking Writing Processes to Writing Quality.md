@@ -1,5 +1,5 @@
-Link: 
-Problem Type: 
+Link: https://www.kaggle.com/competitions/linking-writing-processes-to-writing-quality
+Problem Type: [[multi-class classification]] [[NLP]]
 Input: 
 Output: 
 Eval Metric: [[RMSE]]
@@ -32,9 +32,18 @@ Given only keystroke information, predict a student's essay score [0, 6], in inc
 				- deberta-v3-large trained with q replaced by i (with first 12 layers frozen in finetuning, to avoid overfit) [[Freezing Layers]]
 				- deberta-v3-base trained with q replaced by X
 				- deberta-v3-base trained with custom spm tokenizer
-			- "we used positive Ridge Regression on Out-of-fold (OOF) predictions to determine blending weights."
-				- What does this mean? Does it mean that they took yhat to predict y using ridge regression and look at the error?
-					- then using this error, determine the blend weights?
+			- [[lasso feature importance for ensembling]] "we used positive Ridge Regression on Out-of-fold (OOF) predictions to determine blending weights."
+				- actually, they used lasso
+				- https://www.kaggle.com/competitions/linking-writing-processes-to-writing-quality/discussion/466906#2596622
+					-  They basically took yhat (that each deBerta outputted) as input features to a ridge regression that was trained to predict y
+						- ridge regression tells you feature importance:
+							- "Deberta1's predictions are 30% important"
+							- "Deberta2's predictions are 50% important"
+							- "Deberta3's predictions are 20% important"
+						- you can use the importance info to weigh the ensemble
+				- **Important:**
+					- "Deberta scores were relatively stable compared to each other; likewise GBM models."
+					- **So we trained a Lasso on Deberta only predictions; and a separate Lasso on GBM only predictions.**
 		- ##### Postprocessing
 			- For some models we clipped predictions at [0.5,6.] but it did not really make a difference.
 		- ##### What did not help
