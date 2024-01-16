@@ -1,0 +1,2 @@
+- a variation of LSTM. It's more efficient cause it combines the hidden state with the cell state (into just one hidden state)
+	- unlike LSTM, it also has a `1-` operator, so when it tells the hidden state to forget information, it also writes to it with new info.

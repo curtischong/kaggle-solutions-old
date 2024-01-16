@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "42992905ced055d7",
+        "id": "2fa4b16966ed3998",
         "type": "tabs",
         "children": [
           {
-            "id": "8f462eabeabc2e15",
+            "id": "c7a3293cda1a4092",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e777ea5a1b06c692",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "xpos positional encoding.md",
+                "file": "GRU.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gru",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "xpos positional encoding.md",
+                "file": "GRU.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "xpos positional encoding.md",
+                "file": "GRU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "xpos positional encoding.md"
+                "file": "GRU.md"
               }
             }
           }
@@ -159,9 +145,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e777ea5a1b06c692",
+  "active": "c7a3293cda1a4092",
   "lastOpenFiles": [
     "competitions/Stanford Ribonanza RNA Folding.md",
+    "GRU.md",
     "xpos positional encoding.md",
     "techniques/absolute positional embedding.md",
     "techniques/models/Squeeze-and-Excitation layer.md",
@@ -186,7 +173,6 @@
     "Agglomerative Hierarchical Clustering.md",
     "techniques/active learning.md",
     "Affinity Propagation.md",
-    "Adjusted Rand Index (ARI).md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

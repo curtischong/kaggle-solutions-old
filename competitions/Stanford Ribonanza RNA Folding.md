@@ -5,28 +5,34 @@ Output: the reactivity for reactivity_DMS_MaP and reactivity_2A3_MaP for _each_�
 Eval Metric: [[MAELoss]]
 ##### Summary
 ##### Solutions
-(1st) Transformer model with Dynamic positional encoding + CNN for BPPM features
-- [[Squeeze-and-Excitation layer]]
-	- To allow better generalization for longer input we implemented Dynamic Positional Bias
-- use [[DBSCAN]]
-- Subsetting data (filtering by different thresholds on SN ratio) resulted in a performance boost for all models. However, this technique was superseded by weight sampling, which proved itself to be more effective.
-	- by subsetting data, I think they mean: "They only selected training rows based on the signal to noise ratio of each example"
-		- How did they calculate the signal to noise ratio?
-	- by weight sampling, I think they mean: "they weighed each training row based on how high it's signal to noise ratio"
-- We tried to use data about predicted 3D structure of 100k sequences from the train dataset but gave up on that once we had visually analyzed them:
-	- probably cause they all looked the same in 3D?
-- Using absolute positional embedding leads to unsolvable issues when generalizing upon longer sequences.
-- How to solve the positional embedding to generalize to longer sequences
-	- [[absolute positional embedding]]. it doesn't generalize to longer sequences!
-	- Try shifting the positional embeddings to the right
-		- e.g. if our sequence is ends 40 tokens below the context length, we can shift the positional embeddings up to 40 indexes to the right
-			- so the first token has a positional embedding of 30 (for example)
-	- [[Rotational positional embedding]], unfortunately, doesn’t help the model to generalize on larger lengths.
-	- ALiBi positional embedding solves the issue with extrapolation but even after keeping it only for a part of heads (as suggested in [https://github.com/lucidrains/x-transformers](https://github.com/lucidrains/x-transformers)) still behaves worse than dynamic positional bias.
-	- [[xpos positional encoding]]
-		- Unfortunately, xpos shows rather poor performance on long sequences so we abstained from using this model in the final submission.
-	- We have also tried shift augmentation and different sequence padding approaches. This didn’t improve our model performance as well.
+- (1st) Transformer model with Dynamic positional encoding + CNN for BPPM features
+	- [[Squeeze-and-Excitation layer]]
+		- To allow better generalization for longer input we implemented Dynamic Positional Bias
+	- use [[DBSCAN]]
+	- Subsetting data (filtering by different thresholds on SN ratio) resulted in a performance boost for all models. However, this technique was superseded by weight sampling, which proved itself to be more effective.
+		- by subsetting data, I think they mean: "They only selected training rows based on the signal to noise ratio of each example"
+			- How did they calculate the signal to noise ratio?
+		- by weight sampling, I think they mean: "they weighed each training row based on how high it's signal to noise ratio"
+	- We tried to use data about predicted 3D structure of 100k sequences from the train dataset but gave up on that once we had visually analyzed them:
+		- probably cause they all looked the same in 3D?
+	- Using absolute positional embedding leads to unsolvable issues when generalizing upon longer sequences.
+	- How to solve the positional embedding to generalize to longer sequences
+		- [[absolute positional embedding]]. it doesn't generalize to longer sequences!
+		- Try shifting the positional embeddings to the right
+			- e.g. if our sequence is ends 40 tokens below the context length, we can shift the positional embeddings up to 40 indexes to the right
+				- so the first token has a positional embedding of 30 (for example)
+		- [[Rotational positional embedding]], unfortunately, doesn’t help the model to generalize on larger lengths.
+		- ALiBi positional embedding solves the issue with extrapolation but even after keeping it only for a part of heads (as suggested in [https://github.com/lucidrains/x-transformers](https://github.com/lucidrains/x-transformers)) still behaves worse than dynamic positional bias.
+		- [[xpos positional encoding]]
+			- Unfortunately, xpos shows rather poor performance on long sequences so we abstained from using this model in the final submission.
+		- We have also tried shift augmentation and different sequence padding approaches. This didn’t improve our model performance as well.
+	- [[handling public data leakage]]
+		- 13% of the public test sequences are identical to the ones present in the train dataset (by sequence)
+		- To avoid selecting a model that is memorizing more of these sequences, we zeroed out the predictions for these sequences 
+		- sometimes we sent non-zeroed out submissions in order to compare our performance to other participants.
 
+- (2nd) Squeezeformer + BPP Conv2D Attention
+	- why use a [[GRU]] layer???
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653
 	- x axis represents position, while y axis represents sequence number
@@ -49,6 +55,7 @@ Eval Metric: [[MAELoss]]
 		
 				My guess was if I am to use sliding window attention, my generalization plots would become closer to the ones Shujun shared, but it was not the case, they are still "too sharp"
 - https://www.kaggle.com/code/ayushs9020/understanding-the-competition-standford-ribonaza
+	- 
 ##### Questions
 - What are bpp matrices?
 #### Takeaways
