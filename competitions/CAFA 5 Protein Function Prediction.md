@@ -2,9 +2,9 @@ TODO. I am kinda confused. definitely needs more time to look. prob public kerne
 Link: https://www.kaggle.com/c/cafa-5-protein-function-prediction/leaderboard
 Problem Type: 
 Input: 
-Output: You have to predict all of the possible classes each gene can have. There are thousands of possible classes. Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
+Output: You have to predict all of the possible classes (Gene ontology - GO) each gene can have. There are thousands of possible classes. Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
 Eval Metric: [[F-score]]
-	TODO: is it just f1 or fbeta????
+- but the precision and recall (to calculate the F1 score) are weighted via the formulas on page 31 of this paper https://ndownloader.figstatic.com/files/7128245
 
 The maximum F-measure based on the weighted precision and recall will be calculated on each of the three test sets and the final performance measure will be an arithmetic mean of the three maximum F-measures (for MF, BP, and CC). The formulas for computing weighted F-measures are provided in the [supplement](https://ndownloader.figstatic.com/files/7128245) (page 31) of the following [paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1037-6)
 
@@ -17,6 +17,7 @@ The goal is to figure out "what each protein does" (it's function)
 
 (2nd)
 - https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/434064
+- solution code: https://github.com/btbpanda/CAFA5-protein-function-prediction-2nd-place
 	- they only did a simple 5-fold CV (nothing else was better)
 	- [[Gradient-Boosted Decision Tree]] improved their models the most (their own pyboost framework is super fast)
 
