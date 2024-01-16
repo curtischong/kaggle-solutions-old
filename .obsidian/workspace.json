@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "linear layers",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md"
+                "file": "competitions/CAFA 5 Protein Function Prediction.md"
               }
             }
           }
@@ -147,13 +147,14 @@
   },
   "active": "59e3524c4f49c2e3",
   "lastOpenFiles": [
-    "GRU.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/Stanford Ribonanza RNA Folding.md",
-    "xpos positional encoding.md",
+    "techniques/Rotational positional embedding.md",
+    "techniques/xpos positional encoding.md",
+    "GRU.md",
     "techniques/absolute positional embedding.md",
     "techniques/models/Squeeze-and-Excitation layer.md",
-    "Rotational positional embedding.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "techniques/mean-shift clustering.md",
     "techniques/Multiple Instance Learning.md",
     "techniques/singular value decomposition.md",
@@ -172,7 +173,6 @@
     "brown clustering.md",
     "Agglomerative Hierarchical Clustering.md",
     "techniques/active learning.md",
-    "Affinity Propagation.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
