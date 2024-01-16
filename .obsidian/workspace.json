@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rotational positional embedding.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "gru",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rotational positional embedding.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rotational positional embedding.md",
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rotational positional embedding.md"
+                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
               }
             }
           }
@@ -160,8 +161,8 @@
   },
   "active": "e777ea5a1b06c692",
   "lastOpenFiles": [
-    "competitions/Stanford Ribonanza RNA Folding.md",
     "Rotational positional embedding.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
     "techniques/mean-shift clustering.md",
     "techniques/Multiple Instance Learning.md",
     "techniques/singular value decomposition.md",
