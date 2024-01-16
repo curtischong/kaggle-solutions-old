@@ -32,7 +32,12 @@ Eval Metric: [[MAELoss]]
 		- sometimes we sent non-zeroed out submissions in order to compare our performance to other participants.
 
 - (2nd) Squeezeformer + BPP Conv2D Attention
-	- why use a [[GRU]] layer???
+	- https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/460316
+	- squeezeformer was the most efficient (compared to newer Conv-Transformer Hybrid architectures)
+		- showed strong performance early in training and consistently showed faster convergence.
+	- why use a [[GRU]] layer, especially after a transformer layer???
+		- it just yielded minor improvements. This was probably just intuition
+	- used [[ALiBi positional encoding]] since it's claimed to generalize better over long sequences than other methods.
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653
 	- x axis represents position, while y axis represents sequence number

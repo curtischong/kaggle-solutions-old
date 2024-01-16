@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2fa4b16966ed3998",
+        "id": "0ca4b03670399b80",
         "type": "tabs",
         "children": [
           {
-            "id": "c7a3293cda1a4092",
+            "id": "59e3524c4f49c2e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GRU.md",
+                "file": "competitions/Stanford Ribonanza RNA Folding.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GRU.md",
+                "file": "competitions/Stanford Ribonanza RNA Folding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GRU.md",
+                "file": "competitions/Stanford Ribonanza RNA Folding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GRU.md"
+                "file": "competitions/Stanford Ribonanza RNA Folding.md"
               }
             }
           }
@@ -145,10 +145,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7a3293cda1a4092",
+  "active": "59e3524c4f49c2e3",
   "lastOpenFiles": [
-    "competitions/Stanford Ribonanza RNA Folding.md",
     "GRU.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
     "xpos positional encoding.md",
     "techniques/absolute positional embedding.md",
     "techniques/models/Squeeze-and-Excitation layer.md",
