@@ -1,0 +1,45 @@
+- input a large clusters of owrds
+- output 1: a partition of words into clusters
+- output 2: (generalization of 1): a hierarchal word clustering
+- has applications in named entity recognition and parsing problems
+
+- How does it work
+    - words that are in the same cluster tend to surround the same words. ex: "dog/cat" typically appears after the words "a" and "the" so they are in the same cluster
+    - we have a vocabulary V and function C: V ->{1,2,...k} to partition the vocabulary into k clusters
+    - we have a parameter e(v|c) for every v in V and c in {1,2,...,k}
+    - we have a parameter q(c'|c) for every c', c in {1,2,...,k}
+    - P(dog | the) = e(dog | 50)*q(50 | q)
+    - all we have to do is figure out how to optimize for the functions e and q
+    - P(the dog saw the cat) = P(1 2 3 1 2) where the = 1, dog = 2, saw = 3, cat = 2
+    - P(1 2 3 1 2) = q(1|0)*q(2|1)*q(3|2)*
+    - q(1|3)*q(2|1)*e(the|1)*e(dog|2)*e(saw|3)*...
+
+- you should also measure the quality of C, so you want to maximize a summation of the probabilities such that C is really large (this is in the slides in the video)
+    - this measure depends on probabilities P(c|c') and P(c), both of which can be determined by counting the frequency of words in the set or counting the frequency of one word appearing after another word in the set
+
+- The algorithm:
+- - perform |V| - k merge steps
+    - - you greedily pick the merge steps that maximizes Quality(C)
+    - naive time complexity is O(|V|^5) but optimized is O(|V|^3) (still too slow)
+- the second algo
+    - then take another word and make a new cluster. we now have m + 1 clusters.
+    - Then merge two clusters together to get back to m.
+    - Do this for the rest the words of index (m + 1) to |V|
+    - Finally carry out (m - 1) final merges to create the full heirarchy
+    - running time: O(|V|m^2 + n) where n is the corpus length
+    
+    - after this algo, we have a hierarchal clustering
+    - MILLER et al NAACL 2004
+    - this paper makes named entity recognition cheaper
+    - so you don't have to tag every word.
+    - what they did was take
+    - tag + prev8bitOfCurrword
+    - tag + prev12bitOfCurrword
+    - etc
+    - tag + prev8bitOfprevword
+    - etc
+    - tag + prev8bitOfnextword
+    - etc
+    - where the prevxbitOfxxxword is the first x bit of the brown clusters
+    - using [[active learning]] yields better results
+    - - take the top m most frequent words and place it into its own cluster

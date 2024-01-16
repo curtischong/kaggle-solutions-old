@@ -1,0 +1,12 @@
+- goal: find dense area of points
+- steps
+- 1) start your sliding window (aka a sphere) at some point
+- 2) then keep moving the centre of your window to the mean of the datapoints
+- 3) keep doing this until it's stopped
+- 4) Do this multiple times to find all the clusters
+- 5) remove all of the duplicate spheres (at the same point/near each other) at the end of the algo
+
+- pros:
+    - you don't have to select the number of clusters
+- con:
+    - selecting the right radius is hard

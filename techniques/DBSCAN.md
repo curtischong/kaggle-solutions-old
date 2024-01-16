@@ -1,0 +1,20 @@
+- Density-Based Spatial Clustering of Applications with Noise
+- Works on the same principle as [[mean-shift clustering]]
+- steps
+    - 1) start with a node that hasn't been visited
+    - 2) if this point has sufficient amount of neighbours, the clustering process starts
+        - A neighbour is defined as within epsilon away
+        - if there are insufficient points, the datapoint is labelled as noise
+        - both cases mark the point as visited
+    - 3) the points within epsilon away are part of the same cluster
+    - 4) then repeat the steps 2&3 to find all of the points of this cluster
+        - we are done when all points within the epsilon neighbourhood has been visited
+    - 5) once we're done with the current cluster, a new unvisited point is retrieved and processed
+- pros
+    - it doesn't require a pe-set number of clusters at all
+    - it identifies outliers as noise
+    - it can find arbitrarily shaped clusters quite well
+- cons
+    - it doesn't perform as well when the clusters are of varying density
+        - cause the epsilon and minPoints requirement will differ from cluster to cluster
+    - it's hard to determine epsilon for high-dimensional data since it's difficult to estimate

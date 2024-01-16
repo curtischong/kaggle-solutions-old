@@ -1,0 +1,4 @@
+- you choose which examples should be labelled
+- choose to label the most useful examples at each stage
+    - useful may mean that the tagger has the most difficulty in tagging these words
+    - so the examples are more challenging and contain more information

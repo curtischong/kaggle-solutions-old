@@ -5,6 +5,10 @@ Output: the reactivity for reactivity_DMS_MaP and reactivity_2A3_MaP for _each_Â
 Eval Metric: [[MAELoss]]
 ##### Summary
 ##### Solutions
+(1st) Transformer model with Dynamic positional encoding + CNN for BPPM features
+- [[Squeeze-and-Excitation layer]]
+	- To allow better generalization for longer input we implemented Dynamic Positional Bias
+- use [[DBSCAN]]
 
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653

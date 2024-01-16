@@ -1,0 +1,9 @@
+- [https://towardsdatascience.com/louvain-algorithm-93fde589f58c](https://towardsdatascience.com/louvain-algorithm-93fde589f58c)
+    - The actual implementation of the algorithm is found here
+- This algorithm finds communities (aka subgraphs)
+- it merges communities together until there is 1 community
+    - A bit like the second half of [[brown clustering]]
+- It determines which nodes to merge into a cluster via the delta in a metric called Modularity
+- you get delta modularity by removing and inserting each node into a different community until there is no significant increase in modularity
+- I think modularity is metric for the entire graph, not individual nodes
+    - The faster metric that is used in the algo is an approximation (I think) called delta Mm

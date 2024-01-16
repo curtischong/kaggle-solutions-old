@@ -1,0 +1,36 @@
+- inputs:
+    - a measure of similarity
+    - preferences, representing each data point’s suitability to be an exemplar.
+- gist: it simultaneously considers all data points as potential exemplars
+- steps
+    - 1) create a similarity and preference matrix
+        - the mail diagonal represents preferences, similarities against each datapoint on the rest
+            - if the connections are sparse, you don't need to store the entire nxn array. in mem. Just keep a list of similarities connected to points
+    - 2) calculate responsibilities
+        - r(i, k) that reflects the accumulated evidence for how well-suited point k is to serve as the exemplar for point i
+        - this takes into account other potential exemplars for point i
+        - Responsibility is sent from data point i to candidate exemplar point k.
+        - responsibility is calculated by: original similarities and availabilities calculated in the previous iteration minus the largest of the similarity and availability sum between point i and other candidate exemplars
+            - the logic: a point is more suited as an exemplar if the initial preference was higher
+            - but responsibility gets lower if a similar point is also a good candidate
+                - this simulates competition
+    - 3) calculate availabilities:
+        - Availability a(i, k) reflects the accumulated evidence for how appropriate it would be for point i to choose point k as its exemplar
+        - taking into account the support from other points that point k should be an exemplar
+        - Availability is sent from candidate exemplar point k to point i.
+        - availability is calculated by setting to the self-responsibility r(k, k) plus the sum of the positive responsibilities that candidate exemplar k receives from other points.
+    - 4) stop when
+        - the changes fall below a threshold
+        - or the number of iterations is reached
+    - for point i, the k with maximum r(i, k) + a(i, k) represents point i’s exemplar
+    - if we just need the set of exemplars, we can scan the main diagonal. If r(i, i) + a(i, i) > 0, point i is an exemplar.
+- we can change the cluster count by adjusting our initial preferences
+    - higher preference values = more clusters
+    - lower preference values mean "no, no, please, you’re a better exemplar, I’ll join your cluster"
+- pros
+    - you don't have to specify the number of clusters
+    
+- this algo takes quadratic complexity
+- similarity metrics
+    - Negative Square Distance $s(x_i, x_j) = -||x_i - x_j||^2$
+        - $s(x_i, x_j) > s(x_i, x_k)$ if an observation $x_i$ is more similar to observation $x_j$ and less similar to observation $x_k$

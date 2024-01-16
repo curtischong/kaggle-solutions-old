@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "058bcd2994bcc111",
+        "id": "74db37e0d0e86a56",
         "type": "tabs",
         "children": [
           {
-            "id": "69ae0a89bf173dc0",
+            "id": "6b26d19a6d280c66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "Adjusted Mutual Information (AMI).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "Adjusted Mutual Information (AMI).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "Adjusted Mutual Information (AMI).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md"
+                "file": "Adjusted Mutual Information (AMI).md"
               }
             }
           }
@@ -145,38 +145,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "69ae0a89bf173dc0",
+  "active": "6b26d19a6d280c66",
   "lastOpenFiles": [
-    "techniques/sliding window.md",
+    "techniques/active learning.md",
+    "techniques/clustering/Accuracy Metrics For Clustering.md",
+    "techniques/clustering",
+    "Adjusted Rand Index (ARI).md",
+    "Adjusted Mutual Information (AMI).md",
+    "Homogeneity, completeness, V-measure.md",
+    "Silhouette.md",
+    "Clustering.md",
+    "Louvain Algorithm.md",
+    "Text Clustering.md",
+    "text clustering with BERT.md",
+    "brown clustering.md",
+    "techniques/EM GMM.md",
+    "spectral clustering.md",
+    "Agglomerative Hierarchical Clustering.md",
+    "Affinity Propagation.md",
+    "techniques/kmeans.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
+    "techniques/DBSCAN.md",
+    "techniques/mean-shift clustering.md",
+    "techniques/models/Squeeze-and-Excitation layer.md",
+    "techniques/sliding window.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
-    "competitions/Linking Writing Processes to Writing Quality.md",
-    "problem-type/multi-class classification.md",
-    "techniques/ensembling/lasso feature importance for ensembling.md",
     "techniques/ensembling",
-    "Don't blindly follow public Kernels.md",
-    "README.md",
-    "techniques/Masked Language Modeling (MLM).md",
-    "techniques/models/Train on external data first.md",
-    "techniques/models/Freezing Layers.md",
-    "techniques/models/Squeezeformer layer.md",
-    "techniques/Training own Tokenizer.md",
     "techniques/diagnosis",
-    "techniques/diagnosis/identify domain shift.md",
-    "eval-functions/RMSE.md",
-    "eval-functions/Average Precision.md",
-    "eval-functions/MAELoss.md",
-    "competitions/NeurIPS 2023 - Machine Unlearning.md",
-    "techniques/cosine annealing LR.md",
-    "techniques/ensembling/Weighted Boxes Fusion (WBF) ensembling.md",
-    "eval-functions/cross-entropy.md",
     "assets/Pasted image 20240114191810.png",
     "Pasted image 20240114191805.png",
-    "All Competitions.md",
-    "templates/competition template.md",
     "assets/Pasted image 20240114150324.png",
     "assets/Pasted image 20240114142212.png",
     "assets/Pasted image 20240113111631.png",
@@ -191,7 +191,6 @@
     "techniques/regularization",
     "techniques/regularization",
     "eval-functions",
-    "techniques/models",
-    "tools"
+    "techniques/models"
   ]
 }

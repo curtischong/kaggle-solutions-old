@@ -1,0 +1,19 @@
+- $$h = 1 - \frac{H(C | K)}{H(C)}, c = \frac{H(K | C)}{H(K)}$$
+    - H is the entropy function and H(C|K) is the [conditional entropy function](https://en.wikipedia.org/wiki/Conditional_entropy)
+        - H(C|K) quantifies the amount of information needed to describe the outcome of a random variable C given that the value of another random variable K is known
+    - K is a clustering result
+    - C is the initial split
+    - h evaluates whether each cluster is composed of same class objects
+    - c measures how well the same class objects fit the clusters
+- h and c lie in the [0,1] range
+    - values closer to 1 indicate more accurate clustering results
+    - h and c are NOT scaled
+        - so the value are dependent on the number of clusters
+    - use ARI when the number of clusters is big enough and the number of objects is small
+        - cause a random clustering result will not have metrics' values closer to zero
+        - but this issue is ignored with 100+ observations and the number of clusters is less than 10
+- v-measure
+    - the harmonic mean between h and c
+    - $$v = 2\frac{hc}{h+ c}$$
+    - is symmetric
+    - measures how consistent two clustering results are

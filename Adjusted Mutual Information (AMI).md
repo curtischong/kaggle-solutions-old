@@ -1,0 +1,7 @@
+- MI index: defined as the [mutual information](https://en.wikipedia.org/wiki/Mutual_information) for two distributions, corresponding to the sample split into clusters
+    - the mutual information measures the share of information common for both clustering splits
+    - i.e. how information about one of them decreases the uncertainty of the other one
+- AMI is the scaled version of MI
+    - is within the range of [0, 1]
+        - Values close to zero mean the splits are independent, and those close to 1 mean they are similar (if value is 1, they are identical)
+    - is symmetrical

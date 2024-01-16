@@ -1,0 +1,16 @@
+- each leaf starts as a cluster, we just merge each leaf until we have 1 cluster
+- The hierarchy of clusters is represented as a tree (dendrogram)
+- steps
+    - 1) treat each datapoint as a single cluster
+    - 2) select a distance metric
+        - one distance is average linkage (aka the distance b/w the two clusters is the average distance between data points in the first cluster and the second)
+    - 3) combine the two nearest clusters into 1 at each iteration
+    - 4) repeat step 3 until there's 1 cluster.
+- pros
+    - We don't need to specify the number of clusters
+        - we can select which number of clusters look best based on our tree!
+    - The algorithm isn't sensitive to the choice of the distance metric
+        - all distance metrics work well, other algos live or die on the distance metric
+    - this also can also uncover underlying hierarchy from our data
+- con:
+    - time complexity is O(n^3). n merges, n^2 distance comparisons between pairs
