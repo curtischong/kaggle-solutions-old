@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "59e3524c4f49c2e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "86bee03d35a1877c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "F-score.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -157,11 +145,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "59e3524c4f49c2e3",
+  "active": "86bee03d35a1877c",
   "lastOpenFiles": [
-    "techniques/UMAP dimension reduction.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "F-score.md",
+    "techniques/features/dimension reduction for feature generation.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "competitions/Mechanisms of Action (MoA) Prediction.md",
+    "factor analysis.md",
+    "techniques/UMAP dimension reduction.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
@@ -182,9 +173,6 @@
     "techniques/Masked Language Modeling (MLM).md",
     "techniques/kmeans.md",
     "techniques/EM GMM.md",
-    "All Competitions.md",
-    "techniques/clustering/Accuracy Metrics For Clustering.md",
-    "text clustering with BERT.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

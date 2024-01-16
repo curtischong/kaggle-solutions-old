@@ -24,7 +24,7 @@ The goal is to figure out "what each protein does" (it's function)
 - https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/433732
 	- from comments:
 		- concatenating ProtBERT sucked
-		- However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
+		- [[dimension reduction for feature generation]] However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
 	- 
 
 
