@@ -1,0 +1,3 @@
+- a variant of positional embedding that represents the positional information in a cyclic or rotatory manner rather than linearly – just like the minute hand in a clock rotates cyclically.
+- positional embeddings in a transformer are created by two learnable embeddings, sine and cosine functions of different frequencies:
+	- rotation matrices that rotates the d-dimensional embedding space are used. So, each position gets associated with a unique rotation matrix.

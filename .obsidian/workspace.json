@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "xpos positional encoding.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "xpos positional encoding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "xpos positional encoding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
+                "file": "xpos positional encoding.md"
               }
             }
           }
@@ -161,8 +161,12 @@
   },
   "active": "e777ea5a1b06c692",
   "lastOpenFiles": [
-    "Rotational positional embedding.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
+    "xpos positional encoding.md",
+    "techniques/absolute positional embedding.md",
+    "techniques/models/Squeeze-and-Excitation layer.md",
+    "Rotational positional embedding.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
     "techniques/mean-shift clustering.md",
     "techniques/Multiple Instance Learning.md",
     "techniques/singular value decomposition.md",
@@ -183,11 +187,7 @@
     "techniques/active learning.md",
     "Affinity Propagation.md",
     "Adjusted Rand Index (ARI).md",
-    "Adjusted Mutual Information (AMI).md",
     "techniques/clustering",
-    "Homogeneity, completeness, V-measure.md",
-    "Silhouette.md",
-    "Clustering.md",
     "techniques/ensembling",
     "techniques/diagnosis",
     "assets/Pasted image 20240114191810.png",
