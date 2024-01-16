@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "74db37e0d0e86a56",
+        "id": "42992905ced055d7",
         "type": "tabs",
         "children": [
           {
-            "id": "6b26d19a6d280c66",
+            "id": "8f462eabeabc2e15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Adjusted Mutual Information (AMI).md",
+                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e777ea5a1b06c692",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rotational positional embedding.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Adjusted Mutual Information (AMI).md",
+                "file": "Rotational positional embedding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Adjusted Mutual Information (AMI).md",
+                "file": "Rotational positional embedding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Adjusted Mutual Information (AMI).md"
+                "file": "Rotational positional embedding.md"
               }
             }
           }
@@ -145,34 +158,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6b26d19a6d280c66",
+  "active": "e777ea5a1b06c692",
   "lastOpenFiles": [
-    "techniques/active learning.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
+    "Rotational positional embedding.md",
+    "techniques/mean-shift clustering.md",
+    "techniques/Multiple Instance Learning.md",
+    "techniques/singular value decomposition.md",
+    "techniques/sliding window.md",
+    "techniques/Training own Tokenizer.md",
+    "techniques/UMAP dimension reduction.md",
+    "techniques/DBSCAN.md",
+    "techniques/Masked Language Modeling (MLM).md",
+    "techniques/kmeans.md",
+    "techniques/EM GMM.md",
+    "All Competitions.md",
     "techniques/clustering/Accuracy Metrics For Clustering.md",
-    "techniques/clustering",
+    "text clustering with BERT.md",
+    "Text Clustering.md",
+    "spectral clustering.md",
+    "brown clustering.md",
+    "Agglomerative Hierarchical Clustering.md",
+    "techniques/active learning.md",
+    "Affinity Propagation.md",
     "Adjusted Rand Index (ARI).md",
     "Adjusted Mutual Information (AMI).md",
+    "techniques/clustering",
     "Homogeneity, completeness, V-measure.md",
     "Silhouette.md",
     "Clustering.md",
-    "Louvain Algorithm.md",
-    "Text Clustering.md",
-    "text clustering with BERT.md",
-    "brown clustering.md",
-    "techniques/EM GMM.md",
-    "spectral clustering.md",
-    "Agglomerative Hierarchical Clustering.md",
-    "Affinity Propagation.md",
-    "techniques/kmeans.md",
-    "competitions/Stanford Ribonanza RNA Folding.md",
-    "techniques/DBSCAN.md",
-    "techniques/mean-shift clustering.md",
-    "techniques/models/Squeeze-and-Excitation layer.md",
-    "techniques/sliding window.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
-    "competitions/Child Mind Institute - Detect Sleep States.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "techniques/ensembling",
     "techniques/diagnosis",
     "assets/Pasted image 20240114191810.png",

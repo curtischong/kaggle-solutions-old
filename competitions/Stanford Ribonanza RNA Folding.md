@@ -9,6 +9,14 @@ Eval Metric: [[MAELoss]]
 - [[Squeeze-and-Excitation layer]]
 	- To allow better generalization for longer input we implemented Dynamic Positional Bias
 - use [[DBSCAN]]
+- Subsetting data (filtering by different thresholds on SN ratio) resulted in a performance boost for all models. However, this technique was superseded by weight sampling, which proved itself to be more effective.
+	- by subsetting data, I think they mean: "They only selected training rows based on the signal to noise ratio of each example"
+		- How did they calculate the signal to noise ratio?
+	- by weight sampling, I think they mean: "they weighed each training row based on how high it's signal to noise ratio"
+- We tried to use data about predicted 3D structure of 100k sequences from the train dataset but gave up on that once we had visually analyzed them:
+	- probably cause they all looked the same in 3D?
+- Using absolute positional embedding leads to unsolvable issues when generalizing upon longer sequences.
+- [[Rotational positional embedding]], unfortunately, doesn’t help the model to generalize on larger lengths.
 
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653
