@@ -159,8 +159,9 @@
   },
   "active": "59e3524c4f49c2e3",
   "lastOpenFiles": [
-    "F-score.md",
+    "techniques/UMAP dimension reduction.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
+    "F-score.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
@@ -177,7 +178,6 @@
     "techniques/singular value decomposition.md",
     "techniques/sliding window.md",
     "techniques/Training own Tokenizer.md",
-    "techniques/UMAP dimension reduction.md",
     "techniques/DBSCAN.md",
     "techniques/Masked Language Modeling (MLM).md",
     "techniques/kmeans.md",

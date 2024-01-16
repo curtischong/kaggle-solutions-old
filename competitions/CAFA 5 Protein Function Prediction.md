@@ -20,6 +20,12 @@ The goal is to figure out "what each protein does" (it's function)
 - solution code: https://github.com/btbpanda/CAFA5-protein-function-prediction-2nd-place
 	- they only did a simple 5-fold CV (nothing else was better)
 	- [[Gradient-Boosted Decision Tree]] improved their models the most (their own pyboost framework is super fast)
+(4th)
+- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/433732
+	- from comments:
+		- concatenating ProtBERT sucked
+		- However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
+	- 
 
 
 ##### Important notebooks
