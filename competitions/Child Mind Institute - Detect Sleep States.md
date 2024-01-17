@@ -142,7 +142,7 @@ Note: if you submitted multiple predictions for the same sleep event, you'll get
 		- Note: the model had to predict 2 targets (one for onsets and other for wakeups) 
 		- **Target transformation**: Add two steps back and one forward. (0,0,0,0,1,0,0,0 -> 0,0,1,1,1,1,0,0)
 			- prob cause just predicting on one time step is very hard
-		- **loss** : [[cross-entropy]]
+		- **loss** : [[eval-functions/cross-entropy loss]]
 		- A good augmentation trick was to reverse all the series during training, this allowed us to have more sequences and increased our local validation by 0.01
 			- code
 			```python

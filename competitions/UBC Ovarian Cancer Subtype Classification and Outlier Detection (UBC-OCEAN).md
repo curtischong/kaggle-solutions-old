@@ -26,7 +26,7 @@ https://www.kaggle.com/competitions/UBC-OCEAN/discussion/455890
 		- 1) They used [Phikon](https://huggingface.co/owkin/phikon) to generate features -  a 2D tensor with shape `(n_patches, 768)`
 		- 2) They fed these features into Chowder, which outperformed DeepMIL, MeanPool, and DSMIL.
 		- most of the TMA were used for evaluation and not for training.
-		- The loss was the [Cross-Entropy (CE) loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html).
+		- The loss was the [[eval-functions/cross-entropy loss]]
 	- Two strategies were implemented to mitigate class imbalance:
 		1. [Weighted sampling](https://pytorch.org/docs/stable/data.html#torch.utils.data.WeightedRandomSampler) to create balanced batches for training,
 		2. Using class weights in [CE loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html#torch.nn.CrossEntropyLoss).

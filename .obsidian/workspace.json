@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/cross-entropy loss.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "linear layers",
+                "query": "cross-entrop",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/cross-entropy loss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/cross-entropy loss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md"
+                "file": "eval-functions/cross-entropy loss.md"
               }
             }
           }
@@ -147,15 +148,17 @@
   },
   "active": "86bee03d35a1877c",
   "lastOpenFiles": [
+    "cross-entropy loss.md",
+    "eval-functions/cross-entropy loss.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
     "F-score.md",
     "techniques/features/dimension reduction for feature generation.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "competitions/Mechanisms of Action (MoA) Prediction.md",
     "factor analysis.md",
     "techniques/UMAP dimension reduction.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
     "competitions/Linking Writing Processes to Writing Quality.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
@@ -171,8 +174,6 @@
     "techniques/Training own Tokenizer.md",
     "techniques/DBSCAN.md",
     "techniques/Masked Language Modeling (MLM).md",
-    "techniques/kmeans.md",
-    "techniques/EM GMM.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
