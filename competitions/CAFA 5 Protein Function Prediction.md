@@ -22,6 +22,10 @@ The goal is to figure out "what each protein does" (it's function)
 	- [[Gradient-Boosted Decision Tree]] improved their models the most (their own pyboost framework is super fast)
 (4th)
 - https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/433732
+	- approach
+		- 1) Prot-T5, ESM2, and Ankh Protein Language Model (PLM) embeddings. We carried out no further modifications or finetuning on the output of PLMs, only conversion to float32 to save memory.
+		- 2) A single binary matrix representing species taxonomy for each protein.
+		- 3) used text information obtained by tf-idf of abstract information from academic papers associated with each protein
 	- from comments:
 		- concatenating ProtBERT sucked
 		- [[dimension reduction for feature generation]] However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
