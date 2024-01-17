@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eval-functions/cross-entropy loss.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eval-functions/cross-entropy loss.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eval-functions/cross-entropy loss.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eval-functions/cross-entropy loss.md"
+                "file": "competitions/CAFA 5 Protein Function Prediction.md"
               }
             }
           }
@@ -148,20 +147,20 @@
   },
   "active": "86bee03d35a1877c",
   "lastOpenFiles": [
-    "cross-entropy loss.md",
-    "eval-functions/cross-entropy loss.md",
+    "competitions/Child Mind Institute - Detect Sleep States.md",
+    "competitions/Linking Writing Processes to Writing Quality.md",
+    "competitions/Mechanisms of Action (MoA) Prediction.md",
+    "competitions/NeurIPS 2023 - Machine Unlearning.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "eval-functions/cross-entropy loss.md",
+    "cross-entropy loss.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "F-score.md",
     "techniques/features/dimension reduction for feature generation.md",
-    "competitions/Mechanisms of Action (MoA) Prediction.md",
     "factor analysis.md",
     "techniques/UMAP dimension reduction.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
-    "competitions/Stanford Ribonanza RNA Folding.md",
-    "competitions/NeurIPS 2023 - Machine Unlearning.md",
-    "competitions/Linking Writing Processes to Writing Quality.md",
-    "competitions/Child Mind Institute - Detect Sleep States.md",
     "techniques/Rotational positional embedding.md",
     "techniques/xpos positional encoding.md",
     "GRU.md",

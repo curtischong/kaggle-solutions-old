@@ -31,7 +31,7 @@ The goal is to figure out "what each protein does" (it's function)
 		- [[dimension reduction for feature generation]] However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
 	- 
 
-
+(5th)
 ##### Important notebooks
 #### Takeaways
 
