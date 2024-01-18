@@ -54,7 +54,7 @@ A good solution uses both the fasta file (getting an LLM to make predictions bas
 			- `p_term_raw = p_term_cond * (1 - (1 - p_parent_0_raw) * (1 - p_parent_1_raw) * ... * (1 - p_parent_N_raw))`
 				- and processing the parent nodes first, so the child nodes can use the parent probabilities just makes sense. very cool
 		- tbh I'm not sure what this is. gotta look at the code
-	- used a [[Graph Convolutional Network (GCN)]] for the [[Node Classification Task]]
+	- used a [[Graph Convolutional Network (GCN)]] for the [[Node Classification Task (using GCN)]]
 	- postprocessing
 		- [[clip outputs to be within range]]
 		- by looking at the ontology graph, for the predicted OG, they need make sure that the assigned probability makes sense

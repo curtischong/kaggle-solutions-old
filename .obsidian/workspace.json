@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "0916886c2e7d049a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node Classification Task.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node Classification Task.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node Classification Task.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node Classification Task.md"
+                "file": "competitions/CAFA 5 Protein Function Prediction.md"
               }
             }
           }
@@ -158,10 +145,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0916886c2e7d049a",
+  "active": "67e441d78663312c",
   "lastOpenFiles": [
+    "Node Classification Task (using GCN).md",
     "competitions/CAFA 5 Protein Function Prediction.md",
-    "Node Classification Task.md",
     "Kaggle Grandmaster Tools.md",
     "techniques/clip outputs to be within range.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",

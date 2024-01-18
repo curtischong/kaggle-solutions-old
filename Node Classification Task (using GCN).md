@@ -1,0 +1,2 @@
+- basically, you have a bunch of nodes in your graph, but some nodes aren't labelled.
+- so given the features of the graph, and the labels of the other nodes, what are the labels of the unlabelled nodes?
