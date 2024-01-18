@@ -1,0 +1,2 @@
+- this metric rewards models for averaging over uncertainty by blurring
+	- source: https://youtu.be/PD1v5PCJs_o?si=ud0FjTnMlmREpTMd&t=2341

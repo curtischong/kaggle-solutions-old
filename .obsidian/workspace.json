@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/RMSE.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/RMSE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/RMSE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md"
+                "file": "eval-functions/RMSE.md"
               }
             }
           }
@@ -147,6 +147,7 @@
   },
   "active": "86bee03d35a1877c",
   "lastOpenFiles": [
+    "competitions/CAFA 5 Protein Function Prediction.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/Linking Writing Processes to Writing Quality.md",
     "competitions/Mechanisms of Action (MoA) Prediction.md",
@@ -156,7 +157,6 @@
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "eval-functions/cross-entropy loss.md",
     "cross-entropy loss.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "F-score.md",
     "techniques/features/dimension reduction for feature generation.md",
     "factor analysis.md",
