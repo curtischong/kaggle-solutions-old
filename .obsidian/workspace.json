@@ -8,35 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "139563b223769618",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Novozymes Enzyme Stability Prediction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef33f99cebd72b1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "eval-functions/Spearman's correlation Coefficient.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f95e8280a4b2b52d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "competitions/Novozymes Enzyme Stability Prediction.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -85,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Novozymes Enzyme Stability Prediction.md",
+                "file": "competitions/Novozymes Enzyme Stability Prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Novozymes Enzyme Stability Prediction.md",
+                "file": "competitions/Novozymes Enzyme Stability Prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Novozymes Enzyme Stability Prediction.md"
+                "file": "competitions/Novozymes Enzyme Stability Prediction.md"
               }
             }
           }
@@ -166,19 +145,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "139563b223769618",
+  "active": "f95e8280a4b2b52d",
   "lastOpenFiles": [
     "eval-functions/Spearman's correlation Coefficient.md",
-    "Novozymes Enzyme Stability Prediction.md",
     "README.md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
-    "Pasted image 20240118171728.png",
-    "eval-functions/Pearson's Correlation Coefficient.md",
-    "Untitled.md",
-    "Pasted image 20240118135554.png",
-    "Kaggle Grandmaster Tools.md",
     "Don't blindly follow public Kernels.md",
-    "factor analysis.md",
+    "techniques/factor analysis.md",
+    "All Competitions.md",
+    "Untitled.md",
+    "competitions/Novozymes Enzyme Stability Prediction.md",
+    "assets/Pasted image 20240118135554.png",
+    "assets/Pasted image 20240118171728.png",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "eval-functions/Pearson's Correlation Coefficient.md",
+    "Kaggle Grandmaster Tools.md",
     "eval-functions/F-score.md",
     "models/Graph Convolutional Network (GCN).md",
     "models/GRU.md",
