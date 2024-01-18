@@ -1,0 +1,12 @@
+/* https://forum.obsidian.md/t/live-preview-better-treatment-of-code-blocks-code-wrap-horizontal-scroll-and-smart-indent/33718/4?page=2 */
+/*un-wrap code*/
+.HyperMD-codeblock {
+    white-space: nowrap;
+}
+
+/*scroll codeblock in read mode*/
+.markdown-reading-view code[class*="language-"] {
+    overflow-x: scroll;
+    white-space: pre;
+    padding: 15px 0px;
+}

@@ -1,5 +1,8 @@
 {
-  "accentColor": "",
+  "accentColor": "#ff8f9a",
   "cssTheme": "Obsidian Nord",
-  "baseFontSize": 18
+  "baseFontSize": 18,
+  "enabledCssSnippets": [
+    "scrollable-code-blocks"
+  ]
 }

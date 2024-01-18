@@ -57,14 +57,33 @@ A good solution uses both the fasta file (getting an LLM to make predictions bas
 			- ik when it's NaN, but itss not clear.
 			- how can setting some values to 0 or 1 set the conditiona probability?
 				- when is something 0???? should it be nan if it's not a child? I just don't understand this part
+			- This is the entire code
+				```python
+							trg = np.zeros((num.shape[0], ont.idxs), dtype=np.float32)
+							np.add.at(trg, (trm_ont['n'].values, trm_ont['id'].values), 1)
+				
+							if args.propagate:
+								propagate_target(trg, ont)
+				
+							# create NaNs from graph
+							for k, node in enumerate(ont.terms_list):
+								adj = node['adj']
+								if len(adj) > 0:
+									na = np.nonzero(np.nansum(trg[:, adj], axis=1) == 0)[0]
+									assert np.nansum(trg[na, k]) == 0, 'Should be empty'
+									trg[na, k] = np.nan
+				```
+				- 
 	- used a [[Graph Convolutional Network (GCN)]] for the [[Node Classification Task (using GCN)]]
 	- postprocessing
 		- [[clip outputs to be within range]]
+			- cutoff_threshold_low = 0.1  # prediction < cutoff_threshold_low will be set to zero (i.e. no need to save to submission file)
 		- by looking at the ontology graph, for the predicted OG, they need make sure that the assigned probability makes sense
 		- so they look up all the parents for the OG.
 			- They need to make sure that the predicted probability is never higher than a probability for a parent
 				- perhaps they get this probability from the training set if it exists
 			- doing this check is important because their models don't take this into account (some aren't aware of the graph relationships)
+
 (4th)
 - https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/433732
 	- approach
