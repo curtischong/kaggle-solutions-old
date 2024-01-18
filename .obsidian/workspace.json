@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0ca4b03670399b80",
+        "id": "7c1c4a2494c10267",
         "type": "tabs",
         "children": [
           {
-            "id": "86bee03d35a1877c",
+            "id": "fc4a19881f826000",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -145,10 +145,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86bee03d35a1877c",
+  "active": "fc4a19881f826000",
   "lastOpenFiles": [
-    "eval-functions/RMSE.md",
+    "problem-type/Multi-label Classification.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
+    "eval-functions/RMSE.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/Linking Writing Processes to Writing Quality.md",
     "competitions/Mechanisms of Action (MoA) Prediction.md",
@@ -172,7 +173,6 @@
     "techniques/singular value decomposition.md",
     "techniques/sliding window.md",
     "techniques/Training own Tokenizer.md",
-    "techniques/DBSCAN.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

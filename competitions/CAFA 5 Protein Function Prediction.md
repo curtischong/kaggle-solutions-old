@@ -1,8 +1,9 @@
 TODO. I am kinda confused. definitely needs more time to look. prob public kernels will help as well
 Link: https://www.kaggle.com/c/cafa-5-protein-function-prediction/leaderboard
-Problem Type: 
+Problem Type: [[Multi-label Classification]]
 Input: 
-Output: You have to predict all of the possible classes (Gene ontology - GO) each gene can have. There are thousands of possible classes. Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
+**Output:** for each protein, You have to predict the function (aka **GO term ID**) of a set of proteins based on their amino acid sequences and other data. There are thousands of possible classes (i.e. GO term IDs). Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
+
 Eval Metric: [[F-score]]
 - but the precision and recall (to calculate the F1 score) are weighted via the formulas on page 31 of this paper https://ndownloader.figstatic.com/files/7128245
 
@@ -13,6 +14,10 @@ Terms deep in the ontology tend to appear less frequently, be harder to predict,
 - TODO: understand why their metric implementation was flawed. (there was a discussion post). This will teach you how this metric actually works
 ##### Summary
 The goal is to figure out "what each protein does" (it's function)
+
+
+Note: This is like an oldschool kaggle competition. You submit predictions for the test directly via a tsv (tab separated value) file.
+- so competitors know what the test targets are
 ##### Solutions
 
 (2nd)
@@ -33,6 +38,8 @@ The goal is to figure out "what each protein does" (it's function)
 
 (5th)
 ##### Important notebooks
+getting started and understanding the competition: https://www.kaggle.com/code/gusthema/cafa-5-protein-function-with-tensorflow
+- 
 #### Takeaways
 
 
