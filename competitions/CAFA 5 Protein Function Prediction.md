@@ -1,10 +1,18 @@
 TODO. I am kinda confused. definitely needs more time to look. prob public kernels will help as well
-Link: https://www.kaggle.com/c/cafa-5-protein-function-prediction/leaderboard
-Problem Type: [[Multi-label Classification]]
-Input: 
-**Output:** for each protein, You have to predict the function (aka **GO term ID**) of a set of proteins based on their amino acid sequences and other data. There are thousands of possible classes (i.e. GO term IDs). Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
+**Link:** https://www.kaggle.com/c/cafa-5-protein-function-prediction/leaderboard
+**Problem Type:** [[Multi-label Classification]]
+**Input:** The fasta files for proteins (aka the amino acids that make it up) AND the corresponding GO terms this protein is related with
+- For each GO term, we also learn its aspect:
+	1. Molecular Function (MF)
+	2. Biological Process (BP)
+	3. Cellular Component (CC)
 
-Eval Metric: [[F-score]]
+**Output:** for each protein, return a **set** of **(GO term ID, probability)** for it.
+- A GO term is a protein's function. By returning the set of GO term IDs for the protein, you are saying: "this protein does these set of functions"
+	- note: the probability is the model saying: "This is the probability that this protein has this function"
+- Note: GO means gene ontology
+
+**Eval Metric:** [[F-score]]
 - but the precision and recall (to calculate the F1 score) are weighted via the formulas on page 31 of this paper https://ndownloader.figstatic.com/files/7128245
 
 The maximum F-measure based on the weighted precision and recall will be calculated on each of the three test sets and the final performance measure will be an arithmetic mean of the three maximum F-measures (for MF, BP, and CC). The formulas for computing weighted F-measures are provided in the [supplement](https://ndownloader.figstatic.com/files/7128245) (page 31) of the following [paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1037-6)
@@ -19,6 +27,8 @@ The goal is to figure out "what each protein does" (it's function)
 Note: This is like an oldschool kaggle competition. You submit predictions for the test directly via a tsv (tab separated value) file.
 - so competitors know what the test targets are
 ##### Solutions
+
+- Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
 
 (2nd)
 - https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/434064
@@ -38,8 +48,17 @@ Note: This is like an oldschool kaggle competition. You submit predictions for t
 
 (5th)
 ##### Important notebooks
-getting started and understanding the competition: https://www.kaggle.com/code/gusthema/cafa-5-protein-function-with-tensorflow
-- 
+- getting started and understanding the competition: https://www.kaggle.com/code/gusthema/cafa-5-protein-function-with-tensorflow
+	- the majority of the `GO term Id`s have BPO(Biological Process Ontology) as their aspect.
+	- there are 40,000 GO term IDs
+		- but they only plan to make the model predict the top 1500
+		- they one-hot encode all 1500 into the target array
+	- it is using the train_embeddings = np.load('/kaggle/input/t5embeds/train_embeds.npy') created using this notebook:
+		- https://www.kaggle.com/code/sergeifironov/t5embeds-calculation-only-few-samples
+			- very interesting. They use SeqIO to read the fasta files efficiently (and get the number of sequences efficiently)
+	- I was confused reading the notebook cause I thought the embeddings came from a foundation model, not ones that were trained for the competition labels
+- explaining ia: https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/405237
+	- 
 #### Takeaways
 
 

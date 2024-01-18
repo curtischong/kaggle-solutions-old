@@ -1,8 +1,8 @@
-Link: 
-Problem Type: 
-Input: 
-Output: 
-Eval Metric: 
+**Link:** 
+**Problem Type:** 
+**Input:** 
+**Output:** 
+**Eval Metric:** 
 ##### Summary
 ##### Solutions
 

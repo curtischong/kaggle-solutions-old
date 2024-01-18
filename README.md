@@ -28,3 +28,10 @@ In general:
 - hyperparam tuning won't save you. garbage features => bad predictions
 - winning teams try things that aren't done in the public notebooks.
 - trust your CV, not your ego. Don't get attached to implementations that *should* work
+
+How to review kaggle problems efficiently
+1) read the intro
+2) sort all of the notebooks by most votes (not hottest). this will usually give you an indication of what to do / what the competition is
+3) fill in the objective / input / output fields in the competition template
+4) write down what you learn in the notebook in the popular notebooks
+5) see more notebooks (before the competition end - to figure out what ppl were saying during the competition), or top solutions
