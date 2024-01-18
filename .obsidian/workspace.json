@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eval-functions/RMSE.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eval-functions/RMSE.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eval-functions/RMSE.md",
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eval-functions/RMSE.md"
+                "file": "competitions/CAFA 5 Protein Function Prediction.md"
               }
             }
           }
@@ -147,6 +147,7 @@
   },
   "active": "86bee03d35a1877c",
   "lastOpenFiles": [
+    "eval-functions/RMSE.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "competitions/Linking Writing Processes to Writing Quality.md",
@@ -172,7 +173,6 @@
     "techniques/sliding window.md",
     "techniques/Training own Tokenizer.md",
     "techniques/DBSCAN.md",
-    "techniques/Masked Language Modeling (MLM).md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
