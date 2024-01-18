@@ -1,6 +1,5 @@
-TODO. I am kinda confused. definitely needs more time to look. prob public kernels will help as well
 **Link:** https://www.kaggle.com/c/cafa-5-protein-function-prediction/leaderboard
-**Problem Type:** [[Multi-label Classification]]
+**Problem Type:** [[Multi-label Classification]] [[hierarchical label classification]]
 **Input:**
 - 1) The fasta files for proteins (aka the amino acids that make it up) AND the corresponding GO terms this protein is related with
 	- For each GO term, we also learn its aspect:

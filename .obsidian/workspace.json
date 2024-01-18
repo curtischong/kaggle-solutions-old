@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b03d9caa68090940",
+        "id": "f565f1447d1dd48c",
         "type": "tabs",
         "children": [
           {
-            "id": "67e441d78663312c",
+            "id": "b62a0d413853f0c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -145,11 +145,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67e441d78663312c",
+  "active": "b62a0d413853f0c9",
   "lastOpenFiles": [
-    "Node Classification Task (using GCN).md",
-    "competitions/CAFA 5 Protein Function Prediction.md",
     "Kaggle Grandmaster Tools.md",
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "problem-type/Node Classification Task (using GCN).md",
+    "problem-type/hierarchical label classification.md",
     "techniques/clip outputs to be within range.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "models/Pyboost.md",
@@ -172,7 +173,6 @@
     "techniques/UMAP dimension reduction.md",
     "techniques/Rotational positional embedding.md",
     "techniques/xpos positional encoding.md",
-    "GRU.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
