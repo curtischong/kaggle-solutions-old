@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cross-entrop",
+                "query": "p_term_cond",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -145,16 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b62a0d413853f0c9",
+  "active": "c753b076660de5c7",
   "lastOpenFiles": [
     "Kaggle Grandmaster Tools.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
+    "Don't blindly follow public Kernels.md",
+    "factor analysis.md",
+    "eval-functions/F-score.md",
+    "models/Graph Convolutional Network (GCN).md",
+    "models/GRU.md",
     "problem-type/Node Classification Task (using GCN).md",
     "problem-type/hierarchical label classification.md",
     "techniques/clip outputs to be within range.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "models/Pyboost.md",
-    "models/Graph Convolutional Network (GCN).md",
     "templates/competition template.md",
     "README.md",
     "problem-type/Multi-label Classification.md",
@@ -167,12 +172,8 @@
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "eval-functions/cross-entropy loss.md",
     "cross-entropy loss.md",
-    "F-score.md",
     "techniques/features/dimension reduction for feature generation.md",
-    "factor analysis.md",
     "techniques/UMAP dimension reduction.md",
-    "techniques/Rotational positional embedding.md",
-    "techniques/xpos positional encoding.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

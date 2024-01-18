@@ -5,3 +5,5 @@ Performance:
 - from numba inport jit
 	- @jit(nopython=True)
 - https://github.com/nalepae/pandarallel
+- using cupy as a near drop-in replacement for numpy (to do ops with GPU)
+	- you need to wrangle with cp.cuda.MemoryPool()
