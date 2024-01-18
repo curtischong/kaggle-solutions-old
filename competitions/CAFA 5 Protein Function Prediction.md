@@ -39,63 +39,68 @@ A good solution uses both the fasta file (getting an LLM to make predictions bas
 
 - Note: the classes are hierarchical: A leaf class can ONLY exist if all of its parent classes exist.
 
-(2nd)
-- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/434064
-- solution code: https://github.com/btbpanda/CAFA5-protein-function-prediction-2nd-place
-	- they only did a simple 5-fold CV (nothing else was better)
-	- [[Gradient-Boosted Decision Tree]] improved their models the most (their own [[Pyboost]] framework is super fast)
-	- ### Alternative modelling approach - predicting the conditional probabilities
-		- this is very smart. Basically, when training, for each protein, they tell the model: these are the OGs it is.
-			- but for OGs that are not a parent of a nonzero OG, that value is replaced with NaN, so the model ONLY LEARNS VALID OGs for that protein
-				- the three values are 0, 1, and NaN.
-				- 0 since a parent is technically a superclass of the OG, so if the model can't be as precise and predict the lowest child node, predicting a parent node is still good
-		- calculating the conditional probability is also very smart:
-			- `p_term_raw = p_term_cond * (1 - (1 - p_parent_0_raw) * (1 - p_parent_1_raw) * ... * (1 - p_parent_N_raw))`
-				- and processing the parent nodes first, so the child nodes can use the parent probabilities just makes sense. very cool
-		- tbh I'm not sure what this is. gotta look at the code
-			- in which scenarios is the target 0 or 1?
-			- ik when it's NaN, but itss not clear.
-			- how can setting some values to 0 or 1 set the conditiona probability?
-				- when is something 0???? should it be nan if it's not a child? I just don't understand this part
-			- This is the entire code
-				```python
-							trg = np.zeros((num.shape[0], ont.idxs), dtype=np.float32)
-							np.add.at(trg, (trm_ont['n'].values, trm_ont['id'].values), 1)
-				
-							if args.propagate:
-								propagate_target(trg, ont)
-				
-							# create NaNs from graph
-							for k, node in enumerate(ont.terms_list):
-								adj = node['adj']
-								if len(adj) > 0:
-									na = np.nonzero(np.nansum(trg[:, adj], axis=1) == 0)[0]
-									assert np.nansum(trg[na, k]) == 0, 'Should be empty'
-									trg[na, k] = np.nan
-				```
-				- 
-	- used a [[Graph Convolutional Network (GCN)]] for the [[Node Classification Task (using GCN)]]
-	- postprocessing
-		- [[clip outputs to be within range]]
-			- cutoff_threshold_low = 0.1  # prediction < cutoff_threshold_low will be set to zero (i.e. no need to save to submission file)
-		- by looking at the ontology graph, for the predicted OG, they need make sure that the assigned probability makes sense
-		- so they look up all the parents for the OG.
-			- They need to make sure that the predicted probability is never higher than a probability for a parent
-				- perhaps they get this probability from the training set if it exists
-			- doing this check is important because their models don't take this into account (some aren't aware of the graph relationships)
-
-(4th)
-- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/433732
-	- approach
-		- 1) Prot-T5, ESM2, and Ankh Protein Language Model (PLM) embeddings. We carried out no further modifications or finetuning on the output of PLMs, only conversion to float32 to save memory.
-		- 2) A single binary matrix representing species taxonomy for each protein.
-		- 3) used text information obtained by tf-idf of abstract information from academic papers associated with each protein
-	- from comments:
-		- concatenating ProtBERT sucked
-		- [[dimension reduction for feature generation]] However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
-	- 
-
-(5th)
+- (2nd) graph neural net. comditional probability. gradient boosted trees just hardcore stuff
+	- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/434064
+	- solution code: https://github.com/btbpanda/CAFA5-protein-function-prediction-2nd-place
+		- they only did a simple 5-fold CV (nothing else was better)
+		- [[Gradient-Boosted Decision Tree]] improved their models the most (their own [[Pyboost]] framework is super fast)
+		- ### Alternative modelling approach - predicting the conditional probabilities
+			- this is very smart. Basically, when training, for each protein, they tell the model: these are the OGs it is.
+				- but for OGs that are not a parent of a nonzero OG, that value is replaced with NaN, so the model ONLY LEARNS VALID OGs for that protein
+					- the three values are 0, 1, and NaN.
+					- 0 since a parent is technically a superclass of the OG, so if the model can't be as precise and predict the lowest child node, predicting a parent node is still good
+			- calculating the conditional probability is also very smart:
+				- `p_term_raw = p_term_cond * (1 - (1 - p_parent_0_raw) * (1 - p_parent_1_raw) * ... * (1 - p_parent_N_raw))`
+					- and processing the parent nodes first, so the child nodes can use the parent probabilities just makes sense. very cool
+			- tbh I'm not sure what this is. gotta look at the code
+				- in which scenarios is the target 0 or 1?
+				- ik when it's NaN, but itss not clear.
+				- how can setting some values to 0 or 1 set the conditiona probability?
+					- when is something 0???? should it be nan if it's not a child? I just don't understand this part
+				- This is the entire code
+					```python
+								trg = np.zeros((num.shape[0], ont.idxs), dtype=np.float32)
+								np.add.at(trg, (trm_ont['n'].values, trm_ont['id'].values), 1)
+					
+								if args.propagate:
+									propagate_target(trg, ont)
+					
+								# create NaNs from graph
+								for k, node in enumerate(ont.terms_list):
+									adj = node['adj']
+									if len(adj) > 0:
+										na = np.nonzero(np.nansum(trg[:, adj], axis=1) == 0)[0]
+										assert np.nansum(trg[na, k]) == 0, 'Should be empty'
+										trg[na, k] = np.nan
+					```
+					- I'm not sure what trm_ont['n'].values means. This code is hard to understand without running
+		- used a [[Graph Convolutional Network (GCN)]] for the [[Node Classification Task (using GCN)]]
+		- postprocessing
+			- [[clip outputs to be within range]]
+				- cutoff_threshold_low = 0.1  # prediction < cutoff_threshold_low will be set to zero (i.e. no need to save to submission file)
+			- by looking at the ontology graph, for the predicted OG, they need make sure that the assigned probability makes sense
+			- so they look up all the parents for the OG.
+				- They need to make sure that the predicted probability is never higher than a probability for a parent
+					- perhaps they get this probability from the training set if it exists
+				- doing this check is important because their models don't take this into account (some aren't aware of the graph relationships)
+- (3rd)
+	- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/464437
+	- in addition to the ground truth GO labels, there are other GO labels that were computationally hypothesized (non experimental)
+		- sicne these aren't confirmed, he used them as additional training features, rather than as the target
+	- Since the test_x will be experimentally validated in the future, he treated the train/validation/private test split like it was time series data
+		- ![[Pasted image 20240118135554.png]]
+		- This feels weird, but I guess it doesn't matter, cause as long as the validation data is diff form your train it's goo.d but it's weird since you might not be validating your model properly (the metric may not be stable since it's a bit shifted from your train data)
+			- but I guess he had to do it this way, cause he knows that in the future, the test (private) data might be collected with more precision, so the drift is expected
+- (4th)
+	- https://www.kaggle.com/competitions/cafa-5-protein-function-prediction/discussion/433732
+		- approach
+			- 1) Prot-T5, ESM2, and Ankh Protein Language Model (PLM) embeddings. We carried out no further modifications or finetuning on the output of PLMs, only conversion to float32 to save memory.
+			- 2) A single binary matrix representing species taxonomy for each protein.
+			- 3) used text information obtained by tf-idf of abstract information from academic papers associated with each protein
+		- from comments:
+			- concatenating ProtBERT sucked
+			- [[dimension reduction for feature generation]] However, when I reduced the dimensions of ProtBERT to 3dims using [[UMAP dimension reduction]]/tSNE and added it, the score improved
+		- 
 ##### Important notebooks
 - getting started and understanding the competition: https://www.kaggle.com/code/gusthema/cafa-5-protein-function-with-tensorflow
 	- the majority of the `GO term Id`s have BPO(Biological Process Ontology) as their aspect.

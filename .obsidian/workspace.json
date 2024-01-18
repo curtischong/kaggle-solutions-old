@@ -148,6 +148,7 @@
   },
   "active": "b62a0d413853f0c9",
   "lastOpenFiles": [
+    "Pasted image 20240118135554.png",
     "README.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "Kaggle Grandmaster Tools.md",
@@ -173,7 +174,6 @@
     "eval-functions/cross-entropy loss.md",
     "cross-entropy loss.md",
     "techniques/features/dimension reduction for feature generation.md",
-    "techniques/UMAP dimension reduction.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
