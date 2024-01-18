@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7c1c4a2494c10267",
+        "id": "b03d9caa68090940",
         "type": "tabs",
         "children": [
           {
-            "id": "fc4a19881f826000",
+            "id": "67e441d78663312c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0916886c2e7d049a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Node Classification Task.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "Node Classification Task.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "Node Classification Task.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md"
+                "file": "Node Classification Task.md"
               }
             }
           }
@@ -145,10 +158,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc4a19881f826000",
+  "active": "0916886c2e7d049a",
   "lastOpenFiles": [
-    "templates/competition template.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
+    "Node Classification Task.md",
+    "Kaggle Grandmaster Tools.md",
+    "techniques/clip outputs to be within range.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "models/Pyboost.md",
+    "models/Graph Convolutional Network (GCN).md",
+    "templates/competition template.md",
     "README.md",
     "problem-type/Multi-label Classification.md",
     "eval-functions/RMSE.md",
@@ -156,7 +175,6 @@
     "competitions/Linking Writing Processes to Writing Quality.md",
     "competitions/Mechanisms of Action (MoA) Prediction.md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "eval-functions/cross-entropy loss.md",
@@ -168,11 +186,6 @@
     "techniques/Rotational positional embedding.md",
     "techniques/xpos positional encoding.md",
     "GRU.md",
-    "techniques/absolute positional embedding.md",
-    "techniques/models/Squeeze-and-Excitation layer.md",
-    "techniques/mean-shift clustering.md",
-    "techniques/Multiple Instance Learning.md",
-    "techniques/singular value decomposition.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
