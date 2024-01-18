@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "139563b223769618",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef33f99cebd72b1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "eval-functions/Spearman's correlation Coefficient.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/Spearman's correlation Coefficient.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "file": "eval-functions/Spearman's correlation Coefficient.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/CAFA 5 Protein Function Prediction.md"
+                "file": "eval-functions/Spearman's correlation Coefficient.md"
               }
             }
           }
@@ -146,11 +171,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b62a0d413853f0c9",
+  "active": "ef33f99cebd72b1a",
   "lastOpenFiles": [
-    "Pasted image 20240118135554.png",
+    "Novozymes Enzyme Stability Prediction.md",
+    "eval-functions/Spearman's correlation Coefficient.md",
     "README.md",
+    "Untitled.md",
     "competitions/CAFA 5 Protein Function Prediction.md",
+    "Pasted image 20240118135554.png",
     "Kaggle Grandmaster Tools.md",
     "Don't blindly follow public Kernels.md",
     "factor analysis.md",
@@ -172,8 +200,6 @@
     "competitions/Stanford Ribonanza RNA Folding.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "eval-functions/cross-entropy loss.md",
-    "cross-entropy loss.md",
-    "techniques/features/dimension reduction for feature generation.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
@@ -186,7 +212,6 @@
     "assets/Pasted image 20240113011148.png",
     "assets/Pasted image 20240113145106.png",
     "assets/Pasted image 20240113171954.png",
-    "assets/Pasted image 20240114143837.png",
     "techniques/features",
     "models",
     "assets",
