@@ -49,7 +49,7 @@ glossary:
 			- these disrupt the optimization
 	- network architecture
 		-  for the graph convolutional layer itself:
-			- SAGEConv was good
+			- [[SAGEConv]] was good
 				- GAT variants didn't work (Graph attention)
 			- but self-channel attention and cross-config attention was good
 		- [[Squeeze-and-Excitation layer]]

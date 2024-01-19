@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f3d148b1722a9118",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "models/layers/SAGEConv.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "models/layers/SAGEConv.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "models/layers/SAGEConv.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
+                "file": "models/layers/SAGEConv.md"
               }
             }
           }
@@ -145,11 +158,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50dc5f15788c1565",
+  "active": "f3d148b1722a9118",
   "lastOpenFiles": [
+    "GraphSAGE.md",
+    "Pasted image 20240119120515.png",
+    "models/layers/SAGEConv.md",
+    "Untitled.md",
+    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "Pasted image 20240119021535.png",
     "README.md",
-    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "models/layers/Squeezeformer layer.md",
     "models/layers/Squeeze-and-Excitation layer.md",
     "models/layers/Convolutional Block Attention Module (CBAM).md",
@@ -163,8 +180,6 @@
     "assets/Pasted image 20240119013831.png",
     "assets/Pasted image 20240119013727.png",
     "assets/Pasted image 20240119013653.png",
-    "assets/Pasted image 20240119010033.png",
-    "assets/Pasted image 20240119010046.png",
     "techniques/placeholder for invalid values.md",
     "techniques/use a single embedding matrix.md",
     "techniques/data compression.md",
@@ -181,9 +196,6 @@
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
     "competitions/NeurIPS 2023 - Machine Unlearning.md",
     "competitions/Mechanisms of Action (MoA) Prediction.md",
-    "competitions/Child Mind Institute - Detect Sleep States.md",
-    "Kaggle Grandmaster Tools.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

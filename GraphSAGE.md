@@ -1,0 +1,28 @@
+- https://www.youtube.com/watch?v=LLUxwHc7O4A
+	- ![[Pasted image 20240119120515.png]]
+	- when we aggregate, we can take in the features of our neighbours AND our neighbour's neighbours
+		- and the feature. vector of ourself! notice how the feature vector for 0 is fed into the three lowest convolution blocks
+	- "A 2-layer GNN generates embedding of node 0 using 2-hop neighbourhood structure and features"
+	- this changed how we thought of neural nets
+		- before, we could only have graphs of 5k nodes cause they didn't use a node aggregation function
+		- but now, batches of node neighbourhoods can be put into the GPU, so we don't need to care about the rest of the graph.
+		- This gave us the ability to process much larger graphs
+- Here's how we can perform stochastic gradient descent:
+	- 1) randomly sample M << N nodes to put into our minibatch
+	- 2) generate the computation graph for all M nodes and put into our minibatch
+	- 3) compute loss and get our gradients!
+- but this is compute intensive cause
+	- 1) for each node, we need to get the computation graph
+		- but increasing hops increases the number of nodes exponentially
+	- 2) if we hit a hub node, we're screwed
+- Solution: use neighbourhood sampling
+	- we just sample at most H neighbours when doing the calculation (instead of every neighbour)
+		- we are capping the fan-out by H
+	- 3 remarks
+		- choosing H is a tradeoff for accuracy vs training time
+		- H doesn't change the fact that fan-out is exponential
+		- random sampling of neighbours may not be optimal
+			- we can use random walk with restarts
+				- basically, the random walk will score each node (prob based on its features)
+					- we perform a few of these random walks
+				- then we just sample the neighbouring nodes with the highest scores
