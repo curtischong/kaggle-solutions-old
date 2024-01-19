@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d1aa552ee6724653",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "techniques/models/Squeeze-and-Excitation layer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "techniques/models/Squeeze-and-Excitation layer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "techniques/models/Squeeze-and-Excitation layer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
+                "file": "techniques/models/Squeeze-and-Excitation layer.md"
               }
             }
           }
@@ -145,10 +158,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b7ae020beb44dab",
+  "active": "d1aa552ee6724653",
   "lastOpenFiles": [
-    "techniques/placeholder for invalid values.md",
+    "Pasted image 20240119012140.png",
+    "Pasted image 20240119011727.png",
+    "Pasted image 20240119011558.png",
+    "techniques/models/Squeeze-and-Excitation layer.md",
+    "Pasted image 20240119011528.png",
+    "Pasted image 20240119011501.png",
+    "Pasted image 20240119011400.png",
+    "Pasted image 20240119010806.png",
+    "Pasted image 20240119010703.png",
+    "Pasted image 20240119010046.png",
+    "Pasted image 20240119010033.png",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "techniques/placeholder for invalid values.md",
     "techniques/use a single embedding matrix.md",
     "techniques/data compression.md",
     "All Competitions.md",
@@ -172,20 +196,9 @@
     "Don't blindly follow public Kernels.md",
     "techniques/factor analysis.md",
     "assets/Pasted image 20240118135554.png",
-    "assets/Pasted image 20240118171728.png",
-    "competitions/CAFA 5 Protein Function Prediction.md",
-    "eval-functions/Pearson's Correlation Coefficient.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
-    "assets/Pasted image 20240114191810.png",
-    "Pasted image 20240114191805.png",
-    "assets/Pasted image 20240114150324.png",
-    "assets/Pasted image 20240114142212.png",
-    "assets/Pasted image 20240113111631.png",
-    "assets/Pasted image 20240113111356.png",
-    "assets/Pasted image 20240113011148.png",
-    "assets/Pasted image 20240113145106.png",
     "techniques/features",
     "models",
     "assets",

@@ -47,6 +47,12 @@ glossary:
 		- They used `StandardScaler` for these features: `node_feat[:134]`
 			- cause some features were `*_sum` and `*_product`, which can have high values
 			- these disrupt the optimization
+	- network architecture
+		-  for the graph convolutional layer itself:
+			- SAGEConv was good
+				- GAT variants didn't work (Graph attention)
+			- but self-channel attention and cross-config attention was good
+		- [[Squeeze-and-Excitation layer]]
 	[[PairwiseHingeLoss]]
 	
 
