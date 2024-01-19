@@ -33,7 +33,14 @@
 		- I assume it's the difference between tm and (mutation coord - enzym center cord) in the train data
 	- this was the code he used to create the graph from the pdb (3D coords of protein) files:
 		- https://www.kaggle.com/code/gyozzza/create-graph-data-from-pdb-files-for-gnn
-
+		- how it works:
+			- each node in the graph is an amino acid in the pdb file (which tells us its xyz)
+			- 1) for each protein, create the distance matrix, which is the euclidian distance between any two amino acids in the protein
+				- 2) get the adjacency mat for amino acids if their distance is < a threshold:
+				- `adj = distance_matrix < distance_threshold`
+				- `u, v = np.nonzero(adj)`
+			- 3)
+		- uses https://www.dgl.ai/
 ##### Important notebooks/discussions
 - EDA and explaining what this competition is
 	- https://www.kaggle.com/code/dschettler8845/novo-esp-eda-baseline

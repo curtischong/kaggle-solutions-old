@@ -7,3 +7,6 @@ Performance:
 - https://github.com/nalepae/pandarallel
 - using cupy as a near drop-in replacement for numpy (to do ops with GPU)
 	- you need to wrangle with cp.cuda.MemoryPool()
+
+[[Graph Convolutional Network (GCN)]]
+- https://www.dgl.ai/

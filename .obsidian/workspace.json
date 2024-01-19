@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Novozymes Enzyme Stability Prediction.md",
+                "file": "Kaggle Grandmaster Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Novozymes Enzyme Stability Prediction.md",
+                "file": "Kaggle Grandmaster Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Novozymes Enzyme Stability Prediction.md",
+                "file": "Kaggle Grandmaster Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Novozymes Enzyme Stability Prediction.md"
+                "file": "Kaggle Grandmaster Tools.md"
               }
             }
           }
@@ -147,34 +147,34 @@
   },
   "active": "f95e8280a4b2b52d",
   "lastOpenFiles": [
+    "competitions/Novozymes Enzyme Stability Prediction.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "competitions/Linking Writing Processes to Writing Quality.md",
+    "competitions/Child Mind Institute - Detect Sleep States.md",
+    "Kaggle Grandmaster Tools.md",
+    "models/Graph Convolutional Network (GCN).md",
     "eval-functions/Spearman's correlation Coefficient.md",
     "README.md",
     "Don't blindly follow public Kernels.md",
     "techniques/factor analysis.md",
     "All Competitions.md",
     "Untitled.md",
-    "competitions/Novozymes Enzyme Stability Prediction.md",
     "assets/Pasted image 20240118135554.png",
     "assets/Pasted image 20240118171728.png",
     "competitions/CAFA 5 Protein Function Prediction.md",
     "eval-functions/Pearson's Correlation Coefficient.md",
-    "Kaggle Grandmaster Tools.md",
     "eval-functions/F-score.md",
-    "models/Graph Convolutional Network (GCN).md",
     "models/GRU.md",
     "problem-type/Node Classification Task (using GCN).md",
     "problem-type/hierarchical label classification.md",
     "techniques/clip outputs to be within range.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
     "models/Pyboost.md",
     "templates/competition template.md",
     "problem-type/Multi-label Classification.md",
     "eval-functions/RMSE.md",
-    "competitions/Child Mind Institute - Detect Sleep States.md",
-    "competitions/Linking Writing Processes to Writing Quality.md",
     "competitions/Mechanisms of Action (MoA) Prediction.md",
-    "competitions/NeurIPS 2023 - Machine Unlearning.md",
-    "competitions/Stanford Ribonanza RNA Folding.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
