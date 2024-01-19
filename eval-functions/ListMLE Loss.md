@@ -1,8 +1,7 @@
 - Listwise Maximum Likelihood Estimation.
 - Use for [[learning to rank]]:
-	- $$ListMLELoss = -\sum y_i * \log(\text{softmax}(\hat{y_i}))$$
-	- `yi` is typically the ground truth relevance score or label of the i-th item in the list.
-	- note that softmax($\hat{y_i}$) is the model's guess of the probability of the score for the ith item
+	- ![[Pasted image 20240119184214.png]]
+	- The above probability is defined according to PlackettLuce model.
 - the loss is minimized when we maximize the probability of the observed ranking.
 - more info: https://notesonai.com/ListNet+and+ListMLE
 - nice github repo: https://github.com/allegro/allRank/tree/master

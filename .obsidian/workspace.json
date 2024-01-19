@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eval-functions/ListMLE Loss.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "91fe010bfa6c27fa",
+            "id": "e5da24838b0c986d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAPE loss.md",
+                "file": "eval-functions/ListMLE Loss.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MAPE loss.md",
+                "file": "eval-functions/ListMLE Loss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MAPE loss.md",
+                "file": "eval-functions/ListMLE Loss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MAPE loss.md"
+                "file": "eval-functions/ListMLE Loss.md"
               }
             }
           }
@@ -159,14 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "91fe010bfa6c27fa",
+  "active": "e5da24838b0c986d",
   "lastOpenFiles": [
-    "eval-functions/ListMLE Loss.md",
-    "MAPE loss.md",
+    "Pasted image 20240119184214.png",
     "README.md",
-    "problem-type/learning to rank.md",
+    "Online hard negative mining.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "eval-functions/ListMLE Loss.md",
     "eval-functions/Kendall Tau correlation.md",
+    "MAPE loss.md",
+    "problem-type/learning to rank.md",
     "eval-functions/PairwiseHingeLoss.md",
     "eval-functions/HingeLoss.md",
     "problem-type/binary classification.md",
@@ -197,8 +199,6 @@
     "assets/Pasted image 20240119013831.png",
     "techniques/placeholder for invalid values.md",
     "techniques/use a single embedding matrix.md",
-    "techniques/data compression.md",
-    "All Competitions.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

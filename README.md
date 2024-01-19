@@ -42,7 +42,7 @@ How to review kaggle problems efficiently
 4) write down what you learn in the notebook in the popular notebooks
 5) see more notebooks (before the competition end - to figure out what ppl were saying during the competition), or top solutions
 
-If you want to search for winnin solutions using a technique, search for:
+If you want to search for winning solutions using a technique, search for:
 "kaggle 2nd place solution conditional probability"
 - and iterate the "2nd"
 
