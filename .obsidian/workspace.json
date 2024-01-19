@@ -4,69 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "848d92520e607e4f",
+        "id": "6fc1f39c539de2cb",
         "type": "tabs",
         "children": [
           {
-            "id": "a6510a98568b704a",
+            "id": "a05942e1e386bc7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "models/activation functions/activation functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83e2a1ef127fe2d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "models/activation functions/ELU (Exponential Linear Unit).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b753d3aafd15eb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "models/activation functions/Gaussian Error Linear Unit (GELU).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "592c349e390c8233",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/Pasted image 20240119143612.png"
-              }
-            }
-          },
-          {
-            "id": "974761e60900d4da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "models/activation functions/Gaussian Error Linear Unit (GELU).md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/Pasted image 20240119143612.png",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/Pasted image 20240119143612.png",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/Pasted image 20240119143612.png"
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
               }
             }
           }
@@ -192,23 +145,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "592c349e390c8233",
+  "active": "a05942e1e386bc7a",
   "lastOpenFiles": [
-    "Untitled.md",
-    "assets/Pasted image 20240119143612.png",
-    "models/activation functions/Gaussian Error Linear Unit (GELU).md",
+    "eval-functions/Kendall Tau correlation.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "eval-functions/PairwiseHingeLoss.md",
+    "problem-type/ranking problems.md",
+    "eval-functions/HingeLoss.md",
+    "problem-type/binary classification.md",
+    "models/activation functions/activation functions.md",
+    "models/activation functions/Gaussian Error Linear Unit (GELU).md",
     "models/activation functions/ELU (Exponential Linear Unit).md",
+    "Kaggle Grandmaster Tools.md",
+    "assets/Pasted image 20240119145024.png",
+    "assets/Pasted image 20240119143612.png",
+    "Untitled.md",
     "techniques/DBSCAN.md",
     "models/activation functions/Swish.md",
     "models/activation functions",
-    "models/activation functions/activation functions.md",
     "models/layers/Convolutional Block Attention Module (CBAM).md",
     "models/layers/Squeeze-and-Excitation layer.md",
     "models/LSTM.md",
     "models/GraphSAGE.md",
     "assets/Pasted image 20240119120515.png",
-    "Kaggle Grandmaster Tools.md",
     "assets/Pasted image 20240119021535.png",
     "models/layers/SAGEConv.md",
     "README.md",
@@ -221,16 +180,11 @@
     "assets/Pasted image 20240119014321.png",
     "assets/Pasted image 20240119014119.png",
     "assets/Pasted image 20240119013831.png",
-    "assets/Pasted image 20240119013727.png",
     "techniques/placeholder for invalid values.md",
     "techniques/use a single embedding matrix.md",
     "techniques/data compression.md",
     "All Competitions.md",
     "models/graph isomorphism network.md",
-    "competitions/Linking Writing Processes to Writing Quality.md",
-    "eval-functions/Kendall Tau correlation.md",
-    "eval-functions/PairwiseHingeLoss.md",
-    "techniques/speedup iteration.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
