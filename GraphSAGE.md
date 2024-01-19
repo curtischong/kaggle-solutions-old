@@ -4,9 +4,12 @@
 		- and the feature. vector of ourself! notice how the feature vector for 0 is fed into the three lowest convolution blocks
 	- "A 2-layer GNN generates embedding of node 0 using 2-hop neighbourhood structure and features"
 	- this changed how we thought of neural nets
-		- before, we could only have graphs of 5k nodes cause they didn't use a node aggregation function
+		- before, GNNs needed the entire graph to make prediction about a single node
+			- older GNNs were also limited to making predictions on nodes that were there during the training phase
 		- but now, batches of node neighbourhoods can be put into the GPU, so we don't need to care about the rest of the graph.
-		- This gave us the ability to process much larger graphs
+		- This gave us the ability to process:
+			- 1) much larger graphs, and
+			- 2) structures that weren't there during training
 - Here's how we can perform stochastic gradient descent:
 	- 1) randomly sample M << N nodes to put into our minibatch
 	- 2) generate the computation graph for all M nodes and put into our minibatch

@@ -1,1 +1,1 @@
-better than [[GraphSAGE]] cause 
+The conv layer that [[GraphSAGE]] uses
