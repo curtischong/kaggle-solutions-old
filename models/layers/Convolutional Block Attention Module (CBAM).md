@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=lpFufRf9jFI
 	- if you give the model the ability to learn that specific areas are more important than others, then hopefully we'll get a better result
 - the authors realized that applying a channel attention module before spatial attention modules works the best
 	- no intuition, just emperical trials
-- first explaining the channel attention module:
+- **How the channel attention module works:**
 	- ![[Pasted image 20240119013448.png]]
 	- ![[Pasted image 20240119013653.png]]
 		- first do avg pool and max pool to get representations of layers
@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=lpFufRf9jFI
 		- but ultimately, we need a single value that determines which channel is more important than others, so we sum it all and use a sigmoid 
 		- ![[Pasted image 20240119013831.png]]
 	- this feels like [[Squeeze-and-Excitation layer]], but there's an added maxpool (so we get more information about individual channels before the shared MLP)
--  now explaining the channel attention module
+-  **How the spatial attention module works:**
 	- ![[Pasted image 20240119014119.png]]
 	- first apply avg pool and max pool
 		- but unlike before, we're doing these avg pool per pixel (across channels)

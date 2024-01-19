@@ -19,7 +19,7 @@ glossary:
 		- They noticed that only `Convolution`, `Dot` and `Reshape` were configurable nodes
 		- So their pruning strat was: for each graph, only keep the nodes that were either configurable models themselves or were connected to a configurable node
 		- this reduced vram usage by 4x and increased training speed by 5x
-	- deduplication: they found that configs for different network layouts had many dupications
+	- deduplication: they found that configs for different network layouts had many duplications
 		- and "the runtime for the duplicated configs can vary quite a bit and make training less stable"
 		- why would the runtime be different if they were the same?
 			- probably because of page faults? or leaky memory in their computer?
