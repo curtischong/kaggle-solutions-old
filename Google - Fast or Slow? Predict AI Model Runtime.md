@@ -53,6 +53,39 @@ glossary:
 				- GAT variants didn't work (Graph attention)
 			- but self-channel attention and cross-config attention was good
 		- [[Squeeze-and-Excitation layer]]
+		- crossConfigAttention
+			- Another dimension that we can exploit attention is the batch plane (cross-configs). We designed a very simple block that allows the model to explicitly "compare" each config against the others throughout the network. We found this to be much better than letting the model infer for each config individually and only compare them implicitly via the loss function (`PairwiseHingeLoss`). The attention code is as follows:
+				- code
+					```python
+					class CrossConfigAttention(nn.Module):
+					    def __init__(self):
+					        super().__init__()
+					        self.temperature = nn.Parameter(torch.tensor(0.5))
+					
+					    def forward(self, x):
+					        # x of shape (nb_configs, nb_nodes, nb_features)
+					        scores = (x / self.temperature).softmax(dim=0)
+					        x = x * scores
+					        return x
+					```
+
+			- By applying this simple layer after the self-channel attention at every block of the network, it gave us a huge boost for default collections.
+			- it's applied like so:
+				- ![[Pasted image 20240119021535.png]]
+			- Note: the output of the forward layer is (nb_configs, nb_nodes, nb_features) since multiplication and sigmoid are scalar operations
+				- cause dim=0 means: This operation will get probabilities that sum up to 1 across the dimension 0
+			- I'm not sure why they concat the cross attention with the self channel attention. I don't think they need to do that?
+				- oh it's answered: (we concat the output with its input to preserve the individuality of each sample)
+			- note that they do: `scores = (x / self.temperature)`
+				- but I think that scores = (x * self.temperature) works as well since self.temperature is used once.
+	- However, since the prediction depends on the batch, we can leverage it further by applying TTA (Test Time Augmentation) to generate `N` (10) permutations of the configs and average the result after sorting it back to the original order.
+		- I think the author is saying: inferencing is unstable. So to get better answers, we generate 10 permutations of the same config, then average the result, so the inferred value is smoohter.
+		- but I don't get it. ppl usually say this when ensembling, not "in a layer". also why does he mention batch size during inference?
+		- https://github.com/thanhhau097/google_fast_or_slow/blob/626c463dfb02abd739616773ca74f34e38635c71/dataset.py#L441
+			- I think he just means that he's enssembling the results 10 times
+			- he does: # shuffle runtime and config feats
+				- https://github.com/thanhhau097/google_fast_or_slow/blob/626c463dfb02abd739616773ca74f34e38635c71/dataset.py#L490
+	- To create our Linear/Conv blocks we followed the good practices in computer vision. We start by using `InstanceNorm` to normalise the input feature map, followed by `Linear`/`SAGEConv` layer, `SelfChannelAttetion` and `CrossConfigAttetion` (we concat the output with its input to preserve the individuality of each sample). Then, we sum the residual connection and finish with `GELU` and dropout.
 	[[PairwiseHingeLoss]]
 	
 

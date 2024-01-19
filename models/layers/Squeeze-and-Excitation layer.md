@@ -30,7 +30,8 @@
 		- Here's how to organize your layers with squeeze and excite if you have residual layers:
 			- ![[Pasted image 20240119012140.png]]
 		- What are good values of r???
-			- 
+			- https://towardsdatascience.com/review-senet-squeeze-and-excitation-network-winner-of-ilsvrc-2017-image-classification-a887b98b2883
+			- try values between 4 to 32. They found that 16 was good
 - https://www.youtube.com/watch?v=AlaAU3PawHI
 	![[Pasted image 20240119010033.png]]
 	- note: the global average pooling is simple, but works (can be replaced with more complicated one)

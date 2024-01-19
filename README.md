@@ -13,6 +13,9 @@ Why study Kaggle competitions?
 - Many people iterate on the same problem -> better ideas
 - It's a competition, so people try a lot harder to figure out what works/doesn't
 - They aren't motivated to only show positive results. People will talk about their failures as well
+- People will post their code. So if there's something confusing, you can read the implementation to fully understand it
+- Kaggle writeups are simpler to read than papers.
+- Writeups will self-select important topics for you to learn more about, especially if you see it between competitions
 
 Why use this resource:
 - I looked at each competition holistically, scouring discussions as if I were actually competing
