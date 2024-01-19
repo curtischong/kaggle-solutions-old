@@ -1,0 +1,5 @@
+- Listwise Maximum Likelihood Estimation.
+- Use for [[learning to rank]]:
+	- $$ListMLELoss = -\sum y_i * \log(P(y_i))$$
+	- Where P(yi) is the probability of the i-th item being at its current position in the ranked list
+- the loss is minimized when we maximize the probability of the observed ranking.

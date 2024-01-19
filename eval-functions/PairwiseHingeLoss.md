@@ -9,4 +9,4 @@
 	- `score_u` is the predicted score for the positive instance
 	- `score_v` is the predicted score for the negative instance
 - notice how the larger the gap between `score_u` and `score_v` results in a lower loss!
-- since the loss depends on two scores, it's used for [[ranking problems]]
+- since the loss depends on two scores, it's used for [[learning to rank]]

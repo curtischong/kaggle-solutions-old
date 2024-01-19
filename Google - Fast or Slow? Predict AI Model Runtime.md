@@ -88,6 +88,27 @@ glossary:
 		- To create our Linear/Conv blocks we followed the good practices in computer vision. We start by using `InstanceNorm` to normalise the input feature map, followed by `Linear`/[[SAGEConv]] layer, `SelfChannelAttetion` and `CrossConfigAttetion` (we concat the output with its input to preserve the individuality of each sample). Then, we sum the residual connection and finish with [[Gaussian Error Linear Unit (GELU)]] and dropout.
 		[[PairwiseHingeLoss]]
 - (2nd)
+	- data cleaning
+		- like (1st), they found duplicated configs (with diff runtimes). so they deduped them, and keept the config that had the lowest runtime
+		- didn't use unet graphs cause `unet_3d.4x4.bf16` was badly corrupted
+		- they repackaged each NPZ so that each config+runtime measurement could be loaded without needing to load the entire NPZ
+	- model
+		- All GNN layers are SageConv layers with residual connections whenever the number of input and output channels are the same.
+		- Features produced by the GNN layer stack are transformed to one value per node and then sum-reduced to form a single graph-wise prediction.
+			- not sure what sum-reduced means. but probably mean?
+	- training
+		- Models trained with a ranking loss (ListMLE, MarginRankingLoss) heavily outperformed element-wise losses (MAPE, etc).
+		- "The batch is organized into 2 levels of hierarchy: the upper level is different graphs, and the lower level is the same graph and different configurations, grouped in microbatches of the same size (also known as slates)"
+			- todo: understand
+		- hyperparams
+			1. Adam/AdamW optimizer,
+			2. Learning rate 1e-3,
+			3. 400k iterations,
+			4. Step learning rate scheduler at 240k, 280k, 320k, and 360k by factor of `1/sqrt(10)`.
+		- Losses used for training:
+			1. [[ListMLE Loss]] for Layout-NLP,
+			2. A novel DiffMat loss for Tile,
+			3. For Layout-XLA, it is a combination of 2 losses: the DiffMat loss and MAPE loss.
 
 ##### Important notebooks/discussions
 - understanding the competition

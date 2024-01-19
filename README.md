@@ -45,3 +45,6 @@ How to review kaggle problems efficiently
 If you want to search for winnin solutions using a technique, search for:
 "kaggle 2nd place solution conditional probability"
 - and iterate the "2nd"
+
+
+https://notesonai.com/ is also a cool resource

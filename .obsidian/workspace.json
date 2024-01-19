@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "problem-type/learning to rank.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "351c422bbfc34e7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "p_term_cond",
+                "query": "rank",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "problem-type/learning to rank.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "problem-type/learning to rank.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
+                "file": "problem-type/learning to rank.md"
               }
             }
           }
@@ -147,10 +160,12 @@
   },
   "active": "a05942e1e386bc7a",
   "lastOpenFiles": [
-    "eval-functions/Kendall Tau correlation.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "README.md",
+    "eval-functions/ListMLE Loss.md",
+    "eval-functions/Kendall Tau correlation.md",
     "eval-functions/PairwiseHingeLoss.md",
-    "problem-type/ranking problems.md",
+    "problem-type/learning to rank.md",
     "eval-functions/HingeLoss.md",
     "problem-type/binary classification.md",
     "models/activation functions/activation functions.md",
@@ -170,7 +185,6 @@
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",
     "models/layers/SAGEConv.md",
-    "README.md",
     "models/layers/Squeezeformer layer.md",
     "models/Graph Convolutional Network (GCN).md",
     "models/layers",
@@ -184,7 +198,6 @@
     "techniques/use a single embedding matrix.md",
     "techniques/data compression.md",
     "All Competitions.md",
-    "models/graph isomorphism network.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
