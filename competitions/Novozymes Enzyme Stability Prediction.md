@@ -1,5 +1,5 @@
 **Link:** https://www.kaggle.com/c/novozymes-enzyme-stability-prediction
-**Problem Type:** 
+**Problem Type:** [[ordering objects in list]]
 **Input:** 
 - you also get alphafold2 predictions (wildtype) of the enzyme variants
 	- these variants are found via "point amino acid mutation and deletion"
@@ -41,6 +41,9 @@
 				- `u, v = np.nonzero(adj)`
 			- 3)
 		- uses https://www.dgl.ai/
+	- I don't understand what they mean when they say that htey are using a [[graph isomorphism network]].
+		- are they comparing the mutation of the enzyme to the original enzyme, and using the original enzyme as a reference for the mutation, so that the tm value is just an offset of the tm of the original enzyme?
+		- I guess training an IGN outputs an embedding that represents the graph. now that they have an embedding, they can use it as a feature vector for downstream models
 ##### Important notebooks/discussions
 - EDA and explaining what this competition is
 	- https://www.kaggle.com/code/dschettler8845/novo-esp-eda-baseline

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f565f1447d1dd48c",
+        "id": "6efe5dbe09d5f1cb",
         "type": "tabs",
         "children": [
           {
-            "id": "f95e8280a4b2b52d",
+            "id": "915ed5a747de7f10",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md",
+                "file": "problem-type/ordering objects in list.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md",
+                "file": "problem-type/ordering objects in list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md",
+                "file": "problem-type/ordering objects in list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md"
+                "file": "problem-type/ordering objects in list.md"
               }
             }
           }
@@ -145,22 +145,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f95e8280a4b2b52d",
+  "active": "915ed5a747de7f10",
   "lastOpenFiles": [
     "competitions/Novozymes Enzyme Stability Prediction.md",
-    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "problem-type/ordering objects in list.md",
     "competitions/Stanford Ribonanza RNA Folding.md",
     "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "README.md",
+    "graph isomorphism network.md",
+    "competitions/NeurIPS 2023 - Machine Unlearning.md",
+    "competitions/Mechanisms of Action (MoA) Prediction.md",
     "competitions/Linking Writing Processes to Writing Quality.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "Kaggle Grandmaster Tools.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
     "models/Graph Convolutional Network (GCN).md",
     "eval-functions/Spearman's correlation Coefficient.md",
-    "README.md",
     "Don't blindly follow public Kernels.md",
     "techniques/factor analysis.md",
     "All Competitions.md",
-    "Untitled.md",
     "assets/Pasted image 20240118135554.png",
     "assets/Pasted image 20240118171728.png",
     "competitions/CAFA 5 Protein Function Prediction.md",
@@ -171,10 +175,6 @@
     "problem-type/hierarchical label classification.md",
     "techniques/clip outputs to be within range.md",
     "models/Pyboost.md",
-    "templates/competition template.md",
-    "problem-type/Multi-label Classification.md",
-    "eval-functions/RMSE.md",
-    "competitions/Mechanisms of Action (MoA) Prediction.md",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",
