@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "models/activation functions/activation functions.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d7dd3154d62af28e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GNN Positional encodings.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "models/Graph Convolutional Network (GCN).md",
+                "file": "GNN Positional encodings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "models/Graph Convolutional Network (GCN).md",
+                "file": "GNN Positional encodings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "models/Graph Convolutional Network (GCN).md"
+                "file": "GNN Positional encodings.md"
               }
             }
           }
@@ -169,10 +182,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "499a8e295a4ec09c",
+  "active": "d7dd3154d62af28e",
   "lastOpenFiles": [
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "GNN Positional encodings.md",
     "models/activation functions/activation functions.md",
+    "models/Graph Convolutional Network (GCN).md",
     "models/activation functions/Sigmoid Linear Unit (Swish).md",
     "GNN with learnable structural and positional representations.md",
     "linformers.md",
@@ -201,10 +216,8 @@
     "eval-functions/PairwiseHingeLoss.md",
     "problem-type/binary classification.md",
     "models/activation functions/Gaussian Error Linear Unit (GELU).md",
-    "models/activation functions/ELU (Exponential Linear Unit).md",
     "assets/Pasted image 20240119145024.png",
     "assets/Pasted image 20240119143612.png",
-    "techniques/DBSCAN.md",
     "models/activation functions",
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",

@@ -129,8 +129,8 @@ glossary:
 - (3rd) Novel feature generation
 	- [[linformers]]
 	- [[GNN with learnable structural and positional representations]]
-	- Used RWPE Positional encodings
-		- https://arxiv.org/pdf/2110.07875.pdf
+	- Used [[GNN Positional encodings]]
+
 ##### Important notebooks/discussions
 - understanding the competition
 	- https://www.kaggle.com/code/ayushs9020/understanding-the-competition-google-slow-vs-fast

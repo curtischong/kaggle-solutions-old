@@ -1,0 +1,4 @@
+- https://arxiv.org/pdf/2110.07875.pdf
+	- For GNNs, the position of nodes is more challenging due to the fact that there does not exist a canonical positioning of nodes in arbitrary graphs
+		- we can't just assign each node an index representing it's encoding since our model wouldn't be general to unseen graph topologies
+		- a similar problem arises when we try to train the graph on Laplacian Eigenvectors
