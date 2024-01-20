@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "499a8e295a4ec09c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "models/Graph Convolutional Network (GCN).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a7871dbb23666aa2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d7dd3154d62af28e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GNN Positional encodings.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1f48c32623e98b92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linformers.md",
+                "file": "models/graph neural networks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GNN Positional encodings.md",
+                "file": "models/graph neural networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GNN Positional encodings.md",
+                "file": "models/graph neural networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GNN Positional encodings.md"
+                "file": "models/graph neural networks.md"
               }
             }
           }
@@ -182,15 +145,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7dd3154d62af28e",
+  "active": "1f48c32623e98b92",
   "lastOpenFiles": [
+    "models/graph isomorphism network.md",
+    "models/graph neural networks.md",
+    "Graph Attention Networks (GATs).md",
+    "models/layers/Squeeze-and-Excitation layer.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
-    "GNN Positional encodings.md",
-    "models/activation functions/activation functions.md",
-    "models/Graph Convolutional Network (GCN).md",
-    "models/activation functions/Sigmoid Linear Unit (Swish).md",
     "GNN with learnable structural and positional representations.md",
     "linformers.md",
+    "models/Graph Convolutional Network (GCN).md",
+    "Spectral Graph Convolutions.md",
+    "Relational Graph Convolutional Networks (R-GCNs).md",
+    "GNN Positional encodings.md",
+    "models/activation functions/activation functions.md",
+    "models/activation functions/Sigmoid Linear Unit (Swish).md",
     "models/layers/SAGEConv.md",
     "techniques/triplet mining.md",
     "techniques/Online hard negative mining.md",
@@ -210,12 +179,6 @@
     "assets/Pasted image 20240119204953 1.png",
     "problem-type/learning to rank.md",
     "Pasted image 20240119202307.png",
-    "eval-functions/HingeLoss.md",
-    "README.md",
-    "eval-functions/Kendall Tau correlation.md",
-    "eval-functions/PairwiseHingeLoss.md",
-    "problem-type/binary classification.md",
-    "models/activation functions/Gaussian Error Linear Unit (GELU).md",
     "assets/Pasted image 20240119145024.png",
     "assets/Pasted image 20240119143612.png",
     "models/activation functions",

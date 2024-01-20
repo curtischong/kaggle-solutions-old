@@ -130,6 +130,7 @@ glossary:
 	- [[linformers]]
 	- [[GNN with learnable structural and positional representations]]
 	- Used [[GNN Positional encodings]]
+	- GST
 
 ##### Important notebooks/discussions
 - understanding the competition
