@@ -126,10 +126,11 @@ glossary:
 			- I think this is because the model already isn't learning positive OR negative examples well
 			- The model needs to first learn well from the "easier" examples before introducing "harder" ones.
 		- Train 4 folds and merge by mean latency and by [[mean reciprocal rank (MRR)]]
-- (3rd)
+- (3rd) Novel feature generation
 	- [[linformers]]
 	- [[GNN with learnable structural and positional representations]]
-
+	- Used RWPE Positional encodings
+		- https://arxiv.org/pdf/2110.07875.pdf
 ##### Important notebooks/discussions
 - understanding the competition
 	- https://www.kaggle.com/code/ayushs9020/understanding-the-competition-google-slow-vs-fast

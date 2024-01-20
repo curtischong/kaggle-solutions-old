@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "models/Graph Convolutional Network (GCN).md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GNN with learnable structural and positional representations.md",
+                "file": "models/activation functions/activation functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GNN with learnable structural and positional representations.md",
+                "file": "models/Graph Convolutional Network (GCN).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GNN with learnable structural and positional representations.md",
+                "file": "models/Graph Convolutional Network (GCN).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GNN with learnable structural and positional representations.md"
+                "file": "models/Graph Convolutional Network (GCN).md"
               }
             }
           }
@@ -170,9 +169,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a7871dbb23666aa2",
+  "active": "499a8e295a4ec09c",
   "lastOpenFiles": [
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "models/activation functions/activation functions.md",
+    "models/activation functions/Sigmoid Linear Unit (Swish).md",
     "GNN with learnable structural and positional representations.md",
     "linformers.md",
     "models/layers/SAGEConv.md",
@@ -199,13 +200,11 @@
     "eval-functions/Kendall Tau correlation.md",
     "eval-functions/PairwiseHingeLoss.md",
     "problem-type/binary classification.md",
-    "models/activation functions/activation functions.md",
     "models/activation functions/Gaussian Error Linear Unit (GELU).md",
     "models/activation functions/ELU (Exponential Linear Unit).md",
     "assets/Pasted image 20240119145024.png",
     "assets/Pasted image 20240119143612.png",
     "techniques/DBSCAN.md",
-    "models/activation functions/Swish.md",
     "models/activation functions",
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",

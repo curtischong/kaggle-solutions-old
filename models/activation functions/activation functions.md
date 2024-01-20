@@ -22,7 +22,7 @@
     
     Formula: `f(x) = x for x >= 0, f(x) = alpha * (exp(x) - 1) for x < 0`
     
-7. **[[Swish]]** This is a newer activation function introduced by Google. It's a variant of ReLU and was found to have better performance compared to traditional activation functions in deep networks.
+7. **[[Sigmoid Linear Unit (Swish)]]** This is a newer activation function introduced by Google. It's a variant of ReLU and was found to have better performance compared to traditional activation functions in deep networks.
     
     Formula: `f(x) = x * sigmoid(x)`
     
