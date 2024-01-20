@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eval-functions/ListMLE Loss.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eval-functions/ListMLE Loss.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eval-functions/ListMLE Loss.md"
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
               }
             }
           }
@@ -159,13 +158,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5da24838b0c986d",
+  "active": "351c422bbfc34e7f",
   "lastOpenFiles": [
+    "eval-functions/ListMLE Loss.md",
     "Pasted image 20240119184214.png",
     "README.md",
     "Online hard negative mining.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
-    "eval-functions/ListMLE Loss.md",
     "eval-functions/Kendall Tau correlation.md",
     "MAPE loss.md",
     "problem-type/learning to rank.md",
@@ -196,7 +195,6 @@
     "assets/Pasted image 20240119014423.png",
     "assets/Pasted image 20240119014321.png",
     "assets/Pasted image 20240119014119.png",
-    "assets/Pasted image 20240119013831.png",
     "techniques/placeholder for invalid values.md",
     "techniques/use a single embedding matrix.md",
     "techniques/clustering",

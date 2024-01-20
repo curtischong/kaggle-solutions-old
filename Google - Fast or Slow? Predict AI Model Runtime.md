@@ -87,7 +87,8 @@ glossary:
 					- https://github.com/thanhhau097/google_fast_or_slow/blob/626c463dfb02abd739616773ca74f34e38635c71/dataset.py#L490
 		- To create our Linear/Conv blocks we followed the good practices in computer vision. We start by using `InstanceNorm` to normalise the input feature map, followed by `Linear`/[[SAGEConv]] layer, `SelfChannelAttetion` and `CrossConfigAttetion` (we concat the output with its input to preserve the individuality of each sample). Then, we sum the residual connection and finish with [[Gaussian Error Linear Unit (GELU)]] and dropout.
 		[[PairwiseHingeLoss]]
-- (2nd)
+- (2nd) Invented their own DiffMat Loss
+	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456365
 	- data cleaning
 		- like (1st), they found duplicated configs (with diff runtimes). so they deduped them, and keept the config that had the lowest runtime
 		- didn't use unet graphs cause `unet_3d.4x4.bf16` was badly corrupted
@@ -109,6 +110,8 @@ glossary:
 			1. [[ListMLE Loss]] for Layout-NLP,
 			2. A novel DiffMat loss for Tile,
 			3. For Layout-XLA, it is a combination of 2 losses: the DiffMat loss and MAPE loss.
+	- DiffMat Loss
+		- The idea is that 
 [[Online hard negative mining]]
 
 ##### Important notebooks/discussions
