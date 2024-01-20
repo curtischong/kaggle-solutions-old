@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "a7871dbb23666aa2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GNN with learnable structural and positional representations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1f48c32623e98b92",
             "type": "leaf",
             "state": {
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linformers.md",
+                "file": "GNN with learnable structural and positional representations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linformers.md",
+                "file": "GNN with learnable structural and positional representations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linformers.md"
+                "file": "GNN with learnable structural and positional representations.md"
               }
             }
           }
@@ -158,9 +170,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f48c32623e98b92",
+  "active": "a7871dbb23666aa2",
   "lastOpenFiles": [
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "GNN with learnable structural and positional representations.md",
     "linformers.md",
     "models/layers/SAGEConv.md",
     "techniques/triplet mining.md",
@@ -194,7 +207,6 @@
     "techniques/DBSCAN.md",
     "models/activation functions/Swish.md",
     "models/activation functions",
-    "models/layers/Convolutional Block Attention Module (CBAM).md",
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",
     "models/layers",

@@ -128,6 +128,7 @@ glossary:
 		- Train 4 folds and merge by mean latency and by [[mean reciprocal rank (MRR)]]
 - (3rd)
 	- [[linformers]]
+	- [[GNN with learnable structural and positional representations]]
 
 ##### Important notebooks/discussions
 - understanding the competition
