@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6fc1f39c539de2cb",
+        "id": "98606946c0c4b1ae",
         "type": "tabs",
         "children": [
           {
-            "id": "351c422bbfc34e7f",
+            "id": "6620619a722d87b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,45 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "14b800019a13dfd5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "problem-type/learning to rank.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "06da71b51fa8fe24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ranking loss functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e5da24838b0c986d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "eval-functions/ListMLE Loss.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ranking loss functions.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ranking loss functions.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ranking loss functions.md"
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
               }
             }
           }
@@ -183,21 +145,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06da71b51fa8fe24",
+  "active": "6620619a722d87b2",
   "lastOpenFiles": [
-    "Pasted image 20240119202307.png",
-    "eval-functions/HingeLoss.md",
-    "ranking loss functions.md",
-    "problem-type/learning to rank.md",
     "eval-functions/CosineEmbeddingLoss.md",
-    "margin ranking loss.md",
+    "eval-functions/marginRankingLoss.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
     "eval-functions/ListMLE Loss.md",
-    "Pasted image 20240119184214.png",
-    "README.md",
-    "Online hard negative mining.md",
-    "eval-functions/Kendall Tau correlation.md",
+    "techniques/formulas/entropy.md",
     "MAPE loss.md",
+    "Online hard negative mining.md",
+    "MarginRankingLoss.md",
+    "assets/Pasted image 20240119184214.png",
+    "assets/Pasted image 20240119204909.png",
+    "assets/Pasted image 20240119204953 1.png",
+    "ranking loss functions.md",
+    "problem-type/learning to rank.md",
+    "Pasted image 20240119202307.png",
+    "eval-functions/HingeLoss.md",
+    "README.md",
+    "eval-functions/Kendall Tau correlation.md",
     "eval-functions/PairwiseHingeLoss.md",
     "problem-type/binary classification.md",
     "models/activation functions/activation functions.md",
@@ -216,13 +182,9 @@
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",
     "models/layers/SAGEConv.md",
-    "models/layers/Squeezeformer layer.md",
     "models/layers",
     "assets/Pasted image 20240119013448.png",
     "assets/Pasted image 20240119014457.png",
-    "assets/Pasted image 20240119014423.png",
-    "assets/Pasted image 20240119014321.png",
-    "assets/Pasted image 20240119014119.png",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

@@ -1,3 +1,4 @@
+The original paper link is down :'(
 range: 
 ### summary
 - Listwise Maximum Likelihood Estimation.
@@ -8,6 +9,7 @@ range:
 - the loss is minimized when we maximize the probability of the observed ranking.
 - more info: https://notesonai.com/ListNet+and+ListMLE
 - nice github repo: https://github.com/allegro/allRank/tree/masterlink: 
+- pytorch implmentation: https://github.com/Obs01ete/kaggle_latenciaga/blob/b6b55b16fd444d423946eab3d5c8b293f7dc8939/src/losses.py#L62
 ### pros
 
 ### Cons

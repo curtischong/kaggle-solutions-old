@@ -89,6 +89,7 @@ glossary:
 		[[PairwiseHingeLoss]]
 - (2nd) Invented their own DiffMat Loss
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456365
+	- solution code: https://github.com/Obs01ete/kaggle_latenciaga/tree/master
 	- data cleaning
 		- like (1st), they found duplicated configs (with diff runtimes). so they deduped them, and keept the config that had the lowest runtime
 		- didn't use unet graphs cause `unet_3d.4x4.bf16` was badly corrupted
@@ -98,7 +99,7 @@ glossary:
 		- Features produced by the GNN layer stack are transformed to one value per node and then sum-reduced to form a single graph-wise prediction.
 			- not sure what sum-reduced means. but probably mean?
 	- training
-		- Models trained with a ranking loss (ListMLE, MarginRankingLoss) heavily outperformed element-wise losses (MAPE, etc).
+		- Models trained with a ranking loss ([[ListMLE Loss]], [[marginRankingLoss]]) heavily outperformed element-wise losses (MAPE, etc).
 		- "The batch is organized into 2 levels of hierarchy: the upper level is different graphs, and the lower level is the same graph and different configurations, grouped in microbatches of the same size (also known as slates)"
 			- todo: understand
 		- hyperparams
@@ -111,8 +112,11 @@ glossary:
 			2. A novel DiffMat loss for Tile,
 			3. For Layout-XLA, it is a combination of 2 losses: the DiffMat loss and MAPE loss.
 	- DiffMat Loss
-		- The idea is to use the difference matrix between 
-		- this is fed into [[margin ranking loss]]
+		- The idea is to use the difference matrix between ...
+			- the difference matrix reminds me of [[marginRankingLoss]] (since it's euclidian distance)
+		- this is fed into [[marginRankingLoss]]
+	- data recovery
+		- We tried to find the damaged data and remove it in an automatic manner by computing block-wise [[entropy]] of the runtimes between adjacent blocks. 
 [[Online hard negative mining]]
 
 ##### Important notebooks/discussions

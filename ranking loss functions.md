@@ -10,8 +10,15 @@
 		- **triplets of training data** points.
 - **Pairwise ranking loss**
 	- $$L = \begin{cases} d(r_a,r_p) & \text{if Positive Pair} \\ \max(0,m - d(r_a,r_n)) & \text{if Negative Pair} \end{cases}$$
-		- ![[Pasted image 20240119202307.png]]
+	- ![[Pasted image 20240119204953 1.png]]
 	- [[HingeLoss]]
 - **Triplet Ranking Loss**
 	- This works better than pairwise ranking loss:
 		- **The objective is that the distance between the anchor sample and the negative sample representations $d(r_a, r_n)$ is greater (and bigger than a margin m) than the distance between the anchor and positive representations $d(r_a, r_p)$**.
+	- in his research, he found that triplet ranking loss worked better to teach the model multimodal representations of data
+		- e.g. given an image, caption it.
+			- the CNN needs create image embeddings that is close to the GloVe embeddings
+				- this works better than standard **Cross-Entropy Loss**
+		- ![[Pasted image 20240119204909.png]]
+		- "To choose the negative text, we explored different online **negative mining strategies, using the distances in the GloVe space with the positive text embedding**"
+			- this was smart because the negative mining examples will have a close embedding with the positive examples

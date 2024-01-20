@@ -1,4 +1,6 @@
-Use this formula to determine how "sure" a model is of the output. If the entropy is high, then the model is probably predicting an unknown class
+use cases:
+- Use this formula to determine how "sure" a model is of the output. If the entropy is high, then the model is probably predicting an unknown class
+- You can also use this for data cleaning. if there is abnormal amounts of entropy, maybe it's corrupted.
 
 $$H = - \sum_i{p_i * \log(p_i)}$$
 
