@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "models/graph neural networks.md",
+                "file": "GNN Positional encodings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "models/graph neural networks.md",
+                "file": "GNN Positional encodings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "models/graph neural networks.md",
+                "file": "GNN Positional encodings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "models/graph neural networks.md"
+                "file": "GNN Positional encodings.md"
               }
             }
           }
@@ -147,8 +147,8 @@
   },
   "active": "1f48c32623e98b92",
   "lastOpenFiles": [
-    "models/graph isomorphism network.md",
     "models/graph neural networks.md",
+    "models/graph isomorphism network.md",
     "Graph Attention Networks (GATs).md",
     "models/layers/Squeeze-and-Excitation layer.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
