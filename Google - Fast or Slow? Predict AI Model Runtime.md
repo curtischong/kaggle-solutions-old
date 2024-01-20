@@ -121,7 +121,8 @@ glossary:
 		- [[Online hard negative mining]] "since train loss is nowhere near zero,"
 			- I think this is because the model already isn't learning positive OR negative examples well
 			- The model needs to first learn well from the "easier" examples before introducing "harder" ones.
-[[Online hard negative mining]]
+		- Train 4 folds and merge by mean latency and by [[mean reciprocal rank (MRR)]]
+	- TODO: re-read one last time and see if there's more to learn
 
 ##### Important notebooks/discussions
 - understanding the competition

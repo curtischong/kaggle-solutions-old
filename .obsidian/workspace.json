@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "98606946c0c4b1ae",
+        "id": "85afab51e5e6a39e",
         "type": "tabs",
         "children": [
           {
-            "id": "6620619a722d87b2",
+            "id": "5eb5b88e4bb0b5de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "triplet mining.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c256a0be0a952f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mean reciprocal rank (MRR).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "triplet mining.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "triplet mining.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "triplet mining.md"
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
               }
             }
           }
@@ -145,13 +157,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6620619a722d87b2",
+  "active": "5eb5b88e4bb0b5de",
   "lastOpenFiles": [
+    "mean reciprocal rank (MRR).md",
+    "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "Kaggle Grandmaster Tools.md",
+    "triplet mining.md",
     "ranking loss functions.md",
     "assets/Pasted image 20240120003918.png",
-    "triplet mining.md",
     "Online hard negative mining.md",
-    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "eval-functions/CosineEmbeddingLoss.md",
     "eval-functions/marginRankingLoss.md",
     "eval-functions/ListMLE Loss.md",
@@ -171,7 +185,6 @@
     "models/activation functions/activation functions.md",
     "models/activation functions/Gaussian Error Linear Unit (GELU).md",
     "models/activation functions/ELU (Exponential Linear Unit).md",
-    "Kaggle Grandmaster Tools.md",
     "assets/Pasted image 20240119145024.png",
     "assets/Pasted image 20240119143612.png",
     "techniques/DBSCAN.md",
