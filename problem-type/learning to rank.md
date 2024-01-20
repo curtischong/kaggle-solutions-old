@@ -13,3 +13,4 @@
 	    - Tries to optimize for IR metrics, but they are not differentiable.
 		    - what is an IR matrix?
 	    - Approximations by heuristics, bounding or probabilistic approaches to ranking.
+- [[ranking loss functions]]:

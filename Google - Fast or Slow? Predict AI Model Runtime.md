@@ -111,7 +111,8 @@ glossary:
 			2. A novel DiffMat loss for Tile,
 			3. For Layout-XLA, it is a combination of 2 losses: the DiffMat loss and MAPE loss.
 	- DiffMat Loss
-		- The idea is that 
+		- The idea is to use the difference matrix between 
+		- this is fed into [[margin ranking loss]]
 [[Online hard negative mining]]
 
 ##### Important notebooks/discussions
