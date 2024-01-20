@@ -1,0 +1,18 @@
+https://omoindrot.github.io/triplet-loss
+- The goal of the triplet loss is to make sure that:
+	- 1) Two examples with the same label have their embeddings close together in the embedding space
+	- 2) Two examples with different labels have their embeddings far away.
+- To formalise this requirement, the loss will be defined over **triplets** of embeddings:
+	- an **anchor**
+	- a **positive** of the same class as the anchor
+	- a **negative** of a different class
+- For some distance on the embedding space d, the loss of a triplet (a,p,n) is:
+	- $L=\max(d(a,p)−d(a,n)+\text{margin},0)$
+	- where margin is a value we choose that says: "the negative should be farther away than the positive by this margin"
+	- This loss pushes:
+		- d(anchor, pos) to 0
+		- d(anchor, neg) to be greater than d(anchor, pos) + margin
+- hard negatives are examples that are closer to the anchor example than the positive example:
+	- ![[Pasted image 20240120003918.png]]
+- **online mining:** we have computed a batch of B embeddings from a batch of B inputs. Now we want to generate triplets from these B embeddings.
+- 

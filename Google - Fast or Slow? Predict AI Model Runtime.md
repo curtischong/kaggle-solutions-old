@@ -117,6 +117,10 @@ glossary:
 		- this is fed into [[marginRankingLoss]]
 	- data recovery
 		- We tried to find the damaged data and remove it in an automatic manner by computing block-wise [[entropy]] of the runtimes between adjacent blocks. 
+	- what didn't work:
+		- [[Online hard negative mining]] "since train loss is nowhere near zero,"
+			- I think this is because the model already isn't learning positive OR negative examples well
+			- The model needs to first learn well from the "easier" examples before introducing "harder" ones.
 [[Online hard negative mining]]
 
 ##### Important notebooks/discussions

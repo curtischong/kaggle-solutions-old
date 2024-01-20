@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "triplet mining.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "triplet mining.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "triplet mining.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
+                "file": "triplet mining.md"
               }
             }
           }
@@ -147,18 +147,20 @@
   },
   "active": "6620619a722d87b2",
   "lastOpenFiles": [
+    "ranking loss functions.md",
+    "assets/Pasted image 20240120003918.png",
+    "triplet mining.md",
+    "Online hard negative mining.md",
+    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "eval-functions/CosineEmbeddingLoss.md",
     "eval-functions/marginRankingLoss.md",
-    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "eval-functions/ListMLE Loss.md",
     "techniques/formulas/entropy.md",
     "MAPE loss.md",
-    "Online hard negative mining.md",
     "MarginRankingLoss.md",
     "assets/Pasted image 20240119184214.png",
     "assets/Pasted image 20240119204909.png",
     "assets/Pasted image 20240119204953 1.png",
-    "ranking loss functions.md",
     "problem-type/learning to rank.md",
     "Pasted image 20240119202307.png",
     "eval-functions/HingeLoss.md",
@@ -178,13 +180,10 @@
     "models/layers/Convolutional Block Attention Module (CBAM).md",
     "models/layers/Squeeze-and-Excitation layer.md",
     "models/LSTM.md",
-    "models/GraphSAGE.md",
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",
-    "models/layers/SAGEConv.md",
     "models/layers",
     "assets/Pasted image 20240119013448.png",
-    "assets/Pasted image 20240119014457.png",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

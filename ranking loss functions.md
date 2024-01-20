@@ -22,3 +22,4 @@
 		- ![[Pasted image 20240119204909.png]]
 		- "To choose the negative text, we explored different online **negative mining strategies, using the distances in the GloVe space with the positive text embedding**"
 			- this was smart because the negative mining examples will have a close embedding with the positive examples
+- To choose good triplets, see [[triplet mining]]
