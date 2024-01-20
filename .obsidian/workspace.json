@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "85afab51e5e6a39e",
+        "id": "63c04ce789b6fe46",
         "type": "tabs",
         "children": [
           {
-            "id": "5eb5b88e4bb0b5de",
+            "id": "499a8e295a4ec09c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "1c256a0be0a952f3",
+            "id": "1f48c32623e98b92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mean reciprocal rank (MRR).md",
+                "file": "linformers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "linformers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
+                "file": "linformers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
+                "file": "linformers.md"
               }
             }
           }
@@ -157,20 +158,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5eb5b88e4bb0b5de",
+  "active": "1f48c32623e98b92",
   "lastOpenFiles": [
-    "mean reciprocal rank (MRR).md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "linformers.md",
+    "models/layers/SAGEConv.md",
+    "techniques/triplet mining.md",
+    "techniques/Online hard negative mining.md",
+    "eval-functions/mean reciprocal rank (MRR).md",
+    "eval-functions/MAPE loss.md",
+    "assets/Pasted image 20240120015431.png",
     "Kaggle Grandmaster Tools.md",
-    "triplet mining.md",
     "ranking loss functions.md",
     "assets/Pasted image 20240120003918.png",
-    "Online hard negative mining.md",
     "eval-functions/CosineEmbeddingLoss.md",
     "eval-functions/marginRankingLoss.md",
     "eval-functions/ListMLE Loss.md",
     "techniques/formulas/entropy.md",
-    "MAPE loss.md",
     "MarginRankingLoss.md",
     "assets/Pasted image 20240119184214.png",
     "assets/Pasted image 20240119204909.png",
@@ -191,12 +195,9 @@
     "models/activation functions/Swish.md",
     "models/activation functions",
     "models/layers/Convolutional Block Attention Module (CBAM).md",
-    "models/layers/Squeeze-and-Excitation layer.md",
-    "models/LSTM.md",
     "assets/Pasted image 20240119120515.png",
     "assets/Pasted image 20240119021535.png",
     "models/layers",
-    "assets/Pasted image 20240119013448.png",
     "techniques/clustering",
     "techniques/ensembling",
     "techniques/diagnosis",

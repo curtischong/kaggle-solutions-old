@@ -115,6 +115,10 @@ glossary:
 		- The idea is to use the difference matrix between ...
 			- the difference matrix reminds me of [[marginRankingLoss]] (since it's euclidian distance)
 		- this is fed into [[marginRankingLoss]]
+		- I'm not sure what "Margin Ranking Loss with a margin of 0.01 is applied between predicted values and zeros" means
+			- this diagram is kinda vague:
+				- ![[Pasted image 20240120015431.png]]
+			- I tried reading their code but couldn't find it.
 	- data recovery
 		- We tried to find the damaged data and remove it in an automatic manner by computing block-wise [[entropy]] of the runtimes between adjacent blocks. 
 	- what didn't work:
@@ -122,7 +126,8 @@ glossary:
 			- I think this is because the model already isn't learning positive OR negative examples well
 			- The model needs to first learn well from the "easier" examples before introducing "harder" ones.
 		- Train 4 folds and merge by mean latency and by [[mean reciprocal rank (MRR)]]
-	- TODO: re-read one last time and see if there's more to learn
+- (3rd)
+	- [[linformers]]
 
 ##### Important notebooks/discussions
 - understanding the competition
