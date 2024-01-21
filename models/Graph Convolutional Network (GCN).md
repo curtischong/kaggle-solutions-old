@@ -1,5 +1,15 @@
-https://arxiv.org/pdf/1904.09671v1.pdf
-- In supervised graph classification, the task is to solve an end-to-end whole-graph classification problem (i.e. the problem of as-signing a label to the entire graph).
-	- hese supervised approaches [ 33 , 36, 45 , 61 ] learn an intermediate representation of an entire graph as a precondition in order to solve the classification task.
-- but is heavily biased towards maximizing performance on the classification task of interest.
-- Transformer GNNs vs sparse GNNs
+- https://arxiv.org/pdf/1904.09671v1.pdf
+	- In supervised graph classification, the task is to solve an end-to-end whole-graph classification problem (i.e. the problem of as-signing a label to the entire graph).
+		- hese supervised approaches [ 33 , 36, 45 , 61 ] learn an intermediate representation of an entire graph as a precondition in order to solve the classification task.
+	- but is heavily biased towards maximizing performance on the classification task of interest.
+	- Transformer GNNs vs sparse GNNs
+- https://towardsdatascience.com/the-intuition-behind-graph-convolutions-and-message-passing-6dcd0ebf0063
+	- ![[Pasted image 20240121154843.png]]
+	- w are the learnable weights.
+	- A is the adjacency matrix
+		- the problem: if we change the topology of the graph, won't the adj matrix change? wouldn't our matrices w be invalid?
+			- we're only learning weights for this specific graph
+	- It is possible to use graph Laplacian instead of adjacency matrix to pass feature differences instead of feature values between nodes.
+		- isn't the Laplacian matrix just an adj matrix but with the diagonal representing the number of indegrees of each node
+		- TLDR: you can create the Laplacian from the adj matrix. they are one-to-one
+	- 
