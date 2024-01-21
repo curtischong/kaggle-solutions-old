@@ -130,8 +130,9 @@ glossary:
 	- [[linformers]]
 	- [[GNN with learnable structural and positional representations]]
 	- Used [[GNN Positional encodings]]
-	- GST
-
+	- [[GPS Layers]]
+- (4th) Only uses a multilayer perceptron
+	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456462
 ##### Important notebooks/discussions
 - understanding the competition
 	- https://www.kaggle.com/code/ayushs9020/understanding-the-competition-google-slow-vs-fast

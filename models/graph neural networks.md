@@ -5,5 +5,6 @@
 [[graph isomorphism network]] (graph classification problem)
 [[Relational Graph Convolutional Networks (R-GCNs)]]
 [[Message Passing GNNs (MP-GNN)]]
+[[Graph Segment Training]]
 Graph Auto-Encoders (GAEs)
 Variational Graph Auto-Encoders (VGAEs)

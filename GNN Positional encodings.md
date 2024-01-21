@@ -4,3 +4,5 @@
 		- a similar problem arises when we try to train the graph on Laplacian Eigenvectors
 	- "In this work, we decouple structural and positional representations to make it easy for the network to learn these two critical characteristics. This is in contrast with most existing architectures s.a. Dwivedi & Bresson (2021); Beani et al. (2021); Kreuzer et al. (2021) that inject the positional information into the input layer of the GNNs"
 		- and You et al. (2019) that rely on distance-measured anchor sets of nodes limiting general, inductive usage
+	- they said that they were using "learnable positional encodings"
+		- this is kinda sus, cause I'm not sure how they made it general for a graph with any toplogy
