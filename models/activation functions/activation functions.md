@@ -29,4 +29,6 @@
 8. **Softplus:** This activation function is a smooth approximation to the ReLU function.
     
     Formula: `f(x) = log(1 + exp(x))`
+    - A variation of this is the integral of the softplus function (used by TeaNet)
+    - ![[Pasted image 20240121165235.png]]
 [[Gaussian Error Linear Unit (GELU)]]

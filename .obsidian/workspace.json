@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f48c32623e98b92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "models/Graph Convolutional Network (GCN).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "cf1f818e55f5aade",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph Segment Training.md",
+                "file": "Message Passing GNNs (MP-GNN).md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "models/Graph Convolutional Network (GCN).md",
+                "file": "Message Passing GNNs (MP-GNN).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "models/Graph Convolutional Network (GCN).md",
+                "file": "Message Passing GNNs (MP-GNN).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "models/Graph Convolutional Network (GCN).md"
+                "file": "Message Passing GNNs (MP-GNN).md"
               }
             }
           }
@@ -157,26 +145,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f48c32623e98b92",
+  "active": "cf1f818e55f5aade",
   "lastOpenFiles": [
-    "Pasted image 20240121154843.png",
-    "Message Passing GNNs (MP-GNN).md",
-    "Google - Fast or Slow? Predict AI Model Runtime.md",
-    "GPS Layers.md",
-    "Pasted image 20240121152837.png",
-    "graph laplancian.md",
-    "GNN Positional encodings.md",
-    "models/graph neural networks.md",
-    "Graph Segment Training.md",
-    "models/graph isomorphism network.md",
-    "Graph Attention Networks (GATs).md",
-    "models/layers/Squeeze-and-Excitation layer.md",
-    "GNN with learnable structural and positional representations.md",
-    "linformers.md",
     "models/Graph Convolutional Network (GCN).md",
-    "Spectral Graph Convolutions.md",
+    "Message Passing GNNs (MP-GNN).md",
     "Relational Graph Convolutional Networks (R-GCNs).md",
+    "Spectral Graph Convolutions.md",
+    "Graph Segment Training.md",
+    "Graph Attention Networks (GATs).md",
+    "GPS Layers.md",
+    "Kaggle Grandmaster Tools.md",
+    "GNN Positional encodings.md",
+    "GNN with learnable structural and positional representations.md",
     "models/activation functions/activation functions.md",
+    "assets/Pasted image 20240121152837.png",
+    "assets/Pasted image 20240121162832.png",
+    "assets/Pasted image 20240121162825.png",
+    "assets/Pasted image 20240121165235.png",
+    "assets/Pasted image 20240121154843.png",
+    "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "graph laplancian.md",
+    "models/graph neural networks.md",
+    "models/graph isomorphism network.md",
+    "models/layers/Squeeze-and-Excitation layer.md",
+    "linformers.md",
     "models/activation functions/Sigmoid Linear Unit (Swish).md",
     "models/layers/SAGEConv.md",
     "techniques/triplet mining.md",
@@ -184,18 +176,13 @@
     "eval-functions/mean reciprocal rank (MRR).md",
     "eval-functions/MAPE loss.md",
     "assets/Pasted image 20240120015431.png",
-    "Kaggle Grandmaster Tools.md",
     "ranking loss functions.md",
     "assets/Pasted image 20240120003918.png",
     "eval-functions/CosineEmbeddingLoss.md",
     "assets/Pasted image 20240119184214.png",
     "assets/Pasted image 20240119204909.png",
     "assets/Pasted image 20240119204953 1.png",
-    "Pasted image 20240119202307.png",
-    "assets/Pasted image 20240119145024.png",
-    "assets/Pasted image 20240119143612.png",
     "models/activation functions",
-    "assets/Pasted image 20240119120515.png",
     "models/layers",
     "techniques/clustering",
     "techniques/ensembling",

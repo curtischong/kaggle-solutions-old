@@ -1,8 +1,10 @@
 - https://wandb.ai/graph-neural-networks/spatial/reports/An-Introduction-to-Message-Passing-Graph-Neural-Networks--VmlldzoyMDI2NTg2
 	- they are graph neural networks but you are aggregating the features from nearby nodes. that's it!
-- How are graph neural networks different from [[Graph Convolutional Network (GCN)]]
-	- https://freedium.cfd/https://towardsdatascience.com/the-intuition-behind-graph-convolutions-and-message-passing-6dcd0ebf0063
-		- 
+- How are MP-GNNs different from [[Graph Convolutional Network (GCN)]]
+	- People refer to them as the same things.
+		- This article does say that the difference is: message passing is a way to approximate graph convolutions.
+			- Message passing is like taking into account the one-hop embeddings of your neighbouring nodes.
+				- This is what one layer does in a GN
 - main problems:
 	- Since MPNNs are limited by problems of over-smoothing, over-squashing, and low expressivity against the WL test [1, 54], these layers could irreparably fail to keep some information in the early stage
 		- https://openreview.net/pdf?id=lMMaNf6oxKM
