@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "ef71d727d473beb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "graph laplancian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cf1f818e55f5aade",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPS Layers.md",
+                "file": "graph laplancian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPS Layers.md",
+                "file": "graph laplancian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPS Layers.md"
+                "file": "graph laplancian.md"
               }
             }
           }
@@ -170,10 +182,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "112012c1dd71b913",
+  "active": "ef71d727d473beb5",
   "lastOpenFiles": [
-    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "GPS Layers.md",
+    "graph laplancian.md",
+    "Google - Fast or Slow? Predict AI Model Runtime.md",
     "GNN Positional encodings.md",
     "models/graph neural networks.md",
     "Graph Segment Training.md",
@@ -199,7 +212,6 @@
     "eval-functions/CosineEmbeddingLoss.md",
     "eval-functions/marginRankingLoss.md",
     "eval-functions/ListMLE Loss.md",
-    "techniques/formulas/entropy.md",
     "assets/Pasted image 20240119184214.png",
     "assets/Pasted image 20240119204909.png",
     "assets/Pasted image 20240119204953 1.png",

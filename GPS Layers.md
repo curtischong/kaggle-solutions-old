@@ -1,2 +1,3 @@
 https://openreview.net/pdf?id=lMMaNf6oxKM
-- "rudimentary utilisation of eigenvectors of the graph Laplacian as the node positional encoding (PE)"
+- There have been many recent works on PE and SE, notably on Laplacian PE [14, 36, 3, 57, 39], shortest-path-distance [38, 63], node degree centrality [63], kernel distance [ 44 ], random-walk SE [16 ], structure-aware [9, 6 , 5], and more. Some works also propose dedicated networks to learn the PE/SE from an initial encoding [ 36, 16 , 39 , 9]. 
+- [[graph laplancian]]
