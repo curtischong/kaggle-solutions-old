@@ -10,7 +10,7 @@
 		- A is the adjacency matrix
 			- the problem: if we change the topology of the graph, won't the adj matrix change? wouldn't our matrices w be invalid?
 				- we're only learning weights for this specific graph
-			- the article doesn't mention
+			- I think the article is just keeping it simple and making an analogy. In reality we'll just use an aggregation function for hte neighbouring hidden weights (so we aren't training for a specific graph topology)
 		- Note that higher orders of A just means that we are considering node features u-hops away where u is the power of the adj matrix
 			- why even have higher orders of A?
 				- so we can get more data from further neighbours.

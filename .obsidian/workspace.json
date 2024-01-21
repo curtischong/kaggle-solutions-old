@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Message Passing GNNs (MP-GNN).md",
+                "file": "models/graph neural networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rank",
+                "query": "colab",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Message Passing GNNs (MP-GNN).md",
+                "file": "models/graph neural networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Message Passing GNNs (MP-GNN).md",
+                "file": "models/graph neural networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Message Passing GNNs (MP-GNN).md"
+                "file": "models/graph neural networks.md"
               }
             }
           }
@@ -147,12 +148,17 @@
   },
   "active": "cf1f818e55f5aade",
   "lastOpenFiles": [
+    "Graph Attention Networks (GATs).md",
+    "Pasted image 20240121180335.png",
+    "models/graph neural networks.md",
     "models/Graph Convolutional Network (GCN).md",
+    "Pasted image 20240121175206.png",
+    "models/GraphSAGE.md",
+    "Pasted image 20240121174445.png",
     "Message Passing GNNs (MP-GNN).md",
     "Relational Graph Convolutional Networks (R-GCNs).md",
     "Spectral Graph Convolutions.md",
     "Graph Segment Training.md",
-    "Graph Attention Networks (GATs).md",
     "GPS Layers.md",
     "Kaggle Grandmaster Tools.md",
     "GNN Positional encodings.md",
@@ -165,7 +171,6 @@
     "assets/Pasted image 20240121154843.png",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
     "graph laplancian.md",
-    "models/graph neural networks.md",
     "models/graph isomorphism network.md",
     "models/layers/Squeeze-and-Excitation layer.md",
     "linformers.md",
@@ -178,10 +183,6 @@
     "assets/Pasted image 20240120015431.png",
     "ranking loss functions.md",
     "assets/Pasted image 20240120003918.png",
-    "eval-functions/CosineEmbeddingLoss.md",
-    "assets/Pasted image 20240119184214.png",
-    "assets/Pasted image 20240119204909.png",
-    "assets/Pasted image 20240119204953 1.png",
     "models/activation functions",
     "models/layers",
     "techniques/clustering",

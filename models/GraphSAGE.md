@@ -29,3 +29,11 @@
 				- basically, the random walk will score each node (prob based on its features)
 					- we perform a few of these random walks
 				- then we just sample the neighbouring nodes with the highest scores
+- https://youtu.be/JtDgmmQ60x8?si=7DxQdzoiINZia0xE&t=1430
+	- main 2 modifications of graphSAGE:
+		- 1) rather than taking the sum of the neighbour's hidden layers, we can make it more general and say we're using an general AGG function (could be mean)
+			- note: AGG could be max pool, or an LSTM
+				- problem: LSTM has a different output if you input the features in a diff order.
+				- Solution we can perform multiple LSTM inferences on a random permutation of the input features to get a stable result
+		- 2) rather than ADDING our own prev hidden layer, we are CONCATENATING our prev hidden layer
+		- ![[Pasted image 20240121174445.png]]
