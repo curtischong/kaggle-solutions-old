@@ -14,6 +14,5 @@
 			- these are the spectral techniques that embed graphs into an Euclidean space
 				- they are defined via the factorization of the graph Laplacian ∆ = In − D−1/2AD−1/2 = U TΛU, where In is the n × n identity matrix
 			- Laplacian eigenvectors form a meaningful local coordinate system, while preserving the global graph structure. As these eigenvectors hold the key properties of permutation-invariant, uniqueness, computational efficiency and distance-aware
-				- TODO: learn this.
 				- it seems like these eigenvectors are appended to nodes as features
 			- 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "58414ecfb56026a6",
+        "id": "b8db9d2443b355f2",
         "type": "tabs",
         "children": [
           {
-            "id": "c63efe71d8f39152",
+            "id": "72fcbf37eb6e1834",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "models/graph laplancian.md",
+                "file": "models/GNN Positional encodings.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "colab",
+                "query": "laplacian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "models/graph laplancian.md",
+                "file": "models/GNN Positional encodings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "models/graph laplancian.md",
+                "file": "models/GNN Positional encodings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "models/graph laplancian.md"
+                "file": "models/GNN Positional encodings.md"
               }
             }
           }
@@ -145,11 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c63efe71d8f39152",
+  "active": "72fcbf37eb6e1834",
   "lastOpenFiles": [
-    "assets/Pasted image 20240121211311.png",
-    "models/graph laplancian.md",
     "Pasted image 20240121213113.png",
+    "Pasted image 20240121221357.png",
+    "models/graph laplancian.md",
+    "assets/Pasted image 20240121211311.png",
     "Pasted image 20240121213030.png",
     "models/GNN Positional encodings.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
@@ -177,7 +179,6 @@
     "assets/Pasted image 20240121175206.png",
     "models/activation functions/activation functions.md",
     "assets/Pasted image 20240121152837.png",
-    "assets/Pasted image 20240121162832.png",
     "models/graph isomorphism network.md",
     "models/layers/Squeeze-and-Excitation layer.md",
     "models/activation functions/Sigmoid Linear Unit (Swish).md",
