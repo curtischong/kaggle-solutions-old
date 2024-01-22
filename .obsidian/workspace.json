@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "94b19b6ba202b319",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "models/graph neural networks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e8049f735dcb81f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DropEdge.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DropEdge.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DropEdge.md",
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DropEdge.md"
+                "file": "Google - Fast or Slow? Predict AI Model Runtime.md"
               }
             }
           }
@@ -170,12 +145,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e8049f735dcb81f",
+  "active": "72fcbf37eb6e1834",
   "lastOpenFiles": [
+    "eval-functions/Kendall Tau correlation.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
-    "Over-smoothing.md",
+    "techniques/DropEdge.md",
     "models/graph neural networks.md",
-    "DropEdge.md",
+    "techniques/regularization/adding epsilon to regularize.md",
+    "Over-smoothing.md",
     "models/optimizers/adam optimizer.md",
     "All Competitions.md",
     "models/optimizers",
@@ -207,8 +184,6 @@
     "Kaggle Grandmaster Tools.md",
     "models/GraphSAGE.md",
     "models/Graph Convolutional Network (GCN).md",
-    "models/activation functions/activation functions.md",
-    "models/graph isomorphism network.md",
     "models/activation functions",
     "models/layers",
     "techniques/clustering",

@@ -1,8 +1,8 @@
 **Link:** https://www.kaggle.com/c/predict-ai-model-runtime
-**Problem Type:** 
+**Problem Type:** [[learning to rank]]
 **Input:** 
 **Output:** 
-**Eval Metric:** [[Kendall Tau correlation]]
+**Eval Metric:** [[Kendall Tau correlation]] AND custom metric for the top-k predictions
 ##### Summary
 the goal is to predict the runtime of an AI model based on its characteristics, such as the number of parameters/the number of layers/hardware configuration.
 - you have to predict the runtime for many different types of ml models
@@ -132,9 +132,13 @@ glossary:
 	- Used [[GNN Positional encodings]]
 	- [[GPS Layers]]
 	- [[adam optimizer]], [[cosine annealing LR]]
-- (4th) Only uses a multilayer perceptron
+- (4th) Only uses a multilayer perceptron - very clever feature engineering
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456462
+	- features:
+		- a few of the features were just the original columns (but untransformed): node_feat_index
+		- 
 - (5th)
+	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456093
 	- Tips
 		- use the same opcode embedding for unary operations such as abs, ceil, cosine, etc.
 		- override layout_minor_to_major by layout config features for configurable nodes

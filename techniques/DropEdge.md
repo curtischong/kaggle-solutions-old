@@ -1,0 +1,10 @@
+- https://arxiv.org/abs/1907.10903
+- "Over-fitting and over-smoothing are two main obstacles of developing deep Graph Convolutional Networks (GCNs)"
+	- At each training epoch it randomly removes edges
+	- the idea is that less message passing is done, so we reduce oversmoothing
+	- it's similar to [[dropout]], but it's different
+		- dropout sets feature dimensions to 0, which reduces [[overfitting]]
+		- dropedge reduces oversmoothing AND overfitting since it removes edges in the adj matrix
+	  - There are other techniques that the author classifies as "dropNode", but they don't solve the problem like dropedge does
+		  - also graph-sparsification (the goal of removing uneeded edges) requires having an objective function to know which edges to drop.
+		  - but edgedrop doesn't need this
