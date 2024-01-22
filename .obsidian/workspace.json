@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Over-smoothing.md",
+                "file": "DropEdge.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Over-smoothing.md",
+                "file": "DropEdge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Over-smoothing.md",
+                "file": "DropEdge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Over-smoothing.md"
+                "file": "DropEdge.md"
               }
             }
           }
@@ -172,10 +172,10 @@
   },
   "active": "8e8049f735dcb81f",
   "lastOpenFiles": [
-    "models/graph neural networks.md",
-    "Over-smoothing.md",
-    "DropEdge.md",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
+    "Over-smoothing.md",
+    "models/graph neural networks.md",
+    "DropEdge.md",
     "models/optimizers/adam optimizer.md",
     "All Competitions.md",
     "models/optimizers",

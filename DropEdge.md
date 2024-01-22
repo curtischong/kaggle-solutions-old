@@ -1,2 +1,3 @@
+- https://arxiv.org/abs/1907.10903
 - "Over-fitting and over-smoothing are two main obstacles of developing deep Graph Convolutional Networks (GCNs)"
 	- 
