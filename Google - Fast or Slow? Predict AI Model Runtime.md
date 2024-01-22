@@ -137,15 +137,29 @@ glossary:
 	- features:
 		- a few of the features were just the original columns (but untransformed): node_feat_index
 		- 
-- (5th)
+- (5th) - Compressing 3D features into 2D using a transformer
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456093
+	- solution code: https://github.com/knshnb/kaggle-tpu-graph-5th-place
+	- 
 	- Tips
 		- use the same opcode embedding for unary operations such as abs, ceil, cosine, etc.
 		- override layout_minor_to_major by layout config features for configurable nodes
 		- [[DropEdge]]
+			- training only
 		- apply log transformation to input features
 		- oversampling
 		- load layout config data by numpy's mmap mode to save RAM
+	- This is one of their graphConv layers
+		- ![[Pasted image 20240122123307.png]]
+		- notice how they had a function to reverse the edge before feeding it into another sageConv
+		- code
+			```python
+				self.gconv = SAGEConv(mid_ch, mid_ch // 2, ...)
+				self.rev_gconv =SAGEConv(mid_ch, mid_ch // 2, ...)
+				
+				rev_edge_index = torch.flip(edge_index, (0,))
+				x = torch.cat([self.gconv(x, edge_index), self.rev_gconv(x, rev_edge_index)], dim=-1))
+				```
 	- What Didn't Work
 		- graph pooling
 		- pretrain on the tile dataset and finetune on the layout dataset
