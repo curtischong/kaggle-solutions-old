@@ -1,0 +1,3 @@
+- I've seen this a few times. not sure it works
+- I assume it works better than just a linear layer
+	- after this layer you do have the final layer / output so it's just the layer that aggregates the results for output

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "455aad60aec5ecce",
+            "id": "40302a40bde6cf90",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,19 +20,18 @@
             }
           },
           {
-            "id": "40302a40bde6cf90",
+            "id": "1810a5ed4cd142a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bengali.AI Speech Recognition.md",
+                "file": "beam search decoding.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "laplacian",
+                "query": "gru head",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,8 +159,13 @@
   },
   "active": "40302a40bde6cf90",
   "lastOpenFiles": [
-    "ml-concepts/models/BPE tokenizer.md",
+    "kenLM.md",
     "Bengali.AI Speech Recognition.md",
+    "beam search decoding.md",
+    "Pasted image 20240122162324.png",
+    "added an LSTM/GRU head after the backbone layer.md",
+    "added an LSTM",
+    "ml-concepts/models/BPE tokenizer.md",
     "eval-functions/Word Error Rate.md",
     "eval-functions/Levenshtein distance.md",
     "techniques/voice activity detection (VAD).md",
@@ -184,12 +188,9 @@
     "ml-concepts/layers/LSTM.md",
     "ml-concepts/graph laplancian.md",
     "ml-concepts/models/Graph Convolutional Network (GCN).md",
-    "ml-concepts/models/graph neural networks.md",
-    "ml-concepts/Over-smoothing.md",
     "ml-concepts/models",
     "models/model",
     "Untitled",
-    "eval-functions/ListMLE Loss.md",
     "assets/Pasted image 20240122134436.png",
     "assets/Pasted image 20240122123307.png",
     "techniques/Untitled",
@@ -202,9 +203,7 @@
     "assets/Pasted image 20240118171728.png",
     "assets/Pasted image 20240118135554.png",
     "assets/Pasted image 20240114150324.png",
-    "assets/Pasted image 20240114143837.png",
     "ml-concepts/activation functions",
-    "ml-concepts/layers",
-    "techniques/clustering"
+    "ml-concepts/layers"
   ]
 }
