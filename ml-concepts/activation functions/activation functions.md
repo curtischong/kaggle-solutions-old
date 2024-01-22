@@ -31,4 +31,6 @@
     Formula: `f(x) = log(1 + exp(x))`
     - A variation of this is the integral of the softplus function (used by TeaNet)
     - ![[Pasted image 20240121165235.png]]
+[[Gated Linear Units (GLU)]]
 [[Gaussian Error Linear Unit (GELU)]]
+[[SwiGLU]]

@@ -1,0 +1,8 @@
+- https://kikaben.com/swiglu-2020/#swiglu-activation
+	- $SwiGLU(x, W, V) = Swish(xW) \otimes xV$
+		- I think $\otimes$ is just a matrix multiplication in this case
+			- since the output of swiss is a nxn matrix, and xV is a nxn matrix
+	- [[Sigmoid Linear Unit (Swish)]]
+- GPT
+	- ```SwiGLU(x) = x ⊗ Swish(Wx + b)
+- used by mixtral
