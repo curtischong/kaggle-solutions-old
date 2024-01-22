@@ -127,8 +127,8 @@ glossary:
 			- The model needs to first learn well from the "easier" examples before introducing "harder" ones.
 		- Train 4 folds and merge by mean latency and by [[mean reciprocal rank (MRR)]]
 - (3rd) Novel feature generation
+	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456377
 	- [[linformers]]
-	- [[GNN with learnable structural and positional representations]]
 	- Used [[GNN Positional encodings]]
 	- [[GPS Layers]]
 - (4th) Only uses a multilayer perceptron

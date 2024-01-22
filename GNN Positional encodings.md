@@ -1,8 +1,0 @@
-- https://arxiv.org/pdf/2110.07875.pdf
-	- For GNNs, the position of nodes is more challenging due to the fact that there does not exist a canonical positioning of nodes in arbitrary graphs
-		- we can't just assign each node an index representing it's encoding since our model wouldn't be general to unseen graph topologies
-		- a similar problem arises when we try to train the graph on Laplacian Eigenvectors
-	- "In this work, we decouple structural and positional representations to make it easy for the network to learn these two critical characteristics. This is in contrast with most existing architectures s.a. Dwivedi & Bresson (2021); Beani et al. (2021); Kreuzer et al. (2021) that inject the positional information into the input layer of the GNNs"
-		- and You et al. (2019) that rely on distance-measured anchor sets of nodes limiting general, inductive usage
-	- they said that they were using "learnable positional encodings"
-		- this is kinda sus, cause I'm not sure how they made it general for a graph with any toplogy
