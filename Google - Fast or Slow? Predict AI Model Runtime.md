@@ -131,8 +131,26 @@ glossary:
 	- [[linformers]]
 	- Used [[GNN Positional encodings]]
 	- [[GPS Layers]]
+	- [[adam optimizer]], [[cosine annealing LR]]
 - (4th) Only uses a multilayer perceptron
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456462
+- (5th)
+	- Tips
+		- use the same opcode embedding for unary operations such as abs, ceil, cosine, etc.
+		- override layout_minor_to_major by layout config features for configurable nodes
+		- [[DropEdge]]
+		- apply log transformation to input features
+		- oversampling
+		- load layout config data by numpy's mmap mode to save RAM
+	- What Didn't Work
+		- graph pooling
+		- pretrain on the tile dataset and finetune on the layout dataset
+		- graph normalization
+		- dropout node
+		- GAT, GATv2, GIN
+			- GATV2 DID NOT WORK???!?!??!
+		- fp16
+		- pseudo label
 ##### Important notebooks/discussions
 - understanding the competition
 	- https://www.kaggle.com/code/ayushs9020/understanding-the-competition-google-slow-vs-fast

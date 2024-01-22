@@ -15,6 +15,10 @@ good tutorial series: https://pytorch-geometric.readthedocs.io/en/latest/notes/c
 			- 2) If we change the labels of the graph, we'll get different adj matrices
 				- ![[Pasted image 20240121175206.png]]
 	- So we need to make a new kind of neural network to solve graph problems
+- Main problems with GNNs:
+	- overfitting
+	- [[Over-smoothing]] - 
+	- 
 [[Graph Convolutional Network (GCN)]]
 	[[Spectral Graph Convolutions]]
 [[Graph Attention Networks (GATs)]] (almost always outperforms GCNs)
