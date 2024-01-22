@@ -1,0 +1,2 @@
+dithering is the process of adding a small amount of random noise to a digital audio signal in order to reduce the distortion caused by quantization error. This technique is crucial for maintaining audio quality during the conversion process from analog to digital,
+- I guess this is just the same thing, but applied to the spectrogram
