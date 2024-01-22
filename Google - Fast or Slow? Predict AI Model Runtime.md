@@ -111,7 +111,7 @@ glossary:
 			1. [[ListMLE Loss]] for Layout-NLP,
 			2. A novel DiffMat loss for Tile,
 			3. For Layout-XLA, it is a combination of 2 losses: the DiffMat loss and MAPE loss.
-	- DiffMat Loss
+	- DiffMat Loss [[custom loss]]
 		- The idea is to use the difference matrix between ...
 			- the difference matrix reminds me of [[marginRankingLoss]] (since it's euclidian distance)
 		- this is fed into [[marginRankingLoss]]
@@ -132,15 +132,25 @@ glossary:
 	- Used [[GNN Positional encodings]]
 	- [[GPS Layers]]
 	- [[adam optimizer]], [[cosine annealing LR]]
-- (4th) Only uses a multilayer perceptron - very clever feature engineering
+- (4th) Only uses a [[multi layer perceptron]] - very clever feature engineering
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456462
 	- features:
 		- a few of the features were just the original columns (but untransformed): node_feat_index
 		- 
-- (5th) - Compressing 3D features into 2D using a transformer
+- (5th) - [[Transformer to compress dimensions rather than flattening]]
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456093
 	- solution code: https://github.com/knshnb/kaggle-tpu-graph-5th-place
-	- 
+	- Preprocessing
+		- [[Transformer to compress dimensions rather than flattening]]
+			- each node in the graph contained 6 dimensions.
+				- each dimension has 30 features.
+			- before feeding this into the neural net, he could've flattened this 2D array of features into a 1D array (of length: 30 * 6)
+			- HOWEVER, this removes information that says: "these 30 features were from the same dimension"
+				- the model needs to implicitly learn this
+			- So to compress it, he used a transformer to transform the (6, 30) input into a (6, 15) output vector
+				- Note: he treats each of the dimensions as a token when feeding it to the transformer
+			- finally, he took the sum in the token dimension to reduce it to a vector of length (15)
+				- this was the key part.
 	- Tips
 		- use the same opcode embedding for unary operations such as abs, ceil, cosine, etc.
 		- override layout_minor_to_major by layout config features for configurable nodes
@@ -169,6 +179,24 @@ glossary:
 			- GATV2 DID NOT WORK???!?!??!
 		- fp16
 		- pseudo label
+- (6th) - [[graph isomorphism network]] [[Graph Attention Networks (GATs)]]
+	- solution code: https://github.com/hengck23/solution-predict-ai-model-runtime
+	- [[learn on subsets]]
+		- main problem:
+			- we have very large graph as input. how to design learning model and algorithm that can fit into gpu memory?
+		- solution
+			- instead of using the whole graph, we can reduce it by considering only the 5-hop neighbours from node marked as "config id". We call this 5-hop-neighbour subgraph. We think this is reasonable becuase since we are comparing relative ranking of 2 graphs, and we just need to input the "difference nodes" (instead of the whole graph) to the neural net.
+		- ![[Pasted image 20240122134436.png]]
+	- used [[gradient accumulation]]
+	- normalization is important
+		- it works well with gradient accumulation
+		- they used "graph instance norm" over the nodes
+			- GraphNorm: A Principled Approach to Accelerating Graph Neural Network Training  [https://arxiv.org/abs/2009.03294](https://arxiv.org/abs/2009.03294)
+	- they used a custom type of pairwise ranking loss. [[custom loss]]
+		- I don't understand it, but it's not hard, and here's the code: https://github.com/hengck23/solution-predict-ai-model-runtime/blob/998d74a026a7b82705c458b81e67db8db5c8370b/src/res-gin4-pair-hop5-layout/myloss.py#L59
+	- We try both SAGE-conv[2] and GAT-conv[4]. GAT-conv gives better results.
+	- Since we are interested in top 5 ranks, we find [[ListMLE Loss]] is a better loss.
+	- 
 ##### Important notebooks/discussions
 - understanding the competition
 	- https://www.kaggle.com/code/ayushs9020/understanding-the-competition-google-slow-vs-fast
@@ -178,3 +206,11 @@ glossary:
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/436629
 
 #### Takeaways
+- find ways to reduce your input dataset as much as possible
+	- use [[data compression]] if you need to. This speeds up your iteration time by a lot
+	- do not train on padded columns if you don't need to
+- [[Graph Attention Networks (GATs)]] work well.
+	- people ran into smoothing problems, and used techniques like [[DropEdge]] and 
+- [[ListMLE Loss]] is a decent loss
+	- but there's lots of opportunities here to make your own loss (and do well)
+- people's models weren't very deep. A few [[SAGEConv]] or even [[multi layer perceptron]] works well

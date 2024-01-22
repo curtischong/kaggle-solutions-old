@@ -1,0 +1,3 @@
+- the idea of this technique is to not train on complete instances. rather, we make a model that only trains on a subset of each training example
+- benefits:
+	- we need less GPU memory to train one example
