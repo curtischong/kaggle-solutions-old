@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "models/graph neural networks.md",
+                "file": "models/layers/GPS Layers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "718e0635ca259474",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "models/Graph Auto-Encoders (GAEs).md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "models/graph neural networks.md",
+                "file": "models/layers/GPS Layers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "models/graph neural networks.md",
+                "file": "models/layers/GPS Layers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "models/graph neural networks.md"
+                "file": "models/layers/GPS Layers.md"
               }
             }
           }
@@ -148,20 +159,26 @@
   },
   "active": "cf1f818e55f5aade",
   "lastOpenFiles": [
-    "Graph Attention Networks (GATs).md",
-    "Pasted image 20240121180335.png",
-    "models/graph neural networks.md",
-    "models/Graph Convolutional Network (GCN).md",
-    "Pasted image 20240121175206.png",
-    "models/GraphSAGE.md",
-    "Pasted image 20240121174445.png",
-    "Message Passing GNNs (MP-GNN).md",
-    "Relational Graph Convolutional Networks (R-GCNs).md",
-    "Spectral Graph Convolutions.md",
-    "Graph Segment Training.md",
-    "GPS Layers.md",
-    "Kaggle Grandmaster Tools.md",
+    "linformers.md",
     "GNN Positional encodings.md",
+    "models/layers/GPS Layers.md",
+    "models/Graph Attention Networks (GATs).md",
+    "models/Graph Auto-Encoders (GAEs).md",
+    "graph laplancian.md",
+    "eval-functions/ranking loss functions.md",
+    "assets/Pasted image 20240121174445.png",
+    "Kaggle Grandmaster Tools.md",
+    "Graph Segment Training.md",
+    "Spectral Graph Convolutions.md",
+    "Relational Graph Convolutional Networks (R-GCNs).md",
+    "Message Passing GNNs (MP-GNN).md",
+    "models/GraphSAGE.md",
+    "models/graph neural networks.md",
+    "assets/Pasted image 20240121201430.png",
+    "assets/Pasted image 20240121201228.png",
+    "assets/Pasted image 20240121180335.png",
+    "models/Graph Convolutional Network (GCN).md",
+    "assets/Pasted image 20240121175206.png",
     "GNN with learnable structural and positional representations.md",
     "models/activation functions/activation functions.md",
     "assets/Pasted image 20240121152837.png",
@@ -170,19 +187,14 @@
     "assets/Pasted image 20240121165235.png",
     "assets/Pasted image 20240121154843.png",
     "Google - Fast or Slow? Predict AI Model Runtime.md",
-    "graph laplancian.md",
     "models/graph isomorphism network.md",
     "models/layers/Squeeze-and-Excitation layer.md",
-    "linformers.md",
     "models/activation functions/Sigmoid Linear Unit (Swish).md",
     "models/layers/SAGEConv.md",
     "techniques/triplet mining.md",
     "techniques/Online hard negative mining.md",
     "eval-functions/mean reciprocal rank (MRR).md",
     "eval-functions/MAPE loss.md",
-    "assets/Pasted image 20240120015431.png",
-    "ranking loss functions.md",
-    "assets/Pasted image 20240120003918.png",
     "models/activation functions",
     "models/layers",
     "techniques/clustering",
