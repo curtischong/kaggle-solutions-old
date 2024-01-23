@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "All Competitions.md",
+                "file": "eval-functions/substring segmentation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9540eeab870f5c60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "All Competitions.md",
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "All Competitions.md",
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "All Competitions.md"
+                "file": "competitions/Tweet Sentiment Extraction.md"
               }
             }
           }
@@ -145,8 +158,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8b2486a44202de3",
+  "active": "9540eeab870f5c60",
   "lastOpenFiles": [
+    "eval-functions/substring segmentation.md",
+    "competitions/Tweet Sentiment Extraction.md",
+    "eval-functions/jaccard similarity (aka Intersection Over Union).md",
+    "README.md",
+    "assets/Pasted image 20240123115608.png",
+    "Pasted image 20240123113809.png",
+    "Kaggle Grandmaster Tools.md",
+    "All Competitions.md",
     "problem-type/speech to Text (STT).md",
     "techniques/text data cleaning.md",
     "ml-concepts/beam search decoding.md",
@@ -154,11 +175,8 @@
     "competitions/Bengali.AI Speech Recognition.md",
     "techniques/models/kenlm.md",
     "tools/Demucs.md",
-    "Kaggle Grandmaster Tools.md",
     "ml-concepts/activation functions/SwiGLU.md",
-    "competitions/Tweet Sentiment Extraction.md",
     "ml-concepts/activation functions/Gated Linear Units (GLU).md",
-    "README.md",
     "ml-concepts/activation functions/activation functions.md",
     "competitions/Pasted image 20240122162324.png",
     "ml-concepts/activation functions/Sigmoid Linear Unit (Swish).md",
@@ -171,11 +189,7 @@
     "techniques/voice activity detection (VAD).md",
     "techniques/Spectrogram dithering.md",
     "techniques/identifying slow feature generation.md",
-    "techniques/features/downscale upscale examples.md",
-    "problem-type/transcription.md",
     "Pasted image 20240122150028.png",
-    "problem-type/machine translation.md",
-    "competitions/Google - Fast or Slow? Predict AI Model Runtime.md",
     "ml-concepts/models",
     "models/model",
     "Untitled",
@@ -189,8 +203,6 @@
     "assets/Pasted image 20240119010046.png",
     "assets/Pasted image 20240119010033.png",
     "assets/Pasted image 20240118171728.png",
-    "assets/Pasted image 20240118135554.png",
-    "assets/Pasted image 20240114150324.png",
     "ml-concepts/activation functions",
     "ml-concepts/layers"
   ]

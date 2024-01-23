@@ -34,6 +34,11 @@ In general:
 - hyperparam tuning won't save you. garbage features => bad predictions
 - winning teams try things that aren't done in the public notebooks.
 - trust your CV, not your ego. Don't get attached to implementations that *should* work
+- The best performers typically work the smartest and put in the most work
+	- they've found a magic trick that works well
+	- their iteration times are much shorter than yours
+	- they have lots of computational resources
+	- their software tools are as good as the ones Google engineers have
 
 How to review kaggle problems efficiently
 1) read the intro
