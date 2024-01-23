@@ -23,10 +23,11 @@
 (1st) No post processing needed
 - https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/159477
 	- how they did the concatenation: https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/159254
-- custom loss: [[jaccard similarity (aka Intersection Over Union)]]-based Soft Labels
+- custom loss: [[jaccard similarity (aka Intersection Over Union)]]-based Soft Labels [[custom loss]]
 	- why? Cause Cross Entropy doesn’t optimize Jaccard directly
 	- SoftIOU "soft intersection over union" didn't help
 	- 
+- [[pseudo-labeling]]
 
 ##### Important notebooks/discussions
 
