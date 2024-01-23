@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8edcc7dd8c745882",
+        "id": "eae04e326a7c413e",
         "type": "tabs",
         "children": [
           {
-            "id": "40302a40bde6cf90",
+            "id": "b8b2486a44202de3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ml-concepts/activation functions/activation functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "91ede9886efb13b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gated Linear Units (GLU).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "481042abb9e8f612",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SwiGLU.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1810a5ed4cd142a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "beam search decoding.md",
+                "file": "Bengali.AI Speech Recognition.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SwiGLU.md",
+                "file": "Bengali.AI Speech Recognition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SwiGLU.md",
+                "file": "Bengali.AI Speech Recognition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SwiGLU.md"
+                "file": "Bengali.AI Speech Recognition.md"
               }
             }
           }
@@ -182,16 +145,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "481042abb9e8f612",
+  "active": "b8b2486a44202de3",
   "lastOpenFiles": [
-    "Gated Linear Units (GLU).md",
-    "SwiGLU.md",
-    "ml-concepts/activation functions/activation functions.md",
-    "ml-concepts/activation functions/Sigmoid Linear Unit (Swish).md",
+    "text data cleaning.md",
     "Bengali.AI Speech Recognition.md",
-    "kenLM.md",
+    "tools/Demucs.md",
+    "Connectionist temporal classification.md",
+    "techniques/models/kenlm.md",
+    "Kaggle Grandmaster Tools.md",
     "beam search decoding.md",
-    "Pasted image 20240122162324.png",
+    "ml-concepts/activation functions/SwiGLU.md",
+    "competitions/Tweet Sentiment Extraction.md",
+    "ml-concepts/activation functions/Gated Linear Units (GLU).md",
+    "README.md",
+    "ml-concepts/activation functions/activation functions.md",
+    "competitions/Pasted image 20240122162324.png",
+    "ml-concepts/activation functions/Sigmoid Linear Unit (Swish).md",
+    "kenLM.md",
     "added an LSTM/GRU head after the backbone layer.md",
     "added an LSTM",
     "ml-concepts/models/BPE tokenizer.md",
@@ -200,19 +170,12 @@
     "techniques/voice activity detection (VAD).md",
     "techniques/Spectrogram dithering.md",
     "techniques/identifying slow feature generation.md",
-    "README.md",
     "techniques/features/downscale upscale examples.md",
     "problem-type/transcription.md",
     "Pasted image 20240122150028.png",
     "problem-type/machine translation.md",
     "competitions/Google - Fast or Slow? Predict AI Model Runtime.md",
     "ml-concepts/GNN Positional encodings.md",
-    "ml-concepts/models/multi layer perceptron.md",
-    "ml-concepts/Graph Segment Training.md",
-    "ml-concepts/Relational Graph Convolutional Networks (R-GCNs).md",
-    "ml-concepts/Spectral Graph Convolutions.md",
-    "ml-concepts/models/Pyboost.md",
-    "tools/Ray Tune.md",
     "ml-concepts/models",
     "models/model",
     "Untitled",

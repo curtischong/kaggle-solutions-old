@@ -61,6 +61,25 @@ Bengali dialects (especially those spoken by Muslim religious sermons) aren't tr
 		- used v100s
 - (3rd)
 	- https://www.kaggle.com/competitions/bengaliai-speech/discussion/447957
+	- [[text data cleaning]]
+		-  consecutive `[।!?]` in the train data were replaced by a single character
+		- We also removed sentences containing consecutive `[,-]` from the train data
+	- During inference, we sorted data based on audio_length in ascending order and set the dataloader's variable shuffle=False.
+	- [[Connectionist temporal classification]]
+		- we fine-tuned a model only with the human reviewed & corrected data (split=”valid”), which improved CV
+			- cause finetuning on all data decreased CV
+	- used [[kenlm]]
+		- Because there are many out-of-vocabulary in OOD data, we thought training strong LM with large external text data is important. So we downloaded text data and script of ASR datasets(Competition data, indicCorp v2, common voice, fleurs, openslr, openslr37, and oscar) and trained 5-gram LM.
+	- used [[Demucs]] to denoise audios
+		- note: demucs sometimes makes the audio worse
+			- so if it's worse, they don't use it
+			- how to detect if it makes it worse?
+				- 1) make two predictions one with and one without demucs
+					- use mean_width=10 (during bean search) to speed up the inference
+				- 2) we compared the number of tokens in two predictions. If the number of tokens in the prediction with Demucs is longer, then use Demucs, else, don't use it
+	- post processing: the punctuation model
+		- their punctuation model will look at the spaces in between words. and it'll decide to insert a punctuation in those spaces if needed
+		- As a tip for training, the CV score was better improved by setting the loss weight of "PAD" to 0.0.
 ##### Important notebooks/discussions
 - explaining the competition
 	- https://www.kaggle.com/code/sujaykapadnis/bengali-speech-recognition-for-everyone
@@ -74,3 +93,8 @@ Bengali dialects (especially those spoken by Muslim religious sermons) aren't tr
 - use good training data.  if you are given bad training data, don't make a cake out of garbage. find better ingredients!
 - a good approach to data augmentation:
 	- (2nd) "most of the augmentations are there because logically it makes sense for them to be there and not the results of some grid search experiments. I try to take the same approach in CV comps too"
+- when dealing with audio, train a punctuation model to input punctuation afterwards.
+	- but make sure hypthens and periods are trained with the original model (so it can pick up on pauses)
+	- only the top competitors UNDERSTOOD THE IMPORTANCE OF A PUNCTUATION MODEL
+	- people tried ot use a seq2seq model to generate the punctuation (probably given the predicted sentence with no punctuation, generate one that did have it)
+		- however, a classification model worked much better
