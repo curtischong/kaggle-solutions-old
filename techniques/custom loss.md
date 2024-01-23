@@ -1,1 +1,5 @@
-this tag is here so we can easily find custom losses for different types of problems
+- this tag is here so we can easily find custom losses for different types of problems
+- When making your own custom loss, just make sure that it's continuous
+	- so gradient descent can minimize it iteratively
+	- HOWEVER, some models (like random forests), they don't need to be smooth
+		- since they evaluate the quality of a split (e.g. gini index)

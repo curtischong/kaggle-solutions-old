@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "eae04e326a7c413e",
+        "id": "45d563ab9567934e",
         "type": "tabs",
         "children": [
           {
-            "id": "b8b2486a44202de3",
+            "id": "fee2b63c6815162a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eval-functions/substring segmentation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9540eeab870f5c60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "Google QUEST Q&A Labeling.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "Google QUEST Q&A Labeling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "Google QUEST Q&A Labeling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md"
+                "file": "Google QUEST Q&A Labeling.md"
               }
             }
           }
@@ -159,19 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9540eeab870f5c60",
+  "active": "fee2b63c6815162a",
   "lastOpenFiles": [
+    "ml-concepts/models/Roberta.md",
+    "Google QUEST Q&A Labeling.md",
+    "techniques/regularization/label smoothing.md",
+    "techniques/custom loss.md",
+    "ml-concepts/activation functions/activation functions.md",
+    "eval-functions/substring segmentation.md",
+    "competitions/Tweet Sentiment Extraction.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "problem-type/learning to rank.md",
     "competitions/Child Mind Institute - Detect Sleep States.md",
-    "Google QUEST Q&A Labeling.md",
     "Kaggle Grandmaster Tools.md",
     "All Competitions.md",
     "use intermediate layer results (weighted).md",
     "eval-functions/Spearman's correlation Coefficient.md",
-    "competitions/Tweet Sentiment Extraction.md",
     "pseudo-labeling.md",
-    "eval-functions/substring segmentation.md",
     "eval-functions/jaccard similarity (aka Intersection Over Union).md",
     "README.md",
     "assets/Pasted image 20240123115608.png",
@@ -185,11 +176,7 @@
     "tools/Demucs.md",
     "ml-concepts/activation functions/SwiGLU.md",
     "ml-concepts/activation functions/Gated Linear Units (GLU).md",
-    "ml-concepts/activation functions/activation functions.md",
     "competitions/Pasted image 20240122162324.png",
-    "ml-concepts/activation functions/Sigmoid Linear Unit (Swish).md",
-    "kenLM.md",
-    "added an LSTM/GRU head after the backbone layer.md",
     "added an LSTM",
     "Pasted image 20240122150028.png",
     "ml-concepts/models",

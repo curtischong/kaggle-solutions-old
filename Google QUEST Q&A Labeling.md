@@ -1,10 +1,14 @@
-Sorry, I just wanted to add this competition because I read a really cool trick
-**Link:** 
+**Link:** https://www.kaggle.com/competitions/google-quest-challenge
 **Problem Type:** 
 **Input:** 
 **Output:** 
 **Eval Metric:** [[Spearman's correlation Coefficient]]
+- there are 30 target columns
+	- 
+	- The spearman is calculated per target
 ##### Summary
+
+- okokoko There were A LOT OF THE TOP KAGGLE GRANDMASTERS IN THIS COMPETITION. just gushing sry
 ##### Solutions
 (1st)
 - https://www.kaggle.com/c/google-quest-challenge/discussion/129840
@@ -17,6 +21,9 @@ Sorry, I just wanted to add this competition because I read a really cool trick
 - "Well, there is some post-processing. But tuning thresholds for each target was clearly seen as a straight way to overfitting, especially with 30 targets and so small public test size."
 - "This model is initialized with original BERT weights, then finetuning with SX data, finally reusing the checkpoint in our pipeline. A subtle intermediate step was to delete classifier weights and biases from the SX checkpoint, because we had to switch from 6 SX targets to 30."
 	- not sure if this is a trick or not. prob not
+(2nd)
+- https://www.kaggle.com/competitions/google-quest-challenge/discussion/129978
+	- 
 
 ##### Important notebooks/discussions
 
