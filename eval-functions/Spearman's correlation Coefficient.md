@@ -40,3 +40,5 @@ link: https://www.kaggle.com/code/dschettler8845/novo-esp-eda-baseline
 		print_spearman(a, b2) # --> 1.
 			```
 	- So it is important to predict whether consecutive terms are **the same value**
+- why might this happen?
+	- the target column in your dataset was evaluated using a rubric, not relative to the other rows

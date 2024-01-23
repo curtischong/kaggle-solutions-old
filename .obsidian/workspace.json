@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fee2b63c6815162a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GroupKFold.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c53abc70c9263dcf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cross validation.md",
+                "file": "Google QUEST Q&A Labeling.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GroupKFold.md",
+                "file": "Google QUEST Q&A Labeling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GroupKFold.md",
+                "file": "Google QUEST Q&A Labeling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GroupKFold.md"
+                "file": "Google QUEST Q&A Labeling.md"
               }
             }
           }
@@ -158,13 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fee2b63c6815162a",
+  "active": "c53abc70c9263dcf",
   "lastOpenFiles": [
-    "Google QUEST Q&A Labeling.md",
-    "cross validation.md",
-    "GroupKFold.md",
-    "competitions/Google - Fast or Slow? Predict AI Model Runtime.md",
     "eval-functions/Spearman's correlation Coefficient.md",
+    "Google QUEST Q&A Labeling.md",
+    "GroupKFold.md",
+    "cross validation.md",
+    "competitions/Google - Fast or Slow? Predict AI Model Runtime.md",
     "ml-concepts/models/Graph Convolutional Network (GCN).md",
     "ml-concepts/models/Roberta.md",
     "techniques/regularization/label smoothing.md",

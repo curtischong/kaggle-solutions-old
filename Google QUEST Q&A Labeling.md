@@ -35,11 +35,17 @@
 - "Well, there is some post-processing. But tuning thresholds for each target was clearly seen as a straight way to overfitting, especially with 30 targets and so small public test size."
 - "This model is initialized with original BERT weights, then finetuning with SX data, finally reusing the checkpoint in our pipeline. A subtle intermediate step was to delete classifier weights and biases from the SX checkpoint, because we had to switch from 6 SX targets to 30."
 	- not sure if this is a trick or not. prob not
-(2nd)
+(2nd) - Very robust CV. Very nicely formatted target
 - https://www.kaggle.com/competitions/google-quest-challenge/discussion/129978
 	- Given the metric is rank-based, and given targets are not binary, it seemed important to be able to predict values that are neither 0 or 1 correctly.
-	- [[GroupKFold]]
+		- they tried to use [[one-hot encoding]] of the targets (since some targets had a small number of distinct values)
+			- I checked the dataset:
+				- the "answer_type_procedure" column only had this as targets:
+					- 0.000000, 0.333333, 0.666667, 1
 		- 
+	- ### Cross validation
+		- [[GroupKFold]] didn't work
+			- 
 
 ##### Important notebooks/discussions
 - https://www.kaggle.com/code/carlolepelaars/understanding-the-metric-spearman-s-rho/notebook
