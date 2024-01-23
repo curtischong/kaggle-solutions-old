@@ -59,13 +59,22 @@ Bengali dialects (especially those spoken by Muslim religious sermons) aren't tr
 		- he needed to find external data that have dot annotations to do this well
 	- the final full train took ~5days. Training punctuation models are relatively quick though, only a few hours.
 		- used v100s
-- (3rd)
+	- I am still very confused. why are they using three models. shouldn't it just be 2?
+		- 1 model for sound to text (STT)
+		- 1 model to insert punctuation?
+		- why is there a random kenlm model?
+		- **Answer:**
+		- the STT model just outputs characters or subwords ƒrom the audio
+		- we need to piece together these into actual words
+		- [[kenlm]] is the model that generates the final sentence (with the highest probabilities from the given subwords / sounds)
+			- this is why [[beam search decoding]] is used, to quickly find a string transcription
+- (3rd) [[Connectionist temporal classification (CTC)]], [[KenLM]], xlm-roberta-large, denoised using Demucs
 	- https://www.kaggle.com/competitions/bengaliai-speech/discussion/447957
 	- [[text data cleaning]]
 		-  consecutive `[।!?]` in the train data were replaced by a single character
 		- We also removed sentences containing consecutive `[,-]` from the train data
 	- During inference, we sorted data based on audio_length in ascending order and set the dataloader's variable shuffle=False.
-	- [[Connectionist temporal classification]]
+	- [[Connectionist temporal classification (CTC)]]
 		- we fine-tuned a model only with the human reviewed & corrected data (split=”valid”), which improved CV
 			- cause finetuning on all data decreased CV
 	- used [[kenlm]]
@@ -77,9 +86,12 @@ Bengali dialects (especially those spoken by Muslim religious sermons) aren't tr
 				- 1) make two predictions one with and one without demucs
 					- use mean_width=10 (during bean search) to speed up the inference
 				- 2) we compared the number of tokens in two predictions. If the number of tokens in the prediction with Demucs is longer, then use Demucs, else, don't use it
-	- post processing: the punctuation model
+	- post processing: the punctuation model (xlm-roberta-large)
 		- their punctuation model will look at the spaces in between words. and it'll decide to insert a punctuation in those spaces if needed
 		- As a tip for training, the CV score was better improved by setting the loss weight of "PAD" to 0.0.
+- (4th) similar solution to (3rd). not much new
+	- https://www.kaggle.com/competitions/bengaliai-speech/discussion/447995
+	- trained a spelling error correction model (but didn't work)
 ##### Important notebooks/discussions
 - explaining the competition
 	- https://www.kaggle.com/code/sujaykapadnis/bengali-speech-recognition-for-everyone
@@ -98,3 +110,5 @@ Bengali dialects (especially those spoken by Muslim religious sermons) aren't tr
 	- only the top competitors UNDERSTOOD THE IMPORTANCE OF A PUNCTUATION MODEL
 	- people tried ot use a seq2seq model to generate the punctuation (probably given the predicted sentence with no punctuation, generate one that did have it)
 		- however, a classification model worked much better
+	- Since there is no good end-to-end [[speech to Text (STT)]] model to convert the audio into sentences, ppl in this competition hacked a pipeline of three models (mp3 -> subword / character tokens -> constructed sentences -> sentences w/ punctuation) to get the transcriptions.
+		- this probably won't be required in a few years

@@ -1,0 +1,4 @@
+- basically I think: given a sound segment, classify what subword / character it is
+- then you need to assemble these parts into actual words / sentences
+	- you use [[beam search decoding]] and [[best path decoding]] to get the final output
+	- [[kenlm]] can be used to evaluate the probability of individual sentences (for beamsearch to use I think)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bengali.AI Speech Recognition.md",
+                "file": "All Competitions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bengali.AI Speech Recognition.md",
+                "file": "All Competitions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bengali.AI Speech Recognition.md",
+                "file": "All Competitions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bengali.AI Speech Recognition.md"
+                "file": "All Competitions.md"
               }
             }
           }
@@ -147,13 +147,14 @@
   },
   "active": "b8b2486a44202de3",
   "lastOpenFiles": [
-    "text data cleaning.md",
-    "Bengali.AI Speech Recognition.md",
-    "tools/Demucs.md",
-    "Connectionist temporal classification.md",
+    "problem-type/speech to Text (STT).md",
+    "techniques/text data cleaning.md",
+    "ml-concepts/beam search decoding.md",
+    "ml-concepts/Connectionist temporal classification (CTC).md",
+    "competitions/Bengali.AI Speech Recognition.md",
     "techniques/models/kenlm.md",
+    "tools/Demucs.md",
     "Kaggle Grandmaster Tools.md",
-    "beam search decoding.md",
     "ml-concepts/activation functions/SwiGLU.md",
     "competitions/Tweet Sentiment Extraction.md",
     "ml-concepts/activation functions/Gated Linear Units (GLU).md",
@@ -175,7 +176,6 @@
     "Pasted image 20240122150028.png",
     "problem-type/machine translation.md",
     "competitions/Google - Fast or Slow? Predict AI Model Runtime.md",
-    "ml-concepts/GNN Positional encodings.md",
     "ml-concepts/models",
     "models/model",
     "Untitled",

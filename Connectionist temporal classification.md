@@ -1,1 +1,0 @@
-you use [[beam search decoding]] and [[best path decoding]] to get the final output
