@@ -1,0 +1,2 @@
+- you use the intermediate layer results to get the final output
+	- obv, you weigh each layer's results differently (these weights are trained)

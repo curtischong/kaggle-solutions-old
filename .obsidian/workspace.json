@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gru head",
+                "query": "differentia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -160,15 +161,21 @@
   },
   "active": "9540eeab870f5c60",
   "lastOpenFiles": [
-    "pseudo-labeling.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
+    "problem-type/learning to rank.md",
+    "competitions/Child Mind Institute - Detect Sleep States.md",
+    "Google QUEST Q&A Labeling.md",
+    "Kaggle Grandmaster Tools.md",
+    "All Competitions.md",
+    "use intermediate layer results (weighted).md",
+    "eval-functions/Spearman's correlation Coefficient.md",
     "competitions/Tweet Sentiment Extraction.md",
+    "pseudo-labeling.md",
     "eval-functions/substring segmentation.md",
     "eval-functions/jaccard similarity (aka Intersection Over Union).md",
     "README.md",
     "assets/Pasted image 20240123115608.png",
     "Pasted image 20240123113809.png",
-    "Kaggle Grandmaster Tools.md",
-    "All Competitions.md",
     "problem-type/speech to Text (STT).md",
     "techniques/text data cleaning.md",
     "ml-concepts/beam search decoding.md",
@@ -184,12 +191,6 @@
     "kenLM.md",
     "added an LSTM/GRU head after the backbone layer.md",
     "added an LSTM",
-    "ml-concepts/models/BPE tokenizer.md",
-    "eval-functions/Word Error Rate.md",
-    "eval-functions/Levenshtein distance.md",
-    "techniques/voice activity detection (VAD).md",
-    "techniques/Spectrogram dithering.md",
-    "techniques/identifying slow feature generation.md",
     "Pasted image 20240122150028.png",
     "ml-concepts/models",
     "models/model",

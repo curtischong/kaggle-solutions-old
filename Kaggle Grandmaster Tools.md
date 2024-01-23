@@ -10,3 +10,8 @@ Performance:
 
 [[Graph Convolutional Network (GCN)]]
 - https://www.dgl.ai/
+
+
+- https://www.kaggle.com/c/google-quest-challenge/discussion/129840
+	- " About 2 years ago I spent a couple of evenings to create a very tiny python library called [mag](https://github.com/ex4sperans/mag) that addressed the problem of machine learning experiment management. Since then, I used it in every single competition including this one. This really helped our team to don't lose track of all the models we trained for these two weeks. I hope some of you might find it useful too."
+	- https://github.com/ex4sperans/maggot
