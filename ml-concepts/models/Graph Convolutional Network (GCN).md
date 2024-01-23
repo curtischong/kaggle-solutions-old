@@ -11,7 +11,7 @@
 			- the problem: if we change the topology of the graph, won't the adj matrix change? wouldn't our matrices w be invalid?
 				- we're only learning weights for this specific graph
 			- I think the article is just keeping it simple and making an analogy. In reality we'll just use an aggregation function for hte neighbouring hidden weights (so we aren't training for a specific graph topology)
-		- Note that higher orders of A just means that we are considering node features u-hops away where u is the power of the adj matrix
+		- Note that higher orders of A just means that we are considering node features u-hops away where u is the power of the adj matrix (this is a property of adj matrices. look it up!)
 			- why even have higher orders of A?
 				- so we can get more data from further neighbours.
 				- If this was an image net, this is analogous to increasing our kernel size for the convolution (3x3 -> 5x5)

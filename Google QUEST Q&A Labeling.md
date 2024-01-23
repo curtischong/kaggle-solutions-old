@@ -1,11 +1,25 @@
 **Link:** https://www.kaggle.com/competitions/google-quest-challenge
-**Problem Type:** 
+**Problem Type:** [[learning to rank]]
 **Input:** 
 **Output:** 
 **Eval Metric:** [[Spearman's correlation Coefficient]]
+- The goal is to see **how well your model can rank** Q&A forum posts based on these target columns:
+	- question_well_written
+	- answer_helpful
+	- answer_relevance
+	- answer_type_reason_explanation
+	- etc.
 - there are 30 target columns
-	- 
-	- The spearman is calculated per target
+	- each target column is a value from [0,1]
+	- for **each column**:
+		- kaggle sorts your predictions (decreasing yhat)
+			- the yhat you predict is just used to sort all the test rows
+		- we now have an ordered array of [questionId, rank]
+			- the rank is just the index of that questionId in the array
+		- we now run spearman's correlation of this array AGAINST kaggle's rank of this array
+	- since there are 30 columns, kaggle does it 30 times^
+	- The final score is the average of all 30 of these spearman correlations
+- A common approach is to treat it as a binary classification problem, cause the better you can predict each row's score, the more accurate it's rank will be
 ##### Summary
 
 - okokoko There were A LOT OF THE TOP KAGGLE GRANDMASTERS IN THIS COMPETITION. just gushing sry
@@ -23,8 +37,12 @@
 	- not sure if this is a trick or not. prob not
 (2nd)
 - https://www.kaggle.com/competitions/google-quest-challenge/discussion/129978
-	- 
+	- Given the metric is rank-based, and given targets are not binary, it seemed important to be able to predict values that are neither 0 or 1 correctly.
+	- [[GroupKFold]]
+		- 
 
 ##### Important notebooks/discussions
+- https://www.kaggle.com/code/carlolepelaars/understanding-the-metric-spearman-s-rho/notebook
+	- many ppl were just using binary_crossentropy since the targets "look" like a binary classification problem
 
 #### Takeaways
