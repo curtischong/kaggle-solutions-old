@@ -1,6 +1,8 @@
 **Link:** https://www.kaggle.com/competitions/google-quest-challenge
 **Problem Type:** [[learning to rank]]
-**Input:** 
+**Input:** each row contains a question, and the answer to it (on a Q&A site)
+- Note: multiple rows can come from the same question, we group by `question_body`
+	- but they are in different rows since there were more than one answer to the question
 **Output:** 
 **Eval Metric:** [[Spearman's correlation Coefficient]]
 - The goal is to see **how well your model can rank** Q&A forum posts based on these target columns:
@@ -37,15 +39,29 @@
 	- not sure if this is a trick or not. prob not
 (2nd) - Very robust CV. Very nicely formatted target
 - https://www.kaggle.com/competitions/google-quest-challenge/discussion/129978
-	- Given the metric is rank-based, and given targets are not binary, it seemed important to be able to predict values that are neither 0 or 1 correctly.
-		- they tried to use [[one-hot encoding]] of the targets (since some targets had a small number of distinct values)
-			- I checked the dataset:
-				- the "answer_type_procedure" column only had this as targets:
+	- ### Modifying the metric
+		- Given the metric is rank-based, and given targets are not binary, it seemed important to be able to predict values that are neither 0 or 1 correctly.
+			- they tried to use one-hot encoding of the targets (since some targets had a small number of distinct values)
+				- For example: the "answer_type_procedure" column only had this as targets:
 					- 0.000000, 0.333333, 0.666667, 1
-		- 
+					- more than one row can have these targets (cause it was graded via a rubric, not relatively between rows)
+				- However, it didn't work, cause [[one-hot encoding]] destroys the ordering of targets
+					- maybe [[thermometer encoding]] would've worked?
 	- ### Cross validation
-		- [[GroupKFold]] didn't work
-			- 
+		- using ONLY [[GroupKFold]] (where the examples are grouped by question body) didn't work
+			- 1) "Test data is different to training data in the sense that it only has one question-answer pair sampled out of a group of questions in train data. There can be stark noise for labels of the same question, which is why this needs to be addressed robustly."
+				- I don't 100% know what this means
+			- 2) cause there are a few columns with very rare events and also a lot of noise within those rare events
+		- their CV solution:
+			- 1) in each validation fold, first groupby question_body
+				- out of all your unique question_body, randomly pick 100 of them
+					- and ONLY PICK ONE ANSWER to validate against
+			- 2) your model now has 100 predictions
+			- 3) Calculate the median score across these 100 samples and report.
+				- how is this score calculated? you can't use spearman with one value
+			- Ignore spelling column (labels weren't very precise). [[drop bad targets from CV]]
+			- Final CV is a mean of 5 folds.
+	- [[differential learning rate]]
 
 ##### Important notebooks/discussions
 - https://www.kaggle.com/code/carlolepelaars/understanding-the-metric-spearman-s-rho/notebook

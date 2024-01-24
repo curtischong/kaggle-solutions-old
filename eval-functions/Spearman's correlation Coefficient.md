@@ -27,6 +27,11 @@ link: https://www.kaggle.com/code/dschettler8845/novo-esp-eda-baseline
 	- ![[Pasted image 20240118171728.png]]
 	- the red line is y, the green is yhat.
 	- yhat doesn't fit the data well, but the score is 0.92 (high!)
+- Doesn't work when your label column is unstable AND your target column can have duplicate labels
+	- e.g. in [[Google QUEST Q&A Labeling]], the question_type_spelling only had a few rare events
+		- so ppl had to "fiddling with threshold values" (to determine which target label it should be postprocessed into) 
+		- this metric doesn't work well for columns like this!
+			- maybe MSE would've worked better, since a change in rank is a discrete jump in error
 ### Important Considerations
 - https://www.kaggle.com/c/google-quest-challenge/discussion/118724
 	- The spearman's correlation coefficient only considers the order of values

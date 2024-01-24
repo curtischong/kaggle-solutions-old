@@ -1,0 +1,2 @@
+- Most models were trained with differential learning rate, where the transformer gets a lr of 3-e5 and the model head(s) a lr of 0.005 and used a cosine schedule for training 3 epochs including warmup over one epoch. Optimizer were either AdamW or RAdam with weight decay of 0.01 using an effective batchsize of 8 (gradient accumulation).
+- https://www.kaggle.com/competitions/google-quest-challenge/discussion/129978

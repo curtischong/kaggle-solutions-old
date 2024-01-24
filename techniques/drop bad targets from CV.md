@@ -1,0 +1,3 @@
+- these targets are really fiddly probably because they class imbalance is really high.
+- OR their labels just aren't good
+- so remove them from your CV to make it more robust
