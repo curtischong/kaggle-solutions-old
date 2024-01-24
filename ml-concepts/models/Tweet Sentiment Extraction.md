@@ -20,14 +20,24 @@
 		- ans: "no"
 	- https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/159254#889434
 ##### Solutions
-(1st) No post processing needed
+(1st) No post processing needed - use a character-level model instead
+- brief solution: https://www.kaggle.com/competitions/tweet-sentiment-extraction/discussion/159264
+	- notebook for training character models (magic - fixes offset): https://www.kaggle.com/code/theoviel/character-level-model-magic/notebook
 - https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/159477
 	- how they did the concatenation: https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/159254
-- custom loss: [[jaccard similarity (aka Intersection Over Union)]]-based Soft Labels [[custom loss]]
-	- why? Cause Cross Entropy doesn’t optimize Jaccard directly
-	- SoftIOU "soft intersection over union" didn't help
-	- 
-- [[pseudo-labeling]]
+- heartkilla's models
+	- custom loss: [[jaccard similarity (aka Intersection Over Union)]]-based Soft Labels [[custom loss]]
+		- why? Cause Cross Entropy doesn’t optimize Jaccard directly
+		- SoftIOU "soft intersection over union" didn't help
+- theo's models
+	- [[Multi Sample Dropout]]
+- clev's models
+	- used [[label smoothing]] 
+	- [[]]
+- how did they fix the offset issue?
+	- rather than doing post-processing, they **used a second layer model** to predict the correct offsets (this is their magic)
+		- these are their character embedding models
+- [[pseudo-labeling]] 
 
 ##### Important notebooks/discussions
 

@@ -3,3 +3,9 @@
 	- so gradient descent can minimize it iteratively
 	- HOWEVER, some models (like random forests), they don't need to be smooth
 		- since they evaluate the quality of a split (e.g. gini index)
+- How to improve your loss
+	- if your loss has the form: $\sum \frac{t}{r}$, consider using $\sum \frac{t^2}{r^2}$
+		- play with how this looks:
+			- https://www.desmos.com/calculator/gdehmkoyeq
+		- the distribution of the loss looks like an inverse bell graph
+			- there are more values with smaller loss, and more with larger loss
