@@ -13,19 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "eval-functions/ranking loss functions.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e975cb0426ef00b9",
+            "id": "1f6c878cbb11ed64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "eval-functions/KLDivergenceLoss.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "669248ce2d29f24b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "alternative targets.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "eval-functions/KLDivergenceLoss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md",
+                "file": "eval-functions/KLDivergenceLoss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Tweet Sentiment Extraction.md"
+                "file": "eval-functions/KLDivergenceLoss.md"
               }
             }
           }
@@ -159,10 +171,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e975cb0426ef00b9",
+  "active": "1f6c878cbb11ed64",
   "lastOpenFiles": [
-    "thefuzz (prev fuzzywuzzy).md",
+    "eval-functions/ranking loss functions.md",
     "competitions/Tweet Sentiment Extraction.md",
+    "techniques/custom loss.md",
+    "custom labels.md",
+    "alternative targets.md",
+    "eval-functions/KLDivergenceLoss.md",
+    "Loss functions.md",
+    "ml-concepts/activation functions/activation functions.md",
+    "techniques/sanity check.md",
+    "techniques/regularization/label smoothing.md",
+    "thefuzz (prev fuzzywuzzy).md",
     "competitions/Bengali.AI Speech Recognition.md",
     "added an LSTM/GRU head after the backbone layer.md",
     "assets/Pasted image 20240123233643.png",
@@ -171,7 +192,6 @@
     "assets/Pasted image 20240123233405.png",
     "forward chaining cross validation.md",
     "All Competitions.md",
-    "Untitled.md",
     "ml-concepts/learning rates/differential learning rate.md",
     "techniques/Sequence bucketing.md",
     "shuffle split.md",
@@ -183,14 +203,6 @@
     "BERT.md",
     "ml-concepts/regularization/Multi Sample Dropout.md",
     "ml-concepts/regularization",
-    "techniques/models/kenlm.md",
-    "techniques/regularization/label smoothing.md",
-    "techniques/custom loss.md",
-    "competitions/Google QUEST Q&A Labeling.md",
-    "techniques/postprocess to match target distribution.md",
-    "techniques/clip outputs to be within range.md",
-    "threshold clipping.md",
-    "techniques/binary encoded categorical ordinal targets.md",
     "assets/Pasted image 20240123191755.png",
     "assets/Pasted image 20240123115608.png",
     "Pasted image 20240123113809.png",

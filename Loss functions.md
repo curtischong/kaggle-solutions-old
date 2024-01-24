@@ -1,0 +1,2 @@
+- TODO: go over and see if it's good. Try to find competitions that back this up:
+	- https://www.kaggle.com/code/nasirkhalid24/loss-functions-to-help-with-noisy-labelled-data#Bi-Tempered-logistic-loss
