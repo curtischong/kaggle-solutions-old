@@ -47,6 +47,9 @@
 					- more than one row can have these targets (cause it was graded via a rubric, not relatively between rows)
 				- However, it didn't work, cause [[one-hot encoding]] destroys the ordering of targets
 					- maybe [[thermometer encoding]] would've worked?
+		- The metric they settled on:
+			- [[binary encoded categorical ordinal targets]]
+
 	- ### Cross validation
 		- using ONLY [[GroupKFold]] (where the examples are grouped by question body) didn't work
 			- 1) "Test data is different to training data in the sense that it only has one question-answer pair sampled out of a group of questions in train data. There can be stark noise for labels of the same question, which is why this needs to be addressed robustly."
@@ -59,10 +62,13 @@
 			- 2) your model now has 100 predictions
 			- 3) Calculate the median score across these 100 samples and report.
 				- how is this score calculated? you can't use spearman with one value
+				- maybe they just look at [[MAELoss]] between the yhat and y for that one row
 			- Ignore spelling column (labels weren't very precise). [[drop bad targets from CV]]
 			- Final CV is a mean of 5 folds.
-	- [[differential learning rate]]
+	- post processing
+		- [[threshold clipping]]
 	- #### Training models
+		- used [[differential learning rate]]
 		- All “normal” tricks that worked in past computer vision or other NLP competitions (e.g. concat of Max and Mean pooling) did not improve cv. Also using a sliding window approach to capture more text did not work.
 			- they tried sliding window probably because transformers at the time had limited context, you had to remove the middle and keep the ends
 		- saw a big jump when they tried to freeze the transformers and only train the model head for 1 epoch, before fine-tuning

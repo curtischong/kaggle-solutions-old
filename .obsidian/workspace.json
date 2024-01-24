@@ -4,28 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "fe2856a9f327d9d9",
+        "id": "0238f67934230cf7",
         "type": "tabs",
         "children": [
           {
-            "id": "a6998215af520467",
+            "id": "f60f1d38cc4cd53b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Google QUEST Q&A Labeling.md",
+                "file": "threshold clipping.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7fcbcfef07099adb",
+            "id": "68bce2677b648154",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "use intermediate layer results (weighted).md",
+                "file": "threshold clipping.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45e05ca4d83bc347",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "threshold clipping.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +89,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Google QUEST Q&A Labeling.md",
+                "file": "threshold clipping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Google QUEST Q&A Labeling.md",
+                "file": "threshold clipping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Google QUEST Q&A Labeling.md"
+                "file": "threshold clipping.md"
               }
             }
           }
@@ -158,17 +169,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6998215af520467",
+  "active": "f60f1d38cc4cd53b",
   "lastOpenFiles": [
-    "use intermediate layer results (weighted).md",
     "Google QUEST Q&A Labeling.md",
-    "Pasted image 20240123191755.png",
+    "threshold clipping.md",
+    "techniques/binary encoded categorical ordinal targets.md",
+    "techniques/use intermediate layer results (weighted).md",
+    "techniques/cross validation.md",
+    "techniques/GroupKFold.md",
+    "techniques/features/pseudo-labeling.md",
+    "assets/Pasted image 20240123191755.png",
+    "eval-functions/ranking loss functions.md",
     "eval-functions/Spearman's correlation Coefficient.md",
     "techniques/drop bad targets from CV.md",
     "differential learning rate.md",
     "techniques/thermometer encoding.md",
-    "GroupKFold.md",
-    "cross validation.md",
     "competitions/Google - Fast or Slow? Predict AI Model Runtime.md",
     "ml-concepts/models/Graph Convolutional Network (GCN).md",
     "ml-concepts/models/Roberta.md",
@@ -182,12 +197,9 @@
     "competitions/Child Mind Institute - Detect Sleep States.md",
     "Kaggle Grandmaster Tools.md",
     "All Competitions.md",
-    "pseudo-labeling.md",
     "eval-functions/jaccard similarity (aka Intersection Over Union).md",
-    "README.md",
     "assets/Pasted image 20240123115608.png",
     "Pasted image 20240123113809.png",
-    "problem-type/speech to Text (STT).md",
     "competitions/Pasted image 20240122162324.png",
     "added an LSTM",
     "Pasted image 20240122150028.png",

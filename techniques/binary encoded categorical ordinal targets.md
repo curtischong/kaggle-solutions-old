@@ -1,0 +1,40 @@
+- When you are predicting an ordinal target (especially when you're optimizing for [[ranking loss functions]] - e.g. [[jaccard similarity (aka Intersection Over Union)]]), this is a good way to represent it
+	- this technique works well if your ordinal target has duplicate values
+- why not represent each ordinal class as [[one-hot encoding]]?
+	- cause you lose the ordering of values
+- The main idea:
+	- Let t be the true target's value
+	- Assume your target t has unique values `[0, ⅓, ⅔, 1]`
+	- then we will generate 3 new target columns:
+		- `t > 0, t > ⅓`, and `t > ⅔`
+		- we fill in each of these new binary columns based on what the original value of t was
+		- e.g. if the t = ⅔, then the value for that row in each column is:
+			- in the `t > 0` column: 1
+			- in the `t > ⅓` column: 1
+			- in the `t > ⅔` column: 0
+	- We can think of these predictions as the model guessing "the probability that `t > 0`, `t > ⅓`, or `t > ⅔`"
+	- now that we have all these probabilities, we can generate our final answer:
+		- **t_hat = $\sum_a a \cdot P(t = a)$**
+			- where `P(t = a) = P(t > term below) - P(t > a)`
+			- see below to understand why this works
+	- When the values are evenly spaced, as in this example, then the formula simplifies into:
+		- **t_hat = mean(P(t > 0), P(t > ⅓), P(t > ⅔))**
+---
+- I'm not sure why it works 100%. but here is how we derived the case where "the values are evenly spaced"
+	- P(t = 0) = 1 - P(t > 0)
+	- P(t = ⅓) = P(t > 0) - P(t > ⅓)
+	- P(t = ⅔) = P(t > ⅓) - P(t > ⅔)
+	- P(t = 1) = P(t > ⅔) - 0
+- Then we can express the original target value as:
+	- t_hat = 0 * P(t = 0) + ⅓P(t = ⅓) + ⅔P(t = ⅔) + 1 * P(t=1)
+		- TBH I still don't understand why this equation is true. how did they come up with this formula in the first place???
+		- My hunch: when the target is ordinal, and there are n rows, each row has a 1/n probability of being on the ith place (if you only look at the target).
+			- So in this formula: **t_hat = $\sum_a a \cdot P(t = a)$**
+				- we multiply each probability by a because it somehow "encodes being on a position with 1/n probability"
+			- the only reason why I have this hunch is because below, when we simplify, we cancel many terms out and get a nice "mean" of all the new target columns
+- substituting and simplifying:
+	- t_hat = ⅓(P(t > 0) - P(t > 1/3)) + ⅔(P(t > ⅓) - P(t > ⅔)) + P(t > ⅔)`
+	- **t_hat = ⅓P(t > 0) + ⅓P(t > ⅓) + ⅓P(t > ⅔)**
+- https://www.kaggle.com/competitions/google-quest-challenge/discussion/129978
+	- the kaggler forgot which paper this was from
+	- note that I rewrote this because their explanation wasn't very good (their notation was bad)
