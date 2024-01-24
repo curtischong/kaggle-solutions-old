@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blocked Cross-Validation.md",
+                "file": "techniques/cross validation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blocked Cross-Validation.md",
+                "file": "techniques/cross validation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blocked Cross-Validation.md"
+                "file": "techniques/cross validation.md"
               }
             }
           }
@@ -158,11 +157,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06470d21200f423f",
+  "active": "75b591fccc187cae",
   "lastOpenFiles": [
+    "Blocked Cross-Validation.md",
     "Pasted image 20240123233643.png",
     "techniques/cross validation.md",
-    "Blocked Cross-Validation.md",
     "assets/Pasted image 20240123233405.png",
     "forward chaining cross validation.md",
     "All Competitions.md",
@@ -204,7 +203,6 @@
     "techniques/efficiency",
     "ml-concepts/optimizers",
     "assets/Pasted image 20240119011400.png",
-    "assets/Pasted image 20240119010046.png",
     "ml-concepts/activation functions"
   ]
 }
