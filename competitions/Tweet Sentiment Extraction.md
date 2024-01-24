@@ -45,6 +45,16 @@
 		- rather than doing post-processing, they **used a second layer model** to predict the correct offsets (this is their magic)
 			- these are their character embedding models
 	- [[pseudo-labeling]] 
+- (3rd) No postprocessing. Their models just learned the noise
+	- https://www.kaggle.com/competitions/tweet-sentiment-extraction/discussion/159269
+	- solution code: https://github.com/suicao/tweet-extraction/
+	- the main idea: "Basically you predict the start index, get the _k_ hidden states at the _top-k_ indices. for each hidden state, concat it to the end index logits and predict the corresponding _top-k_ end indices."
+	- [[thefuzz (prev fuzzywuzzy)]]
+		- I think he used it to fuzzy match the output substring with the actual text in the tweet in case the output wasn't exactly the same as the tweet
+			- https://github.com/suicao/tweet-extraction/blob/f8207b61cc4f87b58a09e1362875c1a750842c86/utils.py#L29
+			- ok yeah, he just returns the substring that has the highest match with the generated output
+				- note the generated output is just a substring output (via indices, not GPT-like generation
+	- "I used the fastai style freeze-unfreeze scheme since the head is quite complicated."
 
 ##### Important notebooks/discussions
 

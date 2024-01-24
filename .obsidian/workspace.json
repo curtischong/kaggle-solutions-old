@@ -4,34 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7cacc7fa7f2daa91",
+        "id": "6b6f83de18a4b199",
         "type": "tabs",
         "children": [
           {
-            "id": "75b591fccc187cae",
+            "id": "c9500a8f1c6851b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "techniques/cross validation.md",
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "06470d21200f423f",
+            "id": "e975cb0426ef00b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blocked Cross-Validation.md",
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jaccard",
+                "query": "gru",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "techniques/cross validation.md",
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "techniques/cross validation.md",
+                "file": "competitions/Tweet Sentiment Extraction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "techniques/cross validation.md"
+                "file": "competitions/Tweet Sentiment Extraction.md"
               }
             }
           }
@@ -157,10 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75b591fccc187cae",
+  "active": "e975cb0426ef00b9",
   "lastOpenFiles": [
+    "thefuzz (prev fuzzywuzzy).md",
+    "competitions/Tweet Sentiment Extraction.md",
+    "competitions/Bengali.AI Speech Recognition.md",
+    "added an LSTM/GRU head after the backbone layer.md",
+    "assets/Pasted image 20240123233643.png",
     "Blocked Cross-Validation.md",
-    "Pasted image 20240123233643.png",
     "techniques/cross validation.md",
     "assets/Pasted image 20240123233405.png",
     "forward chaining cross validation.md",
@@ -173,7 +179,6 @@
     "kfold.md",
     "leavePOut.md",
     "assets/Pasted image 20240122162324.png",
-    "competitions/Tweet Sentiment Extraction.md",
     "ml-concepts/models/RoBERTa.md",
     "BERT.md",
     "ml-concepts/regularization/Multi Sample Dropout.md",
@@ -186,8 +191,6 @@
     "techniques/clip outputs to be within range.md",
     "threshold clipping.md",
     "techniques/binary encoded categorical ordinal targets.md",
-    "techniques/use intermediate layer results (weighted).md",
-    "techniques/GroupKFold.md",
     "assets/Pasted image 20240123191755.png",
     "assets/Pasted image 20240123115608.png",
     "Pasted image 20240123113809.png",
