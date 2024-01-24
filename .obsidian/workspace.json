@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f46a1c54772ac051",
+        "id": "7cacc7fa7f2daa91",
         "type": "tabs",
         "children": [
           {
-            "id": "c8d73b6ab2bd73e5",
+            "id": "75b591fccc187cae",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "4fd767bb037cb6b3",
+            "id": "06470d21200f423f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "forward chaining cross validation.md",
+                "file": "Blocked Cross-Validation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "forward chaining cross validation.md",
+                "file": "Blocked Cross-Validation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "forward chaining cross validation.md",
+                "file": "Blocked Cross-Validation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "forward chaining cross validation.md"
+                "file": "Blocked Cross-Validation.md"
               }
             }
           }
@@ -158,10 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4fd767bb037cb6b3",
+  "active": "06470d21200f423f",
   "lastOpenFiles": [
-    "Pasted image 20240123233405.png",
+    "Pasted image 20240123233643.png",
     "techniques/cross validation.md",
+    "Blocked Cross-Validation.md",
+    "assets/Pasted image 20240123233405.png",
     "forward chaining cross validation.md",
     "All Competitions.md",
     "Untitled.md",
@@ -187,7 +189,6 @@
     "techniques/binary encoded categorical ordinal targets.md",
     "techniques/use intermediate layer results (weighted).md",
     "techniques/GroupKFold.md",
-    "techniques/features/pseudo-labeling.md",
     "assets/Pasted image 20240123191755.png",
     "assets/Pasted image 20240123115608.png",
     "Pasted image 20240123113809.png",
@@ -204,7 +205,6 @@
     "ml-concepts/optimizers",
     "assets/Pasted image 20240119011400.png",
     "assets/Pasted image 20240119010046.png",
-    "assets/Pasted image 20240119010033.png",
     "ml-concepts/activation functions"
   ]
 }

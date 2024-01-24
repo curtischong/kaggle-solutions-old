@@ -4,3 +4,4 @@ https://medium.com/geekculture/cross-validation-techniques-33d389897878
 
 - [[GroupKFold]]
 - [[forward chaining cross validation]]
+- [[Blocked Cross-Validation]]
