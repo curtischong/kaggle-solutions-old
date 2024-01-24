@@ -62,6 +62,19 @@
 			- Ignore spelling column (labels weren't very precise). [[drop bad targets from CV]]
 			- Final CV is a mean of 5 folds.
 	- [[differential learning rate]]
+	- #### Training models
+		- All “normal” tricks that worked in past computer vision or other NLP competitions (e.g. concat of Max and Mean pooling) did not improve cv. Also using a sliding window approach to capture more text did not work.
+			- they tried sliding window probably because transformers at the time had limited context, you had to remove the middle and keep the ends
+		- saw a big jump when they tried to freeze the transformers and only train the model head for 1 epoch, before fine-tuning
+			- isn't fine-tuning just more training?
+				- ahhh, by fine-tuning they probably just stop freezing the transformers
+		- We further improved than this 2 step approach by using different learning rates for transformer and head, together with a warm up schedule, which enabled us to get rid of the freezing step in general.
+		- [[use intermediate layer results (weighted)]]
+		- their "siamese model"
+			- normally, siamese is used to determine if two ppl's faces look similar for facial recognition
+			- but they say "siamese model" just because they are referencing: "feed question and answer twice through the same transformer"
+			- then they take the final embeddings and concatenate the featrues before feeding it into a dense layer with 30 "target" values
+				- target is in ""s cause: "(For the sake of simplicity we show the architecture for the original 30 targets. It was adapted to work with the binarized targets.)"
 
 ##### Important notebooks/discussions
 - https://www.kaggle.com/code/carlolepelaars/understanding-the-metric-spearman-s-rho/notebook
