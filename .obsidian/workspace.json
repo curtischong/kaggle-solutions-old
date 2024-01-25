@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "4f3e238fbb685f9a",
+        "id": "6d9fc7ca90a164a7",
         "type": "tabs",
         "children": [
           {
-            "id": "fac4db825eb82686",
+            "id": "eab3c88d3fc977ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "G-Research Crypto Forecasting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1d5170f684bd5e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gru",
+                "query": "pearson",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "G-Research Crypto Forecasting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md",
+                "file": "G-Research Crypto Forecasting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Open Problems – Single-Cell Perturbations.md"
+                "file": "G-Research Crypto Forecasting.md"
               }
             }
           }
@@ -146,37 +159,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fac4db825eb82686",
+  "active": "eab3c88d3fc977ba",
   "lastOpenFiles": [
+    "README.md",
+    "eval-functions/Spearman's correlation Coefficient.md",
+    "eval-functions/Pearson's Correlation Coefficient.md",
+    "G-Research Crypto Forecasting.md",
+    "MLB Player Digital Engagement Forecasting.md",
+    "techniques/alternative targets.md",
+    "techniques/custom labels.md",
+    "ml-concepts/Blocked Cross-Validation.md",
+    "ml-concepts/forward chaining cross validation.md",
+    "ml-concepts/Loss functions.md",
+    "competitions/Open Problems – Single-Cell Perturbations.md",
     "added an LSTM/GRU head after the backbone layer.md",
     "techniques/regularization/label smoothing.md",
     "competitions/Tweet Sentiment Extraction.md",
     "eval-functions/KLDivergenceLoss.md",
     "tools/thefuzz (prev fuzzywuzzy).md",
     "techniques/derive results from logits.md",
-    "alternative targets.md",
     "eval-functions/ranking loss functions.md",
     "problem-type/classification.md",
     "techniques/custom loss.md",
-    "custom labels.md",
-    "Loss functions.md",
     "ml-concepts/activation functions/activation functions.md",
     "techniques/sanity check.md",
     "competitions/Bengali.AI Speech Recognition.md",
     "assets/Pasted image 20240123233643.png",
-    "Blocked Cross-Validation.md",
     "techniques/cross validation.md",
     "assets/Pasted image 20240123233405.png",
-    "forward chaining cross validation.md",
     "All Competitions.md",
     "ml-concepts/learning rates/differential learning rate.md",
-    "techniques/Sequence bucketing.md",
-    "shuffle split.md",
-    "README.md",
-    "kfold.md",
-    "leavePOut.md",
     "assets/Pasted image 20240122162324.png",
-    "ml-concepts/models/RoBERTa.md",
     "ml-concepts/regularization",
     "assets/Pasted image 20240123191755.png",
     "assets/Pasted image 20240123115608.png",

@@ -1,0 +1,2 @@
+- you get the model to also learn on other targets (that are related to your actual target) so it performs better
+	- e.g. if you want to teach a model to identify smiles, teaching it to identify other facial expressions might help
