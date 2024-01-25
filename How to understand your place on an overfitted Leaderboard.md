@@ -1,0 +1,9 @@
+- you can tell that the public LB is overfitted if:
+	- you have a good local CV, and you're doing a lot, but still not doing that well on the leaderboard
+	- there are too many beginners on the top ranks
+- You can get an accurate understanding of where you are by
+	- 1) Pulling the scores of masters & grandmasters with low scores (with prob > 5 submissions)
+		- cause these ppl typically submit decent submissions (and have good CV)
+	- 2) Then plot these scores on the scatter plot
+		- Try to beat these scores in your local CV
+		- Note: your local CV should have a worse score than the public leaderboard since submissions are trained on all the data (not just n - 1 folds in CV)

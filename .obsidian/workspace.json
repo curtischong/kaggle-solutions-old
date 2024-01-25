@@ -13,30 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "techniques/cross validation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1d5170f684bd5e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MLB Player Digital Engagement Forecasting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af60a229281a627d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "G-Research Crypto Forecasting.md",
                 "mode": "source",
                 "source": false
@@ -55,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,15 +158,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af60a229281a627d",
+  "active": "eab3c88d3fc977ba",
   "lastOpenFiles": [
-    "ml-concepts/forward chaining cross validation.md",
-    "G-Research Crypto Forecasting.md",
     "techniques/cross validation.md",
+    "ml-concepts/forward chaining cross validation.md",
+    "ml-concepts/models/lgbm.md",
+    "G-Research Crypto Forecasting.md",
     "MLB Player Digital Engagement Forecasting.md",
+    "filling training data.md",
+    "techniques/data period selection.md",
+    "README.md",
+    "How to understand your place on an overfitted Leaderboard.md",
     "tools/Numba.md",
     "tools/polars.md",
-    "README.md",
     "eval-functions/Spearman's correlation Coefficient.md",
     "eval-functions/Pearson's Correlation Coefficient.md",
     "techniques/alternative targets.md",
@@ -208,10 +186,6 @@
     "techniques/derive results from logits.md",
     "eval-functions/ranking loss functions.md",
     "problem-type/classification.md",
-    "techniques/custom loss.md",
-    "ml-concepts/activation functions/activation functions.md",
-    "techniques/sanity check.md",
-    "competitions/Bengali.AI Speech Recognition.md",
     "assets/Pasted image 20240123233643.png",
     "assets/Pasted image 20240123233405.png",
     "assets/Pasted image 20240122162324.png",
