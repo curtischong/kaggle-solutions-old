@@ -63,21 +63,27 @@
 		- he also has 4 model heads:
 			- 1) QA dense head (just a linear layer without any dropout) for predicting start and end tokens
 				- for each token in the output, predict if it's the start token, or if it's the end token
-				- Loss is computed with [[KLDivergenceLoss]] to add [[label smoothing]]:
+				- "Loss is computed with [[KLDivergenceLoss]] to add [[label smoothing]]":
 					- "true target token is given 0.9 probability and two of its neighbors (left and right) both take 0.05"
+					- I think they're saying that kldivergence basically adds label smoothing
 			- 2) Linear layer to predict binary target for each token: if it should be in selected text or not.
 				- very similar to 1) but now, every token in the answer is given a probability of 1
 			- [[alternative targets]]
 			- 3) linear layer to predict a sentiment of each token.
 			- 4) Two linear layers with ReLU in between to predict the sentiment of the whole tweet.
-		- 1) At the inference time, the first head is used to create a set of (start, end) candidates. First of all, each pair of (start, end) indices where end >= start is assigned a logit as a sum of individual start and end logits. All cases where end < start are given -999 logits. Then softmax is applied across all pairs to obtain probabilities for candidates and top 3 of them are selected to be used for the further processing. Tried other numbers of candidates, but 3 worked best. Let’s call the probability of a candidate from this head ‘_qa_prob_’.
-			- I don't think they are treating this as a "regression problem" where they are using a language model to do the regression
-			- they are just using smart ways to look at the logits of the final layer (before sigmoid) and try to find the end token only using the logits
+		- ### _Inference phase_
+			- [[derive results from logits]]
+				- Using 1st model head (the one that predicts the probability of each token being a start OR end token)
+					- they took the logits (i.e. the signal right before it's squashed between 0-1 via a sigmoid)
+					- and summed up all n choose 2 logit values
+					- then they just selected the top 3 of these three values to get the top position pairs
+						- these pairs are the most likely spots of being the start and end indexes!
 	
 ##### Important notebooks/discussions
 
 #### Takeaways
 - nobody used a regression strategy to predict the start/end indices
+	- they don't "use bert to output 2 integers from 1 to n representing the start and end idx of the substring"
 	- for each token in the input, your model predicts the probability that it's in the tweet substring or not
 		- so if there's n tokens as the input, the output is dimension n
 - you can take the logits of the final layer and do things with it... TODO fully understand
