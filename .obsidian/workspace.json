@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md",
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md",
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md",
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kaggle Grandmaster Tools.md"
+                "file": "MLB Player Digital Engagement Forecasting.md"
               }
             }
           }
@@ -147,14 +147,14 @@
   },
   "active": "658056db5e1cd5bf",
   "lastOpenFiles": [
+    "README.md",
+    "Kaggle Grandmaster Tools.md",
     "How to understand your place on an overfitted Leaderboard.md",
     "eval-functions/mean column-wise mean absolute error (MCMAE).md",
     "techniques/Fibonacci window lag.md",
     "eval-functions/Mean absolute error (MAE).md",
     "MLB Player Digital Engagement Forecasting.md",
     "techniques/filling training data.md",
-    "README.md",
-    "Kaggle Grandmaster Tools.md",
     "ml-concepts/axial attention.md",
     "competitions/G-Research Crypto Forecasting.md",
     "ml-concepts/forward chaining cross validation.md",
