@@ -80,7 +80,20 @@ Your (forecasted returns) - (actual market returns)
 			- (not sure if weighted average)
 - (7th) only modelling. the only feature added was time of day
 	- the final submission is an ensemble of 4 models trained with different sequence lengths.
-		- they probably mean different periods of data
+		- they probably mean different periods of data?
+	- for the image below, it looks like the minutes 90 is just the last 90 minutes of data right before the current time?
+	- ![[Pasted image 20240125155158.png]]
+	- [[axial attention]]
+- (9th) feature engineering [[expert models]] [[lgbm]]
+	- https://www.kaggle.com/competitions/g-research-crypto-forecasting/discussion/324180
+	- inference solution code: https://www.kaggle.com/code/bturan19/lgb-3fold-rollingagg-lagtarget-submissioninference/notebook
+	- the hull moving average was their most important feature
+		- https://www.motivewave.com/studies/hull_moving_average.htm
+			- "The Hull Moving Average makes a moving average more responsive while maintaining a curve smoothness."
+		- I choose my windows with a Fibonacci sequence: `fibo_list = [55, 210, 340, 890, 3750]` [[Fibonacci window lag]]
+	- I have 3 different LightGBM models that were trained for different market conditions. Up market, down market and relatively more stable market. Then I get the average of them. [[expert models]]
+	- they only made 3 models. they used the same 3 models to predict for each asset
+		- Note: the model doesn't see the data for all assets at once. it just predicts per-asset
 ##### Important notebooks/discussions
 - https://www.kaggle.com/code/cstein06/tutorial-to-the-g-research-crypto-competition/notebook
 	-  log returns are preferred for mathematical modelling of time series
@@ -96,3 +109,6 @@ Your (forecasted returns) - (actual market returns)
 
 
 #### Takeaways
+- feature engineering is so important
+- you can get very far with basic gradient boosted tree models
+- 

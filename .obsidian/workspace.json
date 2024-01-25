@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6d9fc7ca90a164a7",
+        "id": "ed058cc1b4ac94f6",
         "type": "tabs",
         "children": [
           {
-            "id": "eab3c88d3fc977ba",
+            "id": "658056db5e1cd5bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "G-Research Crypto Forecasting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3185129050ae2fc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ml-concepts/forward chaining cross validation.md",
+                "file": "Kaggle Grandmaster Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "G-Research Crypto Forecasting.md",
+                "file": "Kaggle Grandmaster Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "G-Research Crypto Forecasting.md",
+                "file": "Kaggle Grandmaster Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "G-Research Crypto Forecasting.md"
+                "file": "Kaggle Grandmaster Tools.md"
               }
             }
           }
@@ -145,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,17 +145,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eab3c88d3fc977ba",
+  "active": "658056db5e1cd5bf",
   "lastOpenFiles": [
-    "techniques/cross validation.md",
-    "ml-concepts/forward chaining cross validation.md",
-    "ml-concepts/models/lgbm.md",
-    "G-Research Crypto Forecasting.md",
-    "MLB Player Digital Engagement Forecasting.md",
-    "filling training data.md",
-    "techniques/data period selection.md",
-    "README.md",
     "How to understand your place on an overfitted Leaderboard.md",
+    "eval-functions/mean column-wise mean absolute error (MCMAE).md",
+    "techniques/Fibonacci window lag.md",
+    "eval-functions/Mean absolute error (MAE).md",
+    "MLB Player Digital Engagement Forecasting.md",
+    "techniques/filling training data.md",
+    "README.md",
+    "Kaggle Grandmaster Tools.md",
+    "ml-concepts/axial attention.md",
+    "competitions/G-Research Crypto Forecasting.md",
+    "ml-concepts/forward chaining cross validation.md",
+    "techniques/models/expert models.md",
+    "assets/Pasted image 20240125155158.png",
+    "techniques/cross validation.md",
+    "ml-concepts/models/lgbm.md",
+    "techniques/data period selection.md",
     "tools/Numba.md",
     "tools/polars.md",
     "eval-functions/Spearman's correlation Coefficient.md",
@@ -180,12 +174,6 @@
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "added an LSTM/GRU head after the backbone layer.md",
     "techniques/regularization/label smoothing.md",
-    "competitions/Tweet Sentiment Extraction.md",
-    "eval-functions/KLDivergenceLoss.md",
-    "tools/thefuzz (prev fuzzywuzzy).md",
-    "techniques/derive results from logits.md",
-    "eval-functions/ranking loss functions.md",
-    "problem-type/classification.md",
     "assets/Pasted image 20240123233643.png",
     "assets/Pasted image 20240123233405.png",
     "assets/Pasted image 20240122162324.png",
@@ -204,7 +192,6 @@
     "ml-concepts/learning rates",
     "techniques/efficiency",
     "ml-concepts/optimizers",
-    "assets/Pasted image 20240119011400.png",
     "ml-concepts/activation functions"
   ]
 }

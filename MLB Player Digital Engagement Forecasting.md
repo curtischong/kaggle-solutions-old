@@ -2,7 +2,7 @@
 **Problem Type:** 
 **Input:** 
 **Output:** 
-**Eval Metric:** 
+**Eval Metric:** [[mean column-wise mean absolute error (MCMAE)]]
 ##### Summary
 ##### Solutions
 

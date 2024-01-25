@@ -1,0 +1,1 @@
+- rather than training one monolithic model you train different models that are good at different things

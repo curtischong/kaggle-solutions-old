@@ -1,0 +1,2 @@
+- apparently traders use this "sequence very heavily"
+	- https://www.kaggle.com/competitions/g-research-crypto-forecasting/discussion/324180#1784411
