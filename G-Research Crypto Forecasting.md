@@ -15,13 +15,35 @@ Your (forecasted returns) - (actual market returns)
 	- https://www.kaggle.com/competitions/g-research-crypto-forecasting/discussion/323098
 	- "I'll strive to provide insight into my methods, but without giving away model details that could be profitable for the host"
 	- ### Crossvalidation
+		- there were around 200 weeks of data
 		- used 6-fold, walk-forward, grouped cross validation
 			- the group key was the timestamp
 			- train folds were 40 weeks long
 			- test folds were 40 weeks long
 			- there was a gap of 1 week between test and train folds
 			- the ends of training folds were incremented by 20 weeks each fold.
-		- I chose to overlap my folds so that they could be long, but I could still have 6 folds. With non-overlapping folds, I would have to decide between many short folds or a few long ones.
+				- this sentence make me believe it's [[forward chaining cross validation]]
+		- I chose to overlap my folds so that they could be long, but I could still have 6 folds.
+			- more folds = less variance
+			- I think he averaged these folds since they say "the average CV scores"
+		- didn't change seeds cause the CV score variance was low enough
+		- With no gap, a model can cheat at the the beginning of the test period, because the end of the train period is very similar.
+			- obv, train without the gap for the final submission
+	- feature engineering
+		- they were very private about this because the competition host wouldn't make alpha
+			- they definitely tried everything (e.g. making one model for all coints - the coin is a feature)
+	- "Timeseries learning is essentially supervised learning that respects causality." (cause it all depends on past data)
+	- models
+		- LightGBM with squared loss
+		- The only parameters I changed from defaults were the number of estimators, number of leaves, and the learning rate
+		- no regularization, augmentation, or feature neutralization
+			- it didn't help CV
+		- I wanted to train with the entire dataset, because CV had shown me that scores just kept improving with longer training data
+			- this is interesting. it suggests that limiting to only the last x weeks of data doesn't perform better than using all data (no domain drift)
+		- df.update() caused lots of unnecessary RAM copies of arrays
+			- The solution was to select small subsets of data, use df.update() on those subsets, then append to a list of dataframes, and then at the end, concatenate the list into one dataframe.
+			- [[polars]] would've prob fixed this
+			- he used [[Numba]] for feature engineering
 
 ##### Important notebooks/discussions
 - https://www.kaggle.com/code/cstein06/tutorial-to-the-g-research-crypto-competition/notebook

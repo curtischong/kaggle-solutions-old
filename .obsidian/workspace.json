@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "G-Research Crypto Forecasting.md",
+                "file": "techniques/cross validation.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,8 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "af60a229281a627d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "G-Research Crypto Forecasting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3185129050ae2fc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ml-concepts/forward chaining cross validation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,17 +184,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eab3c88d3fc977ba",
+  "active": "af60a229281a627d",
   "lastOpenFiles": [
+    "ml-concepts/forward chaining cross validation.md",
+    "G-Research Crypto Forecasting.md",
+    "techniques/cross validation.md",
+    "MLB Player Digital Engagement Forecasting.md",
+    "tools/Numba.md",
+    "tools/polars.md",
     "README.md",
     "eval-functions/Spearman's correlation Coefficient.md",
     "eval-functions/Pearson's Correlation Coefficient.md",
-    "G-Research Crypto Forecasting.md",
-    "MLB Player Digital Engagement Forecasting.md",
     "techniques/alternative targets.md",
     "techniques/custom labels.md",
     "ml-concepts/Blocked Cross-Validation.md",
-    "ml-concepts/forward chaining cross validation.md",
     "ml-concepts/Loss functions.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "added an LSTM/GRU head after the backbone layer.md",
@@ -185,10 +213,7 @@
     "techniques/sanity check.md",
     "competitions/Bengali.AI Speech Recognition.md",
     "assets/Pasted image 20240123233643.png",
-    "techniques/cross validation.md",
     "assets/Pasted image 20240123233405.png",
-    "All Competitions.md",
-    "ml-concepts/learning rates/differential learning rate.md",
     "assets/Pasted image 20240122162324.png",
     "ml-concepts/regularization",
     "assets/Pasted image 20240123191755.png",
