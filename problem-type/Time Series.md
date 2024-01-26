@@ -1,0 +1,5 @@
+- Treat these problems as normal problems except you have to:
+	- Be careful with your [[cross validation]]
+		- ![[cross validation#best way to cross validation over time]]
+	- Make sure that you don't include data from the future
+	- you can use the target variable (from the past) as features

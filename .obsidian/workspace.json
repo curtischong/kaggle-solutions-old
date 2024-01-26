@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ed058cc1b4ac94f6",
+        "id": "af5feca74e75ece5",
         "type": "tabs",
         "children": [
           {
-            "id": "0cd7073b3f220347",
+            "id": "c45ac7f903925d0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "techniques/cross validation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6be618af350c1ca2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ml-concepts/optimizers/Adam optimizer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c8468dab7b3f6f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "techniques/models/create enriching features first, then mix across time.md",
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "causali",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "techniques/cross validation.md",
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "techniques/cross validation.md",
+                "file": "MLB Player Digital Engagement Forecasting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "techniques/cross validation.md"
+                "file": "MLB Player Digital Engagement Forecasting.md"
               }
             }
           }
@@ -169,35 +145,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0cd7073b3f220347",
+  "active": "c45ac7f903925d0d",
   "lastOpenFiles": [
-    "techniques/features/is present bit.md",
     "Kaggle Grandmaster Tools.md",
-    "ml-concepts/forward chaining cross validation.md",
-    "techniques/cross validation.md",
-    "MLB Player Digital Engagement Forecasting.md",
-    "techniques/features/log scaling.md",
     "How to understand your place on an overfitted Leaderboard.md",
-    "ml-concepts/learning rates/decreasing learning rate.md",
+    "assets/Pasted image 20240126122316.png",
+    "MLB Player Digital Engagement Forecasting.md",
+    "problem-type/Time Series.md",
+    "techniques/cross validation.md",
+    "competitions/G-Research Crypto Forecasting.md",
+    "ml-concepts/models/lgbm.md",
+    "ml-concepts/regularization/D.A.R.T.md",
+    "ml-concepts/regularization.md",
+    "lbgm D.A.R.T.md",
+    "techniques/features/target scaling.md",
+    "ml-concepts/models/xgboost.md",
+    "ml-concepts/hold-out cross validation.md",
+    "assets/Pasted image 20240126115150.png",
     "techniques/models/create enriching features first, then mix across time.md",
+    "ml-concepts/optimizers/Adam optimizer.md",
+    "techniques/features/is present bit.md",
+    "ml-concepts/forward chaining cross validation.md",
+    "ml-concepts/learning rates/decreasing learning rate.md",
     "assets/Pasted image 20240126112915.png",
     "techniques/models/Stochastic Weights Averaging.md",
-    "ml-concepts/optimizers/Adam optimizer.md",
     "techniques/filling training data.md",
-    "competitions/G-Research Crypto Forecasting.md",
     "README.md",
     "eval-functions/mean column-wise mean absolute error (MCMAE).md",
     "techniques/Fibonacci window lag.md",
     "eval-functions/Mean absolute error (MAE).md",
     "ml-concepts/axial attention.md",
-    "techniques/models/expert models.md",
     "assets/Pasted image 20240125155158.png",
-    "ml-concepts/models/lgbm.md",
-    "techniques/data period selection.md",
-    "tools/Numba.md",
-    "tools/polars.md",
-    "eval-functions/Spearman's correlation Coefficient.md",
-    "eval-functions/Pearson's Correlation Coefficient.md",
     "assets/Pasted image 20240123233643.png",
     "assets/Pasted image 20240123233405.png",
     "assets/Pasted image 20240122162324.png",
@@ -206,11 +184,9 @@
     "assets/Pasted image 20240123115608.png",
     "Pasted image 20240123113809.png",
     "added an LSTM",
-    "Pasted image 20240122150028.png",
     "ml-concepts/models",
     "models/model",
     "Untitled",
-    "assets/Pasted image 20240122134436.png",
     "techniques/Untitled",
     "ml-concepts/learning rates",
     "techniques/efficiency",

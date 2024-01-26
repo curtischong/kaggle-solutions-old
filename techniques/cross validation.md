@@ -14,3 +14,6 @@ https://medium.com/geekculture/cross-validation-techniques-33d389897878
 
 #### best way to cross validation over time
 - [[forward chaining cross validation]] is pretty popular
+- [[hold-out cross validation]] also works where you only validate on the last bit of data
+	- although I'm afraid that you could be overfitting to the validation set (even if you run the validation multiple times with diff model seeds)
+		- because you aren't looking for trends in other time periods

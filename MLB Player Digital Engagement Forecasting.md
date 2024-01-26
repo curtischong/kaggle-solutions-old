@@ -17,7 +17,7 @@
 - (1st) lots of model testing, not much features
 	- https://www.kaggle.com/competitions/mlb-player-digital-engagement-forecasting/discussion/274255
 	- solution code: https://www.kaggle.com/code/ph0921/mlb-final-1/notebook
-	- [[log scaling]]
+	- [[target scaling]] using log(x)
 		- all the past targets were scaled with log(1+x) to reduce their partly extremely "peaked nature"
 		- in addition a target mask was added to mark if the target information was provided on the respective day or not:
 	- Since the targets would only be available up to a certain time, he used a [[is present bit]] to represent if the targets exist or not
@@ -29,9 +29,19 @@
 	- [[Adam optimizer]] with [[decreasing learning rate]] start: 2e-3 end: 5e-4
 	- tried LSTM, CNNs or a transformer, but the GRU layer performed the best
 	- normalization methods (batch norm, layer norm,…) didn't work
-- (2nd)
+- (2nd) 1000 features engineered. [[lgbm]], [[xgboost]]
 	- https://www.kaggle.com/competitions/mlb-player-digital-engagement-forecasting/discussion/274661
 	- cross validation: "We validated on the last month of data"
+	- [[hold-out cross validation]]
+	- [[target scaling]] using ($x^{1/4}$)
+	- [[lgbm]] with [[D.A.R.T]]
+- (3rd) 
+	- https://www.kaggle.com/competitions/mlb-player-digital-engagement-forecasting/discussion/256620
+	- solution code:
+		- training: https://github.com/nyanp/mlb-player-digital-engagement  
+		- inference: https://www.kaggle.com/nyanpn/3rd-place-solution-inference-only
+	- how they setup CV
+		- ![[Pasted image 20240126122316.png]]
 	- 
 ##### Important notebooks/discussions
 - most popular eda
