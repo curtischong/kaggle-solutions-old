@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "af5feca74e75ece5",
+        "id": "7be061f17bb57355",
         "type": "tabs",
         "children": [
           {
-            "id": "c45ac7f903925d0d",
+            "id": "eba30e33588e7163",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "competitions/Linking Writing Processes to Writing Quality.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "competitions/Linking Writing Processes to Writing Quality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "competitions/Linking Writing Processes to Writing Quality.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "competitions/Linking Writing Processes to Writing Quality.md"
               }
             }
           }
@@ -145,9 +145,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c45ac7f903925d0d",
+  "active": "eba30e33588e7163",
   "lastOpenFiles": [
+    "techniques/diagnosis/identify domain shift.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "inputs-and-outputs/Class Name (Thresholded).md",
+    "inputs-and-outputs/Image Masks.md",
+    "competitions/Bengali.AI Speech Recognition.md",
+    "competitions/Stanford Ribonanza RNA Folding.md",
+    "competitions/Tweet Sentiment Extraction.md",
+    "All Competitions.md",
     "MLB Player Digital Engagement Forecasting.md",
+    "README.md",
+    "encapsulate team's code in class.md",
+    "techniques/sanity check.md",
     "Kaggle Grandmaster Tools.md",
     "How to understand your place on an overfitted Leaderboard.md",
     "assets/Pasted image 20240126122316.png",
@@ -164,17 +175,7 @@
     "assets/Pasted image 20240126115150.png",
     "techniques/models/create enriching features first, then mix across time.md",
     "ml-concepts/optimizers/Adam optimizer.md",
-    "techniques/features/is present bit.md",
-    "ml-concepts/forward chaining cross validation.md",
-    "ml-concepts/learning rates/decreasing learning rate.md",
     "assets/Pasted image 20240126112915.png",
-    "techniques/models/Stochastic Weights Averaging.md",
-    "techniques/filling training data.md",
-    "README.md",
-    "eval-functions/mean column-wise mean absolute error (MCMAE).md",
-    "techniques/Fibonacci window lag.md",
-    "eval-functions/Mean absolute error (MAE).md",
-    "ml-concepts/axial attention.md",
     "assets/Pasted image 20240125155158.png",
     "assets/Pasted image 20240123233643.png",
     "assets/Pasted image 20240123233405.png",
