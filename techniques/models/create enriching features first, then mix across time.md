@@ -1,0 +1,3 @@
+- In time series problems, try using an embedding block to create embeddings for each time step.
+- Now that each time step has embeddings, you can mix the embeddings across time (e.g. use a GRU) to generate more features
+- Note: you should concat these time-mixed embeddings with the individual time-step embeddings before feeding them to the next layers

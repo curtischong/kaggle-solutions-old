@@ -1,0 +1,4 @@
+- the idea is that your model needs to take larger steps at first, then smaller later
+- Note: for the [[Adam optimizer]], the rate you set is the maximum learning rate that adam can use
+		- "It's true, that the learning rates adapt themselves during training steps, but if you want to be sure that every update step doesn't exceed lambda you can than lower lambda using exponential decay or whatever"
+		- https://stackoverflow.com/questions/39517431/should-we-do-learning-rate-decay-for-adam-optimizer

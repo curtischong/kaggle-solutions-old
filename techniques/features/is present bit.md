@@ -1,0 +1,1 @@
+- a boolean column that tells you if values exist or not in this column

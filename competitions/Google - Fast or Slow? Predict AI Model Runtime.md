@@ -131,7 +131,7 @@ glossary:
 	- [[linformers]]
 	- Used [[GNN Positional encodings]]
 	- [[GPS Layers]]
-	- [[adam optimizer]], [[cosine annealing LR]]
+	- [[Adam optimizer]], [[cosine annealing LR]]
 - (4th) Only uses a [[multi layer perceptron]] - very clever feature engineering
 	- https://www.kaggle.com/competitions/predict-ai-model-runtime/discussion/456462
 	- features:

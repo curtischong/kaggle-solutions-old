@@ -1,4 +1,4 @@
- Stochastic Weights Averaging -  Saves the best n epochs states and then averages them in final model.
+ [[Stochastic Weights Averaging]] -  Saves the best n epochs states and then averages them in final model.
 - https://github.com/btbpanda/CAFA5-protein-function-prediction-2nd-place/blob/main/protnn/swa.py#L8
 
 Performance:
