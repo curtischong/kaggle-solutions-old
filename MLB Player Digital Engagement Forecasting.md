@@ -12,6 +12,11 @@
 		- e.g. a player who does not pitch on a given day cannot possibly pitch a shutout
 		- how did they solve this?
 ##### Solutions
+- (1st)
+	- https://www.kaggle.com/competitions/mlb-player-digital-engagement-forecasting/discussion/274255
+	- [[log scalling]]
+		- all the past targets were scaled with log(1+x) to reduce their partly extremely "peaked nature"
+		- in addition a target mask was added to mark if the target information was provided on the respective day or not:
 
 ##### Important notebooks/discussions
 - most popular eda
