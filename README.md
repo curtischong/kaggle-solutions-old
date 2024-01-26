@@ -5,7 +5,7 @@ I am using this site to gather the solutions: https://farid.one/kaggle-solutions
 I will be filling out this repo in reverse chronological order (since newer techniques are more important)
 
 https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions
-- this is good cuase they have tags on the types of competitions
+- this is good cause they have tags on the types of competitions
 
 Why study Kaggle competitions?
 - Cause people have to go through the entire ml process

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLB Player Digital Engagement Forecasting.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MLB Player Digital Engagement Forecasting.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MLB Player Digital Engagement Forecasting.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MLB Player Digital Engagement Forecasting.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,10 +147,10 @@
   },
   "active": "c45ac7f903925d0d",
   "lastOpenFiles": [
+    "MLB Player Digital Engagement Forecasting.md",
     "Kaggle Grandmaster Tools.md",
     "How to understand your place on an overfitted Leaderboard.md",
     "assets/Pasted image 20240126122316.png",
-    "MLB Player Digital Engagement Forecasting.md",
     "problem-type/Time Series.md",
     "techniques/cross validation.md",
     "competitions/G-Research Crypto Forecasting.md",
