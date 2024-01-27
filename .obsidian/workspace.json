@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "4c8383c510a633b6",
+        "id": "39006c3e8f2cb007",
         "type": "tabs",
         "children": [
           {
-            "id": "98e23741b02b84d3",
+            "id": "4b104fa48a1c84d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "RSNA 2023 Abdominal Trauma Detection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "90da214c3e5c45f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "eval-functions/jaccard similarity (aka Intersection Over Union).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1d52bc9f44cddcaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DiceLoss.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "genes",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "DiceLoss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md",
+                "file": "DiceLoss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Stanford Ribonanza RNA Folding.md"
+                "file": "DiceLoss.md"
               }
             }
           }
@@ -145,19 +171,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "98e23741b02b84d3",
+  "active": "1d52bc9f44cddcaa",
   "lastOpenFiles": [
-    "add signal to attention bias.md",
+    "eval-functions/F-score.md",
+    "DiceLoss.md",
+    "RSNA 2023 Abdominal Trauma Detection.md",
+    "eval-functions/jaccard similarity (aka Intersection Over Union).md",
+    "eval-functions/log loss.md",
+    "eval-functions/Huber loss.md",
+    "README.md",
+    "assets/Pasted image 20240127143047.png",
+    "techniques/code quality/encapsulate team's code in class.md",
+    "techniques/code quality",
+    "assets/Pasted image 20240127113354.png",
+    "assets/Pasted image 20240127113437.png",
     "competitions/Stanford Ribonanza RNA Folding.md",
+    "add signal to attention bias.md",
     "ml-concepts/layers/Squeezeformer layer.md",
     "Squeezeformer.md",
     "techniques/target/drop bad targets from CV.md",
-    "Pasted image 20240127113437.png",
-    "Pasted image 20240127113354.png",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "assets/Pasted image 20240127112853.png",
     "ml-concepts/ALiBi positional encoding.md",
-    "README.md",
     "techniques/xpos positional encoding.md",
     "techniques/efficiency/use a single embedding matrix.md",
     "techniques/features/Transformer to compress dimensions rather than flattening.md",
@@ -169,13 +204,6 @@
     "ml-concepts/voice activity detection (VAD).md",
     "ml-concepts/input-tricks/Sequence bucketing.md",
     "ml-concepts/clustering/UMAP dimension reduction.md",
-    "techniques/features/dimension reduction for feature generation.md",
-    "techniques/features/downscale upscale examples.md",
-    "techniques/efficiency/data compression.md",
-    "techniques/efficiency/identifying slow feature generation.md",
-    "techniques/target/binary encoded categorical ordinal targets.md",
-    "techniques/cross validation.md",
-    "techniques/target/derive results from logits.md",
     "techniques/data-selection",
     "ml-concepts/input-tricks",
     "ml-concepts/clustering",
@@ -187,11 +215,9 @@
     "assets/Pasted image 20240125155158.png",
     "assets/Pasted image 20240123233643.png",
     "assets/Pasted image 20240123233405.png",
-    "assets/Pasted image 20240122162324.png",
     "ml-concepts/regularization",
     "added an LSTM",
     "ml-concepts/models",
-    "models/model",
-    "Untitled"
+    "models/model"
   ]
 }

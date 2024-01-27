@@ -50,6 +50,7 @@ Eval Metric: [[MAELoss]]
 - (3rd) AlphaFold Style Twin Tower Architecture + [[Squeezeformer layer]]
 	- https://github.com/GosUxD/OpenChemFold
 	- recycling from alphafold2 wasn't useful
+	- this solution VERY inspired by alphafold. that architecture is v complicated and I didn't look into how it works rn :'(
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653
 	- x axis represents position, while y axis represents sequence number
