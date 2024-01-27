@@ -48,7 +48,8 @@ Eval Metric: [[MAELoss]]
 		- code
 			- https://github.com/hoyso48/Stanford---Ribonanza-RNA-Folding-2nd-place-solution/blob/main/src/models/model.py
 - (3rd) AlphaFold Style Twin Tower Architecture + [[Squeezeformer layer]]
-	- 
+	- https://github.com/GosUxD/OpenChemFold
+	- recycling from alphafold2 wasn't useful
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653
 	- x axis represents position, while y axis represents sequence number
