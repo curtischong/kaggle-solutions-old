@@ -1,0 +1,5 @@
+- https://paperswithcode.com/method/alibi
+- it allows transformers to consume, at inference time, sequences which are longer than the ones they were trained on.
+- it just adds a fixed bias to attention scores
+	- ![[Pasted image 20240127112853.png]]
+	- This method was motivated by the simple reasoning that words that are close-by matter much more than ones that are far away.

@@ -4,6 +4,8 @@ Input:
 Output: the reactivity for reactivity_DMS_MaP and reactivity_2A3_MaP for _each_ sequence position `id`
 Eval Metric: [[MAELoss]]
 ##### Summary
+
+- **Ribonanza_bpp_files** - `TXT` files listing position pairs predicted to have non-zero Watson-Crick base pair probabilities by the LinearPartition-EternaFold package. Files are given for train and test sequences, indexed by `sequence_id`. Note: this package simulates RNA secondary structure ensembles without pseudoknots or other tertiary structure features. It is also limited to Watson-Crick base pairs, even though other kinds of RNA interactions are known to form.
 ##### Solutions
 - (1st) Transformer model with Dynamic positional encoding + CNN for BPPM features
 	- [[Squeeze-and-Excitation layer]]
@@ -30,14 +32,23 @@ Eval Metric: [[MAELoss]]
 		- 13% of the public test sequences are identical to the ones present in the train dataset (by sequence)
 		- To avoid selecting a model that is memorizing more of these sequences, we zeroed out the predictions for these sequences 
 		- sometimes we sent non-zeroed out submissions in order to compare our performance to other participants.
-
-- (2nd) Squeezeformer + BPP Conv2D Attention
+- (2nd) [[Squeezeformer layer]] + BPP Conv2D Attention
 	- https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/460316
+	- solution code: https://github.com/hoyso48/Stanford---Ribonanza-RNA-Folding-2nd-place-solution
 	- squeezeformer was the most efficient (compared to newer Conv-Transformer Hybrid architectures)
 		- showed strong performance early in training and consistently showed faster convergence.
 	- why use a [[GRU]] layer, especially after a transformer layer???
 		- it just yielded minor improvements. This was probably just intuition
-	- used [[ALiBi positional encoding]] since it's claimed to generalize better over long sequences than other methods.
+	- used [[ALiBi positional encoding]] since it's claimed to generalize better over long sequences than other methods. (it worked better too)
+	- [[add signal to attention bias]]
+		- this was their model
+			- ![[Pasted image 20240127113354.png]]
+			- notice the output of the BPP 2D Convnet layer is fed into the multihead attention layer, specifically, learnable biases
+			- ![[Pasted image 20240127113437.png]]
+		- code
+			- https://github.com/hoyso48/Stanford---Ribonanza-RNA-Folding-2nd-place-solution/blob/main/src/models/model.py
+- (3rd) AlphaFold Style Twin Tower Architecture + [[Squeezeformer layer]]
+	- 
 ##### Important notebooks/discussions
 - **How to check if your model generalizes to long sequences** https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/discussion/444653
 	- x axis represents position, while y axis represents sequence number
@@ -61,6 +72,5 @@ Eval Metric: [[MAELoss]]
 				My guess was if I am to use sliding window attention, my generalization plots would become closer to the ones Shujun shared, but it was not the case, they are still "too sharp"
 - https://www.kaggle.com/code/ayushs9020/understanding-the-competition-standford-ribonaza
 	- 
-##### Questions
-- What are bpp matrices?
 #### Takeaways
+- [[add signal to attention bias]] using the BPP features (generated from feeding BPP into a conv net) was used by all the top 3 teams

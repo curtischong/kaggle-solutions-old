@@ -1,7 +1,7 @@
 Link: https://www.kaggle.com/competitions/open-problems-single-cell-perturbations
 Problem Type: 
 Input: cell types and small molecule names
-Output: A 18,211 dim vector for each row. These are the probabilities that the molecule (sm_name) will affect each **gene**'s expression when applied to this cell_type.
+Output: A 18,211 dim vector for each row. These are the probabilities that the molecule (sm_name) will affect each of the **18,211 gene's** expression when applied to this cell_type.
 Eval Metric: [[Mean Rowwise Root Mean Squared Error]]
 ##### Summary
 This is basically a regression problem with 2 feature columns and 18211 targets
