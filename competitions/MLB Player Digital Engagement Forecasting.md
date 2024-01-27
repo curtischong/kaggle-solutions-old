@@ -51,7 +51,7 @@ Data issues:
 	    - Test the robustness of my inference pipeline by "dropout" some of the data returned by the emulator (like chaos engineering) - [[sanity check]]
 - (5th)
 	- https://www.kaggle.com/competitions/mlb-player-digital-engagement-forecasting/discussion/271345
-	- Special matches (like a player's retirement match) should be removed from the data
+	- Special matches (like a player's retirement match) should be removed from the data [[drop outliers]]
 		- e.g. Ichiro Suzuki got lots of engagement, despite doing poorly
 	- feature engineering
 		- made a submodel that predicts if a pitcher would pitch that day

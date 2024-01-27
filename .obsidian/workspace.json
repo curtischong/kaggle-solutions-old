@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "competitions/Linking Writing Processes to Writing Quality.md",
+                "file": "techniques/target/drop bad targets from CV.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "14439c9932825814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "techniques/xpos positional encoding.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "causali",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitions/Linking Writing Processes to Writing Quality.md",
+                "file": "techniques/xpos positional encoding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitions/Linking Writing Processes to Writing Quality.md",
+                "file": "techniques/xpos positional encoding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitions/Linking Writing Processes to Writing Quality.md"
+                "file": "techniques/xpos positional encoding.md"
               }
             }
           }
@@ -145,36 +158,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba30e33588e7163",
+  "active": "14439c9932825814",
   "lastOpenFiles": [
-    "techniques/diagnosis/identify domain shift.md",
-    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
-    "inputs-and-outputs/Class Name (Thresholded).md",
-    "inputs-and-outputs/Image Masks.md",
-    "competitions/Bengali.AI Speech Recognition.md",
-    "competitions/Stanford Ribonanza RNA Folding.md",
-    "competitions/Tweet Sentiment Extraction.md",
-    "All Competitions.md",
-    "MLB Player Digital Engagement Forecasting.md",
-    "README.md",
-    "encapsulate team's code in class.md",
+    "techniques/efficiency/use a single embedding matrix.md",
+    "techniques/features/Transformer to compress dimensions rather than flattening.md",
     "techniques/sanity check.md",
-    "Kaggle Grandmaster Tools.md",
-    "How to understand your place on an overfitted Leaderboard.md",
-    "assets/Pasted image 20240126122316.png",
-    "problem-type/Time Series.md",
+    "techniques/Rotational positional embedding.md",
+    "techniques/custom loss.md",
+    "techniques/target/postprocess to match target distribution.md",
+    "techniques/target/use intermediate layer results (weighted).md",
+    "ml-concepts/voice activity detection (VAD).md",
+    "ml-concepts/input-tricks/Sequence bucketing.md",
+    "ml-concepts/clustering/UMAP dimension reduction.md",
+    "techniques/features/dimension reduction for feature generation.md",
+    "techniques/features/downscale upscale examples.md",
+    "techniques/efficiency/data compression.md",
+    "techniques/efficiency/identifying slow feature generation.md",
+    "techniques/target/binary encoded categorical ordinal targets.md",
     "techniques/cross validation.md",
-    "competitions/G-Research Crypto Forecasting.md",
-    "ml-concepts/models/lgbm.md",
-    "ml-concepts/regularization/D.A.R.T.md",
-    "ml-concepts/regularization.md",
-    "lbgm D.A.R.T.md",
-    "techniques/features/target scaling.md",
-    "ml-concepts/models/xgboost.md",
-    "ml-concepts/hold-out cross validation.md",
+    "techniques/target/derive results from logits.md",
+    "techniques/features/placeholder for invalid values.md",
+    "techniques/features/Spectrogram dithering.md",
+    "techniques/features/data period selection.md",
+    "techniques/target/drop bad targets from CV.md",
+    "techniques/data-selection",
+    "techniques/target/custom labels.md",
+    "techniques/features/Training own Tokenizer.md",
+    "techniques/features/thermometer encoding.md",
+    "ml-concepts/layers/axial attention.md",
+    "ml-concepts/models/Relational Graph Convolutional Networks (R-GCNs).md",
+    "ml-concepts/input-tricks",
+    "ml-concepts/clustering",
+    "techniques/target",
+    "ml-concepts/cross-validation",
+    "assets/Pasted image 20240126122316.png",
     "assets/Pasted image 20240126115150.png",
-    "techniques/models/create enriching features first, then mix across time.md",
-    "ml-concepts/optimizers/Adam optimizer.md",
     "assets/Pasted image 20240126112915.png",
     "assets/Pasted image 20240125155158.png",
     "assets/Pasted image 20240123233643.png",
@@ -187,11 +205,6 @@
     "added an LSTM",
     "ml-concepts/models",
     "models/model",
-    "Untitled",
-    "techniques/Untitled",
-    "ml-concepts/learning rates",
-    "techniques/efficiency",
-    "ml-concepts/optimizers",
-    "ml-concepts/activation functions"
+    "Untitled"
   ]
 }
