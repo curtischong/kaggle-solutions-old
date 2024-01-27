@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "39006c3e8f2cb007",
+        "id": "0c38b4137e81e415",
         "type": "tabs",
         "children": [
           {
-            "id": "4b104fa48a1c84d3",
+            "id": "8c699dfcb84eeee6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RSNA 2023 Abdominal Trauma Detection.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "90da214c3e5c45f3",
+            "id": "1d08a6e3738b2f73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eval-functions/jaccard similarity (aka Intersection Over Union).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d52bc9f44cddcaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DiceLoss.md",
+                "file": "CommonLit - Evaluate Student Summaries.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DiceLoss.md",
+                "file": "CommonLit - Evaluate Student Summaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DiceLoss.md",
+                "file": "CommonLit - Evaluate Student Summaries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DiceLoss.md"
+                "file": "CommonLit - Evaluate Student Summaries.md"
               }
             }
           }
@@ -171,15 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d52bc9f44cddcaa",
+  "active": "1d08a6e3738b2f73",
   "lastOpenFiles": [
-    "eval-functions/F-score.md",
-    "DiceLoss.md",
+    "README.md",
+    "CommonLit - Evaluate Student Summaries.md",
     "RSNA 2023 Abdominal Trauma Detection.md",
+    "added an LSTM/GRU head after the backbone layer.md",
+    "competitions/Bengali.AI Speech Recognition.md",
+    "eval-functions/BCELoss.md",
     "eval-functions/jaccard similarity (aka Intersection Over Union).md",
+    "DiceLoss.md",
+    "eval-functions/F-score.md",
     "eval-functions/log loss.md",
     "eval-functions/Huber loss.md",
-    "README.md",
     "assets/Pasted image 20240127143047.png",
     "techniques/code quality/encapsulate team's code in class.md",
     "techniques/code quality",
@@ -200,10 +192,6 @@
     "techniques/Rotational positional embedding.md",
     "techniques/custom loss.md",
     "techniques/target/postprocess to match target distribution.md",
-    "techniques/target/use intermediate layer results (weighted).md",
-    "ml-concepts/voice activity detection (VAD).md",
-    "ml-concepts/input-tricks/Sequence bucketing.md",
-    "ml-concepts/clustering/UMAP dimension reduction.md",
     "techniques/data-selection",
     "ml-concepts/input-tricks",
     "ml-concepts/clustering",
