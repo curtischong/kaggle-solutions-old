@@ -1,4 +1,3 @@
-
 link: 
 range: 
 
@@ -7,7 +6,7 @@ range:
 - this loss is typically used for image segmentation problems
 
 - this looks similar to the [[F-score]]: ````
-F1 = 2 * (Precision * Recall) / (Precision + Recall)`
+- `F1 = 2 * (Precision * Recall) / (Precision + Recall)`
 
 ### pros
 

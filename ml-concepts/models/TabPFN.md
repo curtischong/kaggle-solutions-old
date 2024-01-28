@@ -1,0 +1,4 @@
+- "A Transformer That Solves Small Tabular Classification Problems in a Second"
+- https://arxiv.org/abs/2207.01848
+- https://medium.com/chat-gpt-now-writes-all-my-articles/tabpfn-the-new-xgboost-easy-models-for-efficient-high-performance-machine-learning-1327de095b4f
+	- "The training is computationally expensive, requiring significant time and computational resources. However, it is a one-time offline step done during algorithm development."

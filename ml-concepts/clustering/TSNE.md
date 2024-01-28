@@ -1,0 +1,3 @@
+- A dimension reduction algorithm created by Geoffrey Hinton
+- It's mainly used to visualize high-dimensional data into clusters
+- it's being replaced by [[UMAP dimension reduction]], which is faster
