@@ -47,12 +47,17 @@ average of the sample weighted: [[log loss]]
 	- solution code:
 		- Inference: https://www.kaggle.com/code/theoviel/rsna-abdominal-inf
 		- training: https://github.com/TheoViel/kaggle_rsna_abdominal_trauma
-	- [[GRU head after the backbone layer]]
+	- [[GRU head (neck) after the backbone layer]]
 		- "1. RNN only sees probabilities precomputed by the CNN, so training is done in 2 stages."
 	- didn't do anything to address the data imbalance. the models handled it well
 - (3rd)
 	- https://www.kaggle.com/competitions/rsna-2023-abdominal-trauma-detection/discussion/447464
-		- "Since each organ has a different size, the appropriate image size and number of images should be different. Therefore, I used a custom sampler to ensure that only boxes of the same organ are included in the same batch. (If batch_size is 4, for example, 4 liver boxes will be included in one batch.)"
+		- Crop: Since information around the organs is essential for trauma detection, the mask was slightly enlarged before the boxes were cut out. Two patterns of mask sizes were employed and two datasets were created for each organ.
+		- The following are those that have made a particularly significant contribution to accuracy:  
+			- masking for liver model  
+			- custom sampler for all class models
+				- "Since each organ has a different size, the appropriate image size and number of images should be different. Therefore, I used a custom sampler to ensure that only boxes of the same organ are included in the same batch. (If batch_size is 4, for example, 4 liver boxes will be included in one batch.)"
+			- 2types of crops
 
 ##### Important notebooks/discussions
 

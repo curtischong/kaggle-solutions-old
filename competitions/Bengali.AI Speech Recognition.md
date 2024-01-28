@@ -48,7 +48,7 @@ Bengali dialects (especially those spoken by Muslim religious sermons) aren't tr
 	- **punctuation model**
 		- it's a token classification model to add the following punctuation set: `।,?!`
 			- my prediction is that for each token, it will classify it as "no punctuation," or "add a I, , ?, or ! punctuation right after it"
-		- [[added an LSTM/GRU head after the backbone layer]]
+		- [[GRU head (neck) after the backbone layer]]
 			- used an LSTM head, then the classification outputs
 			- [[Masked Language Modeling (MLM)]] on 15% of the tokens
 			- used [[beam search decoding]]
