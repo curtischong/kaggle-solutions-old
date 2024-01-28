@@ -45,7 +45,8 @@ How to review kaggle problems efficiently
 2) sort all of the notebooks by most votes (not hottest). this will usually give you an indication of what to do / what the competition is
 3) fill in the objective / input / output fields in the competition template
 4) write down what you learn in the notebook in the popular notebooks
-5) see more notebooks (before the competition end - to figure out what ppl were saying during the competition), or top solutions
+5) start reading solution notebooks
+	1) make sure you read the comments section, because that is where ppl point out important techniques
 
 If you want to search for winning solutions using a technique, search for:
 "kaggle 2nd place solution conditional probability"

@@ -68,7 +68,7 @@
 					- I think they're saying that kldivergence basically adds label smoothing
 			- 2) Linear layer to predict binary target for each token: if it should be in selected text or not.
 				- very similar to 1) but now, every token in the answer is given a probability of 1
-			- [[alternative targets]]
+			- [[alternative targets (auxiliary objective)]]
 			- 3) linear layer to predict a sentiment of each token.
 			- 4) Two linear layers with ReLU in between to predict the sentiment of the whole tweet.
 		- ### _Inference phase_
