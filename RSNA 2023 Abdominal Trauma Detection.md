@@ -62,3 +62,6 @@ average of the sample weighted: [[log loss]]
 ##### Important notebooks/discussions
 
 #### Takeaways
+- It's hard to build an end-to-end model that predicts the target classes.
+	- so ppl built models to identify organs via image segmentation, then derive the target classes from that
+	- tbh. large models + more data will prob eliminate this intermediate step
