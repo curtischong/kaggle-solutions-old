@@ -1,0 +1,2 @@
+- Check to see if numbers match specific distributions
+- e.g. In a healthcare-realted competition, if there is a column `BN` that corresponds to the age of patient population in hospitals, it's most likely age

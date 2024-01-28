@@ -10,7 +10,6 @@ average of the sample weighted: [[log loss]]
 ##### Summary
 - this is one of the biggest datasets I've seen. almost half a Terabyte of data
 	- smaller version of it is here: https://www.kaggle.com/competitions/rsna-2023-abdominal-trauma-detection/discussion/427427
-- you 
 
 ##### Solutions
 - (1st)

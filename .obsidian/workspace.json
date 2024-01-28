@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8c699dfcb84eeee6",
+            "id": "3e1123174333c908",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4eea2ed1826b7b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RSNA 2023 Abdominal Trauma Detection.md",
+                "file": "ICR - Identifying Age-Related Conditions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RSNA 2023 Abdominal Trauma Detection.md",
+                "file": "ICR - Identifying Age-Related Conditions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RSNA 2023 Abdominal Trauma Detection.md",
+                "file": "ICR - Identifying Age-Related Conditions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RSNA 2023 Abdominal Trauma Detection.md"
+                "file": "ICR - Identifying Age-Related Conditions.md"
               }
             }
           }
@@ -158,13 +145,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4eea2ed1826b7b4",
+  "active": "3e1123174333c908",
   "lastOpenFiles": [
-    "added an LSTM/GRU head (neck) after the backbone layer.md",
-    "RSNA 2023 Abdominal Trauma Detection.md",
+    "techniques/features/drop redundant columns.md",
+    "ICR - Identifying Age-Related Conditions.md",
+    "techniques/features/distribution matching.md",
+    "problem-type/Multi-label Classification.md",
     "README.md",
+    "competitions/RSNA 2023 Abdominal Trauma Detection.md",
+    "competitions/CommonLit - Evaluate Student Summaries.md",
+    "added an LSTM/GRU head (neck) after the backbone layer.md",
     "How to understand your place on an overfitted Leaderboard.md",
-    "CommonLit - Evaluate Student Summaries.md",
     "ml-concepts/models/alternative targets (auxiliary objective).md",
     "ml-concepts/image augmentation.md",
     "techniques/efficiency/resize layer to reduce dimensions.md",
@@ -187,10 +178,6 @@
     "techniques/target/drop bad targets from CV.md",
     "competitions/Open Problems – Single-Cell Perturbations.md",
     "assets/Pasted image 20240127112853.png",
-    "ml-concepts/ALiBi positional encoding.md",
-    "techniques/xpos positional encoding.md",
-    "techniques/efficiency/use a single embedding matrix.md",
-    "techniques/features/Transformer to compress dimensions rather than flattening.md",
     "techniques/data-selection",
     "ml-concepts/input-tricks",
     "ml-concepts/clustering",
