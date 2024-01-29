@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "LANL Earthquake Prediction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b91afe885baec7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ml-concepts/KS statistic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23373d6d3099312c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "techniques/cross validation/cross validation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ml-concepts/KS statistic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ml-concepts/KS statistic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ml-concepts/KS statistic.md"
               }
             }
           }
@@ -145,15 +170,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c781234a1ada0f4d",
+  "active": "3b91afe885baec7c",
   "lastOpenFiles": [
     "LANL Earthquake Prediction.md",
+    "ml-concepts/KS statistic.md",
+    "README.md",
+    "techniques/cross validation/cross validation.md",
     "competitions/ICR - Identifying Age-Related Conditions.md",
     "assets/Pasted image 20240129154843.png",
     "eval-functions/MAELoss.md",
     "eval-functions/Mean absolute error (MAE).md",
     "templates/competition template.md",
-    "README.md",
     "How to understand your place on an overfitted Leaderboard.md",
     "techniques/features/create features through the ratio between different features.md",
     "ml-concepts/overfitting yourself.md",
@@ -168,7 +195,6 @@
     "ml-concepts/curse of dimensionality.md",
     "ml-concepts/models/catboost.md",
     "techniques/features/filling training data (impute data).md",
-    "techniques/cross validation/cross validation.md",
     "assets/Pasted image 20240128173618.png",
     "ml-concepts/models/TabPFN.md",
     "eval-functions/DiceLoss.md",

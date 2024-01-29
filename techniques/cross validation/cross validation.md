@@ -14,6 +14,12 @@ https://medium.com/geekculture/cross-validation-techniques-33d389897878
 
 - https://www.kaggle.com/competitions/g-research-crypto-forecasting/discussion/323098
 	 - An easy way to see if your CV scores have too much variance is to look at a plot of CV score vs. a parameter you're tuning. A good plot will usually be smooth, with a knee and a plateau, or maybe a peak or a valley. If the plot looks too noisy to clearly see those things, then try it again, with different seeds, and see if you get different results. If you do, then your CV results are too noisy. You can try using more folds, or running CV several times with different random seeds and averaging.)
+- I also think that from my experience:
+	- If you do something that SHOULD improve the CV, but it worsens, your CV isn't strong enough
+		- e.g. I cleaned my data, but my CV worsened
+
+Note: Doing the right thing could mean getting a worse CV score (e.g. [[remove easy examples]])
+- e.g. (2nd) in [[ICR - Identifying Age-Related Conditions]] did this
 
 
 #### best way to cross validation over time

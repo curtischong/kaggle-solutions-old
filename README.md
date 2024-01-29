@@ -57,10 +57,11 @@ If you want to search for winning solutions using a technique, search for:
 "kaggle 2nd place solution conditional probability"
 - and iterate the "2nd"
 
-shortcuts:
-cmd + shift + leftarrow to select entire line until the bullet (before deleting)
+#### Obsidian tips
+- cmd + shift + leftarrow to select entire line until the bullet (before deleting)
+- here's how to resize images: `![[Pasted image 20240129154843.png|400]]`
 
-Cool resources:
+#### Cool resources:
 - https://farid.one/kaggle-solutions/ (has an exhaustive list of all competitions)
 - https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions
 	- this is good cause they have tags on the types of competitions
