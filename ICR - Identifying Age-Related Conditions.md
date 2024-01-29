@@ -16,6 +16,14 @@
 	- **7,327 Competitors, 6,430 Teams**
 - Note: All of the data in the test set was collected after the training set was collected.
 - **Why did people think that CV didn't Work**
+	- small dataset: only 617 rows (very unstable CV - easy to overfit)
+		- there were also 50+ features, so there's the [[curse of dimensionality]]
+	- only 18% of the data is class1:
+		- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/data?select=train.csv
+	- class1 examples are weirdly distributed
+		- the test data is taken after 2020, but there isn't enough data to form a trend
+			- so do we treat it like a time series problem? not sure
+		- ![[ICR - Identifying Age-Related Conditions#^313qla]]
 - **Why did people think their CV was good, but got bad scores?**
 - **What is reweighing?**
 ##### Solutions
@@ -45,7 +53,7 @@
 			- this DNN is: "literally the model with 2 VariableSelectionFlow layers instead of 3"
 	- feature engineering
 		- imputed missing values with the median [[filling training data (impute data)]] (didn't test mean / [[K-nearest neighbour (KNN)]])
-		- didn't  resample or preprocess for noise reduction
+		- didn't resample or preprocess for noise reduction
 	- comments
 		- "How much did you step 6 improve your model. If I get it right, you override original targets by the model's out of fold prediction if the prediction is confident enough. I had something like that in mind but it seems it felt in a crack. I used this successfully in the past and I have seen recent competition winners share something similar too." - CPMP, Kaggle Grandmaster
 			- "I didn't override the original target, the tgt2 was used only for better splits during cross-validation. Step 6 improved the score by 0.02."
@@ -55,13 +63,27 @@
 		- "I tried reducing dimensions with autoencoder, but it didn't look very promising." - Tilii - competitions master
 		- it took 10 hrs to train the DNN
 		- "And regarding [[balanced logloss]] - as I understand this, reweighting just stretches the probabilities in one or other side, but if they are in the middle (0.5) they stay there)"
-- (2nd)
+- (2nd) Dropped rows where date was unknown. [[catboost]], [[xgboost]], [[TabPFN]]
 	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/430860
+	- solution code: https://www.kaggle.com/code/opamusora/main-notebook
 	- filled Nan values with -100 [[filling training data (impute data)]]
-	- used a technique I saw in some other competition: reducing dimensions with umap and then labeling clusters with kmeans, it didn't bring a lot of score, but it's there
+	- used a technique I saw in some other competition: reducing dimensions with umap and then labeling clusters with kmeans, it didn't bring a lot of score, but it's there ([[alternative targets (auxiliary objective)]]???)
 	- did feature permutation manually, dropped any cols that made score even slightly worse
 		- interesting that it worked
-	- Catboost, xgb with parameters from some public notebook and [[TabPFN]]
+	- used Catboost, xgb with parameters from some public notebook and [[TabPFN]]
+	- [[remove rows where feat=x to find unknown data clusters]] [[remove easy examples]]
+		- **removed rows where time (ƒrom `greeks`) is None (23% of data)**, I noticed a weird cluster that was far away from all other data when playing with umap and it were rows with absent time
+			- **many people didn't remove those rows. BECAUSE THE DATASET WAS ALREADY SMALL**
+		- "it obviously dropped some score (since we remove a lot of easy class 0 ), but eventually I decided to keep it cause it would be better for general cases."
+			- those "data points were really far from the main cluster so I decided to remove it anyway"
+			- "seems intuitive for me to drop data thats insanely far from most observations and also has a clear feature that distinguishes it from everything else" (in discord)
+	- [[permutation feature importance to select features]]
+		- they removed 20 features in the best model
+		- I checked the discord. There's no 
+	- we wanted to try edit [[TabPFN]] to get embeddings and we had an idea to try fine tune tabpfn, but it didn't work out.
+	- optuna didn't work
+	- Stacking didn't work
+	- **used a simple 4-fold** [[stratified kfold]]
 maybe " the reweighting is done in a way such that the class predictions are more balanced overall across all test data rows"
 
 ##### Important notebooks/discussions
@@ -73,8 +95,12 @@ maybe " the reweighting is done in a way such that the class predictions are mo
 	- The BN column is age [[distribution matching]]
 	- The Population is segmented by the `EJ` column
 		- when `EJ == 0`, `EH = 0.5`. This means there is no reason to encode `EJ` [[drop redundant columns]]
-	- there are more class1 examples for the rows that occur on later years
+	- the mean is the **percentage of the data that is class 1** ^313qla
 		- ![[Pasted image 20240128144336.png]]
+		- notice how the mean fluctuates. NOTE: we do NOT KNOW THE YEAR IN THE PRIVATE TEST SET
+			- since this is derived from the `greeks` dataset, which isn't available for test
+		- NOTE: the hidden set was recorded after the traning dataset was collected, so some time influence may be important.
+		- however, this fluctuation doesn't show a pattern
 	- They ran a [[TSNE]] and [[K-nearest neighbour (KNN)]] on the data.
 		- Found that for all the `class 0` examples, there are only 8 `class 1` examples that are near it
 		- basically: after clustering, there are very few `class 1` examples that are intermixed with the `class 0` examples.
@@ -111,4 +137,9 @@ maybe " the reweighting is done in a way such that the class predictions are mo
 		- kaggle master: "I think it would work well if the two classes were better separated overall. Sadly, I don't think it will be competitive for this dataset"
 #### Takeaways
 - Use a deep neural network. Always. Even if you have little data. If you have a good CV, it'll work.
+	- (1st) and (2nd) found success with [[TabPFN]]
 - (1st) "feature engineering led to overfitting". This requires blindly believing in your CV. which is so painful to accept
+- Do brave things:
+	- (2nd) removed the rows that didn't have a date in the aux data
+		- prob because they were all class 0
+		- this was very brave since the dataset was already small

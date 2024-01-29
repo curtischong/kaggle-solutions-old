@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "37084d5b22a73e78",
+        "id": "ee0ed19dd94c5219",
         "type": "tabs",
         "children": [
           {
-            "id": "9df3a73187cf3c12",
+            "id": "f495315d405cb75a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "ICR - Identifying Age-Related Conditions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3869f623fca7b51e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "hardness to predict label.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0654b37337bd129c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "select 2 best models for each fold on CV.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,14 +145,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9df3a73187cf3c12",
+  "active": "f495315d405cb75a",
   "lastOpenFiles": [
-    "hardness to predict label.md",
-    "ICR - Identifying Age-Related Conditions.md",
-    "select 2 best models for each fold on CV.md",
+    "techniques/features/permutation feature importance to select features.md",
+    "techniques/target/hardness to predict label.md",
     "README.md",
+    "techniques/cross validation/select 2 best models for each fold on CV.md",
+    "techniques/cross validation",
+    "remove easy examples.md",
+    "remove rows where feat=x to find unknown data clusters.md",
+    "ICR - Identifying Age-Related Conditions.md",
+    "ml-concepts/cross-validation/stratified kfold.md",
+    "ml-concepts/curse of dimensionality.md",
+    "ml-concepts/models/catboost.md",
     "techniques/features/filling training data (impute data).md",
-    "techniques/cross validation.md",
+    "techniques/cross validation/cross validation.md",
     "balanced logloss.md",
     "assets/Pasted image 20240128173618.png",
     "ml-concepts/models/TabPFN.md",
@@ -192,13 +175,6 @@
     "problem-type/Multi-label Classification.md",
     "competitions/RSNA 2023 Abdominal Trauma Detection.md",
     "competitions/CommonLit - Evaluate Student Summaries.md",
-    "added an LSTM/GRU head (neck) after the backbone layer.md",
-    "ml-concepts/models/alternative targets (auxiliary objective).md",
-    "ml-concepts/image augmentation.md",
-    "techniques/efficiency/resize layer to reduce dimensions.md",
-    "competitions/Bengali.AI Speech Recognition.md",
-    "eval-functions/BCELoss.md",
-    "eval-functions/jaccard similarity (aka Intersection Over Union).md",
     "assets/Pasted image 20240127143047.png",
     "techniques/code quality",
     "assets/Pasted image 20240127113354.png",
@@ -215,7 +191,6 @@
     "assets/Pasted image 20240125155158.png",
     "ml-concepts/regularization",
     "added an LSTM",
-    "ml-concepts/models",
-    "models/model"
+    "ml-concepts/models"
   ]
 }

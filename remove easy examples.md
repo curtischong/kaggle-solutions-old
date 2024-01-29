@@ -1,0 +1,2 @@
+- removing easy examples WILL decrease your [[cross validation]] (since they are easy)
+- however, it'll force your model to try harder to learn difficult examples
