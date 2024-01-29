@@ -60,7 +60,7 @@ Your (forecasted returns) - (actual market returns)
 			- then what is a better way to choose this start date?
 			- probably to look at the distribution that is missing data in the training set and select the period that has the least?
 			- Note: I think that it's best to NOT have missing data during training (but it's ok to have it during inference) since for training we want to have the best signal. (and for data to be missing isn't an *expected* case)
-		- [[filling training data]]
+		- [[filling training data (impute data)]]
 			- many coins had long periods where they were missing data
 				- "I attempted forward fill to prevent missing data as a result of rolling"
 				- but they thought that forward filling would "cause a decline in data quality when there is a long blank period, so I set a limit on forward fill"

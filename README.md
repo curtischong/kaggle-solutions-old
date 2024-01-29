@@ -45,6 +45,14 @@
 5) start reading solution notebooks
 	1) make sure you read the comments section, because that is where ppl point out important techniques
 
+### Finding worthwhile competitions to look at
+- I want to look at a diverse set of competitions to learn the most.
+- 1) look at competitions with different input types
+- 2) look for competitions with high leaderboard shake-up
+	- This is because the shakeup occurs when most people have a poor [[cross validation]], but some people have amazing CV
+		- you can learn how to create a GOOD CV faster by looking at these competitions
+	- https://www.kaggle.com/code/jtrotman/meta-kaggle-competition-shake-up
+
 If you want to search for winning solutions using a technique, search for:
 "kaggle 2nd place solution conditional probability"
 - and iterate the "2nd"

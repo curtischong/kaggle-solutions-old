@@ -13,6 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9df3a73187cf3c12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "ICR - Identifying Age-Related Conditions.md",
                 "mode": "source",
                 "source": false
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,8 +159,11 @@
   },
   "active": "8f5cba0f67861583",
   "lastOpenFiles": [
-    "assets/Pasted image 20240128173618.png",
     "ICR - Identifying Age-Related Conditions.md",
+    "techniques/features/filling training data (impute data).md",
+    "techniques/cross validation.md",
+    "balanced logloss.md",
+    "assets/Pasted image 20240128173618.png",
     "ml-concepts/models/TabPFN.md",
     "eval-functions/DiceLoss.md",
     "How to understand your place on an overfitted Leaderboard.md",
@@ -172,9 +187,7 @@
     "eval-functions/jaccard similarity (aka Intersection Over Union).md",
     "eval-functions/F-score.md",
     "eval-functions/log loss.md",
-    "eval-functions/Huber loss.md",
     "assets/Pasted image 20240127143047.png",
-    "techniques/code quality/encapsulate team's code in class.md",
     "techniques/code quality",
     "assets/Pasted image 20240127113354.png",
     "assets/Pasted image 20240127113437.png",

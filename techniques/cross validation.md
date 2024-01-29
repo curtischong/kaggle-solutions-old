@@ -1,3 +1,7 @@
+This is what happens to people have have made a successful CV ([[ICR - Identifying Age-Related Conditions]]):
+![[Pasted image 20240128173618.png]]
+- "I woke up today with my teammate congrats and I got intrigued as to what place we got? I burst out laughing when I saw it was 2nd place, and the funniest thing is my solution is just CV - no probing, no nothing"	
+
 https://medium.com/geekculture/cross-validation-techniques-33d389897878
 - there's lots of diff cv methods here. but I'm not sure which ones are used.
 - I'm only including ones I've seen used
