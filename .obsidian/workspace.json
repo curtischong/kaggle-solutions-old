@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ee0ed19dd94c5219",
+        "id": "3b1a051892e6b67a",
         "type": "tabs",
         "children": [
           {
-            "id": "f495315d405cb75a",
+            "id": "c781234a1ada0f4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ICR - Identifying Age-Related Conditions.md"
+                "file": "README.md"
               }
             }
           }
@@ -145,36 +145,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f495315d405cb75a",
+  "active": "c781234a1ada0f4d",
   "lastOpenFiles": [
+    "LANL Earthquake Prediction.md",
+    "competitions/ICR - Identifying Age-Related Conditions.md",
+    "assets/Pasted image 20240129154843.png",
+    "eval-functions/MAELoss.md",
+    "eval-functions/Mean absolute error (MAE).md",
+    "templates/competition template.md",
+    "README.md",
+    "How to understand your place on an overfitted Leaderboard.md",
+    "techniques/features/create features through the ratio between different features.md",
+    "ml-concepts/overfitting yourself.md",
+    "eval-functions/balanced logloss.md",
+    "techniques/remove rows where feat=x to find unknown data clusters.md",
+    "techniques/remove easy examples.md",
     "techniques/features/permutation feature importance to select features.md",
     "techniques/target/hardness to predict label.md",
-    "README.md",
     "techniques/cross validation/select 2 best models for each fold on CV.md",
     "techniques/cross validation",
-    "remove easy examples.md",
-    "remove rows where feat=x to find unknown data clusters.md",
-    "ICR - Identifying Age-Related Conditions.md",
     "ml-concepts/cross-validation/stratified kfold.md",
     "ml-concepts/curse of dimensionality.md",
     "ml-concepts/models/catboost.md",
     "techniques/features/filling training data (impute data).md",
     "techniques/cross validation/cross validation.md",
-    "balanced logloss.md",
     "assets/Pasted image 20240128173618.png",
     "ml-concepts/models/TabPFN.md",
     "eval-functions/DiceLoss.md",
-    "How to understand your place on an overfitted Leaderboard.md",
     "Kaggle Grandmaster Tools.md",
     "assets/Pasted image 20240128144336.png",
     "techniques/models/add signal to attention bias.md",
     "ml-concepts/clustering/K-nearest neighbour (KNN).md",
-    "ml-concepts/clustering/TSNE.md",
-    "techniques/features/drop redundant columns.md",
-    "techniques/features/distribution matching.md",
-    "problem-type/Multi-label Classification.md",
-    "competitions/RSNA 2023 Abdominal Trauma Detection.md",
-    "competitions/CommonLit - Evaluate Student Summaries.md",
     "assets/Pasted image 20240127143047.png",
     "techniques/code quality",
     "assets/Pasted image 20240127113354.png",
@@ -188,7 +189,6 @@
     "assets/Pasted image 20240126122316.png",
     "assets/Pasted image 20240126115150.png",
     "assets/Pasted image 20240126112915.png",
-    "assets/Pasted image 20240125155158.png",
     "ml-concepts/regularization",
     "added an LSTM",
     "ml-concepts/models"

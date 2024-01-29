@@ -1,0 +1,3 @@
+- When you spend too much time on the problem, especially one where the dataset is small, and CV is hard to make, you could be trying too hard
+	- this means you'll make features that improve CV, but overall, doesn't improve the generalization of your model
+- TLDR; spending too much time => making overfitted models

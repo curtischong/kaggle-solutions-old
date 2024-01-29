@@ -6,10 +6,11 @@
 - Note: the Supplemental metadata has `B`, `D`, `G` The three age-related conditions. Correspond to class `1`.
 	- NOTE: (1st) did not use this (since it isn't available for the test set)
 **Eval Metric:** 
-
-
 - The submitted probabilities for a given row are not required to sum to one because they are rescaled prior to being scored (each row is divided by the row sum)
 	- since we're predicting class 0 and class 1, and it's rebalanced, this is just a binary classification
+
+**glossary:** `epsilon` is the date for each row in the (optional dataset) `greeks.csv`
+
 ##### Summary
 - ![[Pasted image 20240128173618.png]]
 	- yep :) This is a fun competition
@@ -25,7 +26,11 @@
 			- so do we treat it like a time series problem? not sure
 		- ![[ICR - Identifying Age-Related Conditions#^313qla]]
 - **Why did people think their CV was good, but got bad scores?**
+	- there is a component of luck
+	- people trusted their CV a bit too much, and didn't do [[remove easy examples]] (2nd)
+		- they spent too much time [[overfitting yourself]]
 - **What is reweighing?**
+	- maybe " the reweighting is done in a way such that the class predictions are more balanced overall across all test data rows"
 ##### Solutions
 - (1st) [[TabPFN]] plus CV + [[alternative targets (auxiliary objective)]] for "hard to predict"
 	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/430843
@@ -71,7 +76,7 @@
 	- did feature permutation manually, dropped any cols that made score even slightly worse
 		- interesting that it worked
 	- used Catboost, xgb with parameters from some public notebook and [[TabPFN]]
-	- [[remove rows where feat=x to find unknown data clusters]] [[remove easy examples]]
+	- [[remove rows where feat=x to find unknown data clusters]] to [[remove easy examples]]
 		- **removed rows where time (ƒrom `greeks`) is None (23% of data)**, I noticed a weird cluster that was far away from all other data when playing with umap and it were rows with absent time
 			- **many people didn't remove those rows. BECAUSE THE DATASET WAS ALREADY SMALL**
 		- "it obviously dropped some score (since we remove a lot of easy class 0 ), but eventually I decided to keep it cause it would be better for general cases."
@@ -79,13 +84,37 @@
 			- "seems intuitive for me to drop data thats insanely far from most observations and also has a clear feature that distinguishes it from everything else" (in discord)
 	- [[permutation feature importance to select features]]
 		- they removed 20 features in the best model
-		- I checked the discord. There's no 
+		- I checked the discord. They didn't mention much about how they did the permutation (it was prob mentioned in a call)
 	- we wanted to try edit [[TabPFN]] to get embeddings and we had an idea to try fine tune tabpfn, but it didn't work out.
 	- optuna didn't work
 	- Stacking didn't work
 	- **used a simple 4-fold** [[stratified kfold]]
-maybe " the reweighting is done in a way such that the class predictions are more balanced overall across all test data rows"
-
+- (3rd) didn't do much after the baseline - got lucky by NOT working on it too much and overfitting
+	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/430978
+	- solution code: https://www.kaggle.com/code/junyang680/icr-lightgbmbaseline
+	- [[create features through the ratio between different features]]
+		- didn't do this in the end
+	- they didn't even select the top k more correlated features (with the target) for their final submission
+- (4th) create models to predict alternative targets (Alpha, Beta, Gamma, Delta in `greeks`), then use these as features
+	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/431173
+	- solution code: https://www.kaggle.com/code/andrejvetrov/third?scriptVersionId=131958512
+	- Now for the key features of my solution.
+		1) Recursive filling of gaps in features using regression on CatBoostRegressor (default hyperparameters),  
+		2) greeks['Epsilon'] Unknown were filled with greeks['Epsilon'].min()  
+		3) row_id - row number in train and in test when sorting by Epsilon
+			- they used the row ID as a feature???
+			- "I added this simple feature more intuitively for the reason that although the size of the dataset is small, it has a time component that must be taken into account somehow"
+			- SO EPSILON IS TECHNICALLY IN THE DATASET. IT'S THE ROW ID
+		4) Trained models for each Alpha, Beta, Gamma, Delta and stacked these probabilities to be used as features.
+		5) 5-fold cross validation and then simple averaging
+- (5th) create models to predict alternative targets (Alpha, Beta, Gamma, Delta in `greeks`), then use these as features
+	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/430907
+	- solution code: https://www.kaggle.com/code/celiker/icr-5-place-solution/notebook
+	- main points:
+		- Trained models for each Alpha, Beta, Gamma, Delta and stacked these probabilities to be used as features.
+		- Created lgbm imputer models for every feature even if it has no missing values on train data.
+			- note: Removing imputers didn't effect the score, so the main strength is stacking greeks.
+		- Used RepeatedStratifiedKFold(n_splits=5, n_repeats=5) with a basic catboost model.
 ##### Important notebooks/discussions
 - Baseline notebook and EDA
 	- https://www.kaggle.com/code/gusthema/identifying-age-related-conditions-w-tfdf
@@ -96,7 +125,7 @@ maybe " the reweighting is done in a way such that the class predictions are mo
 	- The Population is segmented by the `EJ` column
 		- when `EJ == 0`, `EH = 0.5`. This means there is no reason to encode `EJ` [[drop redundant columns]]
 	- the mean is the **percentage of the data that is class 1** ^313qla
-		- ![[Pasted image 20240128144336.png]]
+		- ![[Pasted image 20240128144336.png|300]]
 		- notice how the mean fluctuates. NOTE: we do NOT KNOW THE YEAR IN THE PRIVATE TEST SET
 			- since this is derived from the `greeks` dataset, which isn't available for test
 		- NOTE: the hidden set was recorded after the traning dataset was collected, so some time influence may be important.
@@ -143,3 +172,4 @@ maybe " the reweighting is done in a way such that the class predictions are mo
 	- (2nd) removed the rows that didn't have a date in the aux data
 		- prob because they were all class 0
 		- this was very brave since the dataset was already small
+- if there's a competition with potential for large shakeup, investing more time could mean you're [[overfitting yourself]] to the problem (and make an overfitted model)

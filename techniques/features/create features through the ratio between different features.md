@@ -1,0 +1,2 @@
+- "some indicators in the medical examination report are also calculated by the ratio between other indicators"
+	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/430978

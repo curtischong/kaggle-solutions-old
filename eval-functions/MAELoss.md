@@ -1,1 +1,1 @@
-Mean Absolute Error
+[[Mean absolute error (MAE)]]
