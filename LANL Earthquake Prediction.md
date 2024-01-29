@@ -14,7 +14,8 @@
 	- "After doing abovementioned signal manipulation, we had more trust in our calculated features and could focus on better studying differences between train and test data feature distributions"
 	- we calculated a handful of features for train and test and tried to find a good subset of full earth-quakes in train, so that the overall feature distributions are similar to those of the full test data.
 	- [[KS statistic]]
-
+	- a simple shuffled 3-[[kfold]]
+	- [[adversarial validation]]
 ##### Important notebooks/discussions
 
 #### Takeaways
