@@ -1,0 +1,5 @@
+- If you have a target that is hard to predict, make an [[alternative targets (auxiliary objective)]] where this is the "hardness to predict label"
+	- this is a pesudolabel that you generate
+	- how to make this column:
+		- 1) trained some baseline DNN to predict the original target
+		- 2) for the predictions, label it as follows: (y_true = 1 and y_pred < 0.2) or (y_true = 0 and y_pred > 0.8) -> label 1

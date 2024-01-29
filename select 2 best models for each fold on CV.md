@@ -1,0 +1,2 @@
+- if the problem is really hard and the CV is really unstable, you can evaluate each fold 10-30 times and just pick the best 2 models out of those 10-30 runs
+	- you prob need to randomize your model see to run it 10-30 times

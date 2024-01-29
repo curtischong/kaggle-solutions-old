@@ -8,24 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f5cba0f67861583",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9df3a73187cf3c12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "ICR - Identifying Age-Related Conditions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3869f623fca7b51e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardness to predict label.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0654b37337bd129c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "select 2 best models for each fold on CV.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ICR - Identifying Age-Related Conditions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ICR - Identifying Age-Related Conditions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ICR - Identifying Age-Related Conditions.md"
               }
             }
           }
@@ -157,9 +169,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f5cba0f67861583",
+  "active": "9df3a73187cf3c12",
   "lastOpenFiles": [
+    "hardness to predict label.md",
     "ICR - Identifying Age-Related Conditions.md",
+    "select 2 best models for each fold on CV.md",
+    "README.md",
     "techniques/features/filling training data (impute data).md",
     "techniques/cross validation.md",
     "balanced logloss.md",
@@ -170,7 +185,6 @@
     "Kaggle Grandmaster Tools.md",
     "assets/Pasted image 20240128144336.png",
     "techniques/models/add signal to attention bias.md",
-    "README.md",
     "ml-concepts/clustering/K-nearest neighbour (KNN).md",
     "ml-concepts/clustering/TSNE.md",
     "techniques/features/drop redundant columns.md",
@@ -185,8 +199,6 @@
     "competitions/Bengali.AI Speech Recognition.md",
     "eval-functions/BCELoss.md",
     "eval-functions/jaccard similarity (aka Intersection Over Union).md",
-    "eval-functions/F-score.md",
-    "eval-functions/log loss.md",
     "assets/Pasted image 20240127143047.png",
     "techniques/code quality",
     "assets/Pasted image 20240127113354.png",

@@ -16,23 +16,31 @@
 	- **7,327 Competitors, 6,430 Teams**
 - Note: All of the data in the test set was collected after the training set was collected.
 - **Why did people think that CV didn't Work**
+- **Why did people think their CV was good, but got bad scores?**
 - **What is reweighing?**
 ##### Solutions
 - (1st) [[TabPFN]] plus CV + [[alternative targets (auxiliary objective)]] for "hard to predict"
 	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/430843
+	- solution code: https://storage.googleapis.com/kaggle-forum-message-attachments/2384935/19562/adv_model_training.ipynb
 	- The "greeks.csv" was useless. I think, because we have no greeks for the test data.
 	- Gradient boosting was obviously overfitting
 	- feature engineering led to overfitting
+	- **Cross validation**
+		- 10 folds cv, repeat for each fold 10-30 times, [[select 2 best models for each fold on CV]] (yes, cv somehow worked in this competition!).The training was so unstable, that **the cv-scores could vary from 0.25 to 0.05 for single fold**, partially due to large dropout values, partially due to little amount of train data. That's why I picked 2 best models for each fold.
+		- in the training notebook:
+			- their CV is using StratifiedKFold
+			- they are only printing the lowest validation loss (not using? [[select 2 best models for each fold on CV]])?
+				- the weights are saved to their own h5 file. so maybe they're just picking the right one based on the score
+			- I can confirm that for each of the 10 train-validate splits, they are running them 10 times.
 	- What did work:
 		- DNN based on Variable Selection Network
 			- https://arxiv.org/abs/1912.09363
 		- No "casual" normalization of data like MinMaxScaler or StandartScaler, but instead a linear projection with 8 neurons for each feature.
 		- Huge values of dropout: 0.75->0.5->0.25 for 3 main layers.
 		- Reweighting the probabilities in the end worked really good
-		- 10 folds cv, repeat for each fold 10-30 times, select 2 best models for each fold based on cv (yes, cv somehow worked in this competition!).The training was so unstable, that the cv-scores could vary from 0.25 to 0.05 for single fold, partially due to large dropout values, partially due to little amount of train data. That's why I picked 2 best models for each fold.
 		- The cv was some kind of Multi-label. At first I trained some baseline DNN, gathered all validation data and labeled it as follows: (y_true = 1 and y_pred < 0.2) or (y_true = 0 and y_pred > 0.8) -> label 1, otherwise label 0. So, this label was somthing like "hardness to predict". And the other label was, of course, the target itself.
 	- target engineering
-		- Added a "hardness to predict" label [[alternative targets (auxiliary objective)]]
+		- Added a [[hardness to predict label]]
 			- Trained some baseline DNN, gathered all validation data and labeled it as follows: (y_true = 1 and y_pred < 0.2) or (y_true = 0 and y_pred > 0.8) -> label 1, otherwise label 0
 			- this DNN is: "literally the model with 2 VariableSelectionFlow layers instead of 3"
 	- feature engineering
@@ -62,16 +70,18 @@ maybe " the reweighting is done in a way such that the class predictions are mo
 		-  positive samples (class 1) only account for 17.50% of the data
 - Explaining why the problem is hard (why CV is hard to make)
 	- https://www.kaggle.com/code/raddar/icr-competition-analysis-and-findings
-		- The BN column is age [[distribution matching]]
-		- The Population is segmented by the `EJ` column
-			- when `EJ == 0`, `EH = 0.5`. This means there is no reason to encode `EJ` [[drop redundant columns]]
-		- there are more class1 examples for the rows that occur on later years
-			- ![[Pasted image 20240128144336.png]]
-		- They ran a [[TSNE]] and [[K-nearest neighbour (KNN)]] on the data.
-			- Found that for all the `class 0` examples, there are only 8 `class 1` examples that are near it
-			- basically: after clustering, there are very few `class 1` examples that are intermixed with the `class 0` examples.
-			- This means that there are very FEW "hard examples".
-				- This is BAD because correctly deducing the correct class for hard examples is what makes the model stronger
+	- The BN column is age [[distribution matching]]
+	- The Population is segmented by the `EJ` column
+		- when `EJ == 0`, `EH = 0.5`. This means there is no reason to encode `EJ` [[drop redundant columns]]
+	- there are more class1 examples for the rows that occur on later years
+		- ![[Pasted image 20240128144336.png]]
+	- They ran a [[TSNE]] and [[K-nearest neighbour (KNN)]] on the data.
+		- Found that for all the `class 0` examples, there are only 8 `class 1` examples that are near it
+		- basically: after clustering, there are very few `class 1` examples that are intermixed with the `class 0` examples.
+		- This means that there are very FEW "hard examples".
+			- This is BAD because correctly deducing the correct class for hard examples is what makes the model stronger
+		- however, this method of finding "close" samples is fiddly. if you use diff features, clusters could be easier/harder to form
+	- "The fact that the evaluation metric is almost entirely determined by the presence or absence of the hard cases (false negatives) means that any CV (or indeed LB) evaluation is not going to be a continuous function, let alone differentiable. This explains the difficulties in getting a robust CV scheme we've seen in this competition (as well as the crazy leaderboard)."
 - using the greeks.csv supplimental data
 	- https://www.kaggle.com/code/sugataghosh/icr-the-devil-is-in-the-greeks
 	- The key takeaway from this notebook is the observation that these supplemental metadata, in particular the categorical variables `Beta`, `Gamma` and `Delta`, are far more powerful in predicting `Class`, compared to the features provided in the `train` dataset.
@@ -93,5 +103,12 @@ maybe " the reweighting is done in a way such that the class predictions are mo
 		        new_p = p * np.array([[1/(class_0_est_instances if i==0 else others_est_instances) for i in range(p.shape[1])]])
 		        return new_p / np.sum(new_p,axis=1,keepdims=1)
 		```
+- Similarity CV (doesn't work): "A novel way to tackle the problem"
+	- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/discussion/414856
+		- "instead of focusing on individual of the sample, we consider a couple of individuals (𝑖,𝑗) and try to guess if they belong to the same class"
+		- Now our new training dataset has $N^2$ samples, the new validation dataset has $N * M_0$ samples
+			- where $M_0$ is the size of our validation set
+		- kaggle master: "I think it would work well if the two classes were better separated overall. Sadly, I don't think it will be competitive for this dataset"
 #### Takeaways
 - Use a deep neural network. Always. Even if you have little data. If you have a good CV, it'll work.
+- (1st) "feature engineering led to overfitting". This requires blindly believing in your CV. which is so painful to accept
