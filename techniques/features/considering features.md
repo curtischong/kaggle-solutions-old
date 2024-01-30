@@ -1,0 +1,1 @@
+- techniques ppl use to consider to add a feature or not

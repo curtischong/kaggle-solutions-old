@@ -1,5 +1,8 @@
- [receiver operating characteristic curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
- - the plot of the [true positive rate](https://en.wikipedia.org/wiki/True_positive_rate "True positive rate") (TPR) against the [false positive rate](https://en.wikipedia.org/wiki/False_positive_rate "False positive rate") (FPR) at each threshold setting.
-	 - used to illustrate the performance of a binary classifier model
+ - It's used to illustrate the performance of a binary classifier model
+ - [receiver operating characteristic curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+ - it's the plot of the [true positive rate](https://en.wikipedia.org/wiki/True_positive_rate "True positive rate") (TPR = TP / (TP + FN)) against the [false positive rate](https://en.wikipedia.org/wiki/False_positive_rate "False positive rate") (FPR = FP / (FP + TN)) **at each threshold setting.**
+	- Basically, we iterate through different threshold settings and say: "for this threshold, how many points are TP, and how many points are FP"
+		- then we plot a point on the graph like that
+		- finally, we smoothen all the points
  - ![[Pasted image 20240129174629.png]]
-- to get the area under the curve, we 
+- to get the area under the curve, we need the actual predictions (can't do it using summarized statistics like num TP num FP)
