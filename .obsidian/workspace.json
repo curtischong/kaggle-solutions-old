@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "3b91afe885baec7c",
+            "id": "45d42ad1e03edd17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ml-concepts/KS statistic.md",
+                "file": "ml-concepts/models/autoencoder.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,11 +171,18 @@
   },
   "active": "c781234a1ada0f4d",
   "lastOpenFiles": [
+    "ml-concepts/models/autoencoder.md",
+    "ml-concepts/input-tricks/adversarial validation.md",
+    "Untitled.md",
+    "LANL Earthquake Prediction.md",
+    "assets/Pasted image 20240129215242.png",
+    "ml-concepts/models/denoise autoencoder.md",
     "ml-concepts/KS statistic.md",
+    "problem-type/signal processing.md",
+    "techniques/features/Add noise to denoise median statistic.md",
+    "eval-functions/Pearson's Correlation Coefficient.md",
     "techniques/cross validation/cross validation.md",
     "competitions/ICR - Identifying Age-Related Conditions.md",
-    "LANL Earthquake Prediction.md",
-    "ml-concepts/input-tricks/adversarial validation.md",
     "Mel frequency cepstral coefficients (MFCC).md",
     "techniques/features/considering features.md",
     "problem-type/regression.md",
@@ -193,13 +200,7 @@
     "ml-concepts/overfitting yourself.md",
     "eval-functions/balanced logloss.md",
     "techniques/remove rows where feat=x to find unknown data clusters.md",
-    "techniques/remove easy examples.md",
-    "techniques/features/permutation feature importance to select features.md",
-    "techniques/target/hardness to predict label.md",
-    "techniques/cross validation/select 2 best models for each fold on CV.md",
     "techniques/cross validation",
-    "ml-concepts/cross-validation/stratified kfold.md",
-    "ml-concepts/curse of dimensionality.md",
     "assets/Pasted image 20240128173618.png",
     "assets/Pasted image 20240128144336.png",
     "assets/Pasted image 20240127143047.png",
@@ -213,7 +214,6 @@
     "techniques/target",
     "ml-concepts/cross-validation",
     "assets/Pasted image 20240126122316.png",
-    "assets/Pasted image 20240126115150.png",
     "ml-concepts/regularization",
     "added an LSTM",
     "ml-concepts/models"

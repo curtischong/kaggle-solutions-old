@@ -1,0 +1,6 @@
+- the goal: given an input, output the same thing
+- the challenge is that the model looks like this:
+	- ![[Pasted image 20240129215242.png|400]]
+	- the model needs to learn an encoded representation of the data before reconstructing it in the decoder
+- in an autoencoder, **the dimension of the input is always the same as the dimension of the output**.
+	- cause the goal is to reconstruct the original input

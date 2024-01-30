@@ -1,0 +1,9 @@
+- wavenet denoiser is one: https://arxiv.org/abs/1706.07162
+- on train time:
+	- 1) you feed in your data (make sure it's not noisy)
+	- 2) the noise autoencoder adds noise to your data
+	- 3) it tries to predict the original data you fed in (1)
+- So during inference time, if your data is noisy, it will remove the noise.
+- you CANNOT train a denoise autoencoder if you don't know the (non-noisy) data
+	- cause it doesn't have a non-noisy signal to act as the ground truth
+- Think of denoise autoencoders like normal [[autoencoder]]s, except you feed in noisy data and it has to reconstruct the non-noisy data
