@@ -31,6 +31,7 @@
 		- We did this by sampling 10 full earthquakes multiple times (up to 10k times) on train, and comparing the average KS statistic of all selected features on the sampled earthquakes to the feature dists in full test.
 			- **what does sampling 10 full earthquakes multiple times mean?**
 		- "The x-axis is the average target of the selected EQs in train and the y-axis is the KS statistic on a bunch of features comparing the distribution of that feature for the selected EQs vs the full test data. We can see that the best average KS-statistic is somewhere in the range of 6.2-6.5. You can also see nicely here that a problematic feature like the green one deviates clearly from the rest, this would be a feature we would not select in the end."
+	- "We have one additional binary logloss with the target specifying if the time to failure (ttf) is <0.5 and one further MAE loss on the target of time-since-failure."
 ##### Important notebooks/discussions
 
 #### Takeaways

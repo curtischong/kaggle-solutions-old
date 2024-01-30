@@ -18,7 +18,8 @@
 - Note: All of the data in the test set was collected after the training set was collected.
 - **Why did people think that CV didn't Work**
 	- small dataset: only 617 rows (very unstable CV - easy to overfit)
-		- there were also 50+ features, so there's the [[curse of dimensionality]]
+		- this makes the loss not very continuous
+		- there were also 50+ features, so possibly the [[curse of dimensionality]]?
 	- only 18% of the data is class1:
 		- https://www.kaggle.com/competitions/icr-identify-age-related-conditions/data?select=train.csv
 	- class1 examples are weirdly distributed
@@ -165,6 +166,7 @@
 			- where $M_0$ is the size of our validation set
 		- kaggle master: "I think it would work well if the two classes were better separated overall. Sadly, I don't think it will be competitive for this dataset"
 #### Takeaways
+- (1st)'s [[hardness to predict label]] prob made a big difference
 - Use a deep neural network. Always. Even if you have little data. If you have a good CV, it'll work.
 	- (1st) and (2nd) found success with [[TabPFN]]
 - (1st) "feature engineering led to overfitting". This requires blindly believing in your CV. which is so painful to accept
