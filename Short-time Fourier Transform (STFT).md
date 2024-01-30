@@ -1,0 +1,3 @@
+- https://en.wikipedia.org/wiki/Short-time_Fourier_transform
+	- you basically use [[Fast-Fourier Transform]] on short segments of the signal
+	- In practice, the procedure for computing STFTs is to divide a longer time signal into shorter segments of equal length and then compute the Fourier transform separately on each shorter segment.

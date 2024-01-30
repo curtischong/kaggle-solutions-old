@@ -1,0 +1,4 @@
+- https://www.mathworks.com/discovery/ransac.html
+	- Random sample consensus
+	- An iterative method for estimating a mathematical model from a data set that contains outliers.
+		- works by identifying the outliers in a data set and estimating the desired model using data that does not contain outliers.

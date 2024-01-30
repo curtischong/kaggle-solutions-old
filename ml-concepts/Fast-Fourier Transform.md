@@ -1,0 +1,1 @@
+- converts a signal into individual spectral components

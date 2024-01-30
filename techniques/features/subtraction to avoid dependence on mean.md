@@ -1,0 +1,4 @@
+- if the mean of the data shifts, it's hard to counteract
+- so make you features be based on differences:
+	- 95th percentile - 5th percentile
+	- (max - min) / 2
