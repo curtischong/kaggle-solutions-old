@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b92c9b54b031c048",
+        "id": "e65c892bde4877e7",
         "type": "tabs",
         "children": [
           {
-            "id": "45a3cc91db7929ed",
+            "id": "ab7e56e7724022f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LANL Earthquake Prediction.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LANL Earthquake Prediction.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LANL Earthquake Prediction.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LANL Earthquake Prediction.md"
+                "file": "README.md"
               }
             }
           }
@@ -145,10 +145,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45a3cc91db7929ed",
+  "active": "ab7e56e7724022f1",
   "lastOpenFiles": [
-    "Short-time Fourier Transform (STFT).md",
-    "LANL Earthquake Prediction.md",
+    "ml-concepts/Short-time Fourier Transform (STFT).md",
+    "README.md",
+    "competitions/LANL Earthquake Prediction.md",
     "ml-concepts/models/autoencoder.md",
     "ml-concepts/input-tricks/adversarial validation.md",
     "techniques/features/subtraction to avoid dependence on mean.md",
@@ -177,7 +178,6 @@
     "How to understand your place on an overfitted Leaderboard.md",
     "ml-concepts/input-tricks/Sequence bucketing.md",
     "assets/Pasted image 20240129174629.png",
-    "receiver operating characteristic curve (ROC).md",
     "assets/Pasted image 20240129154843.png",
     "techniques/cross validation",
     "assets/Pasted image 20240128173618.png",
