@@ -1,4 +1,4 @@
-**Link:** https://www.kaggle.com/c/cafa-5-protein-function-prediction/leaderboard
+**Link:** https://www.kaggle.com/c/cafa-5-protein-function-prediction
 **Problem Type:** [[Multi-label Classification]] [[hierarchical label classification]]
 **Input:**
 - 1) The fasta files for proteins (aka the amino acids that make it up) AND the corresponding GO terms this protein is related with

@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ml-concepts/KS statistic.md",
+                "file": "All Competitions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17f7449d983744cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "competitions/CAFA 5 Protein Function Prediction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "33aec3dbba9f2603",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "competitions/Bengali.AI Speech Recognition.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 543.5
+    "width": 332.5
   },
   "right": {
     "id": "105a6fc5c8e9e7d4",
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ml-concepts/KS statistic.md",
+                "file": "All Competitions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ml-concepts/KS statistic.md",
+                "file": "All Competitions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ml-concepts/KS statistic.md"
+                "file": "All Competitions.md"
               }
             }
           }
@@ -147,6 +171,12 @@
   },
   "active": "ab7e56e7724022f1",
   "lastOpenFiles": [
+    "competitions/CAFA 5 Protein Function Prediction.md",
+    "All Competitions.md",
+    "competitions/Bengali.AI Speech Recognition.md",
+    "competitions/UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN).md",
+    "index.md",
+    "ml-concepts/KS statistic.md",
     "ml-concepts/Short-time Fourier Transform (STFT).md",
     "ml-concepts/triplet mining.md",
     "ml-concepts/Connectionist temporal classification (CTC).md",
@@ -156,7 +186,6 @@
     "ml-concepts/input-tricks/Online hard negative mining.md",
     "ml-concepts/input-tricks/adversarial validation.md",
     "ml-concepts/Graph Segment Training.md",
-    "README.md",
     "ml-concepts/math",
     "competitions/LANL Earthquake Prediction.md",
     "ml-concepts/models/autoencoder.md",
@@ -172,12 +201,7 @@
     "ml-concepts/models/RANSAC.md",
     "ml-concepts/models/HuberRegressor.md",
     "eval-functions/Huber loss.md",
-    "ml-concepts/models/linear regression.md",
     "assets/Pasted image 20240129215242.png",
-    "ml-concepts/models/denoise autoencoder.md",
-    "ml-concepts/KS statistic.md",
-    "problem-type/signal processing.md",
-    "techniques/features/Add noise to denoise median statistic.md",
     "assets/Pasted image 20240129174629.png",
     "assets/Pasted image 20240129154843.png",
     "techniques/cross validation",
