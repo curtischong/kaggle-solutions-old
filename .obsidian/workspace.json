@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ml-concepts/KS statistic.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 543.5
   },
   "right": {
     "id": "105a6fc5c8e9e7d4",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ml-concepts/KS statistic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ml-concepts/KS statistic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ml-concepts/KS statistic.md"
               }
             }
           }
@@ -148,10 +148,18 @@
   "active": "ab7e56e7724022f1",
   "lastOpenFiles": [
     "ml-concepts/Short-time Fourier Transform (STFT).md",
+    "ml-concepts/triplet mining.md",
+    "ml-concepts/Connectionist temporal classification (CTC).md",
+    "ml-concepts/input-tricks/BPE tokenizer.md",
+    "ml-concepts/input-tricks/singular value decomposition.md",
+    "ml-concepts/input-tricks/Sequence bucketing.md",
+    "ml-concepts/input-tricks/Online hard negative mining.md",
+    "ml-concepts/input-tricks/adversarial validation.md",
+    "ml-concepts/Graph Segment Training.md",
     "README.md",
+    "ml-concepts/math",
     "competitions/LANL Earthquake Prediction.md",
     "ml-concepts/models/autoencoder.md",
-    "ml-concepts/input-tricks/adversarial validation.md",
     "techniques/features/subtraction to avoid dependence on mean.md",
     "Untitled 1.md",
     "Untitled.md",
@@ -170,13 +178,6 @@
     "ml-concepts/KS statistic.md",
     "problem-type/signal processing.md",
     "techniques/features/Add noise to denoise median statistic.md",
-    "eval-functions/Pearson's Correlation Coefficient.md",
-    "techniques/cross validation/cross validation.md",
-    "competitions/ICR - Identifying Age-Related Conditions.md",
-    "techniques/features/considering features.md",
-    "problem-type/regression.md",
-    "How to understand your place on an overfitted Leaderboard.md",
-    "ml-concepts/input-tricks/Sequence bucketing.md",
     "assets/Pasted image 20240129174629.png",
     "assets/Pasted image 20240129154843.png",
     "techniques/cross validation",
@@ -191,7 +192,6 @@
     "techniques/target",
     "ml-concepts/cross-validation",
     "ml-concepts/regularization",
-    "added an LSTM",
-    "ml-concepts/models"
+    "added an LSTM"
   ]
 }
